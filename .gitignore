@@ -1,0 +1,37 @@
+# Python
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# FastAPI
+
+*.log
+
+# React
+
+node_modules/
+dist/
+
+# VS Code
+
+.vscode/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# ML
+
+*.h5
+*.pt
+*.pth
+
+# Environment variables
+
+.env.local
+.env.production
