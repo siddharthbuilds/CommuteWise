@@ -11,3 +11,13 @@ df['weekday'] = df['DATE'].dt.strftime('%a')
 print(df.head(10))
 print(df.columns)
 print(df.shape)
+drop1=["DATE",
+       "LINE",
+       "ORIENTATION",
+       "AVGVELOCITY",
+       "TRIPDURATION"
+       ]
+df=df.drop(columns=drop1)
+print(df.head(10))
+print(df.columns)
+print(df.shape)
