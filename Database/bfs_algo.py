@@ -1,4 +1,4 @@
-from Database.graph_finder import graph
+from graph_finder import graph
 from collections import deque
 
 def bfs(graph, start, end):
@@ -36,3 +36,17 @@ def bfs(graph, start, end):
                 queue.append(neighbour)
 
     return None
+route = bfs(
+    graph,
+    "Chennai Airport",
+    "Chennai Beach RS"
+)
+
+print(route)
+
+route=bfs(
+    graph,
+    "Wimco Nagar",
+    "Velacherry RS"
+)
+print(route)
