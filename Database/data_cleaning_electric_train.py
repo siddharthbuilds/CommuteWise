@@ -1,14 +1,8 @@
 import pandas as pd
-
 df_rail = pd.read_csv(
     "Sub_Urban_Rail_Chennai_as_on_20_June_2019.csv",
     encoding="latin1"
 )
-
-
-print(df_rail.columns)
-print(df_rail.head(20))
-print(df_rail[["Connection", "Station"]].head(40))
 df_rail["Station"] = (
     df_rail["Station"]
     .str.replace("\xa0", "", regex=False)
@@ -75,8 +69,11 @@ df_rail = pd.concat(
     [df_rail, pd.DataFrame(new_rows)],
     ignore_index=True
 )
-
-print(df_rail[["Connection", "Station"]].tail(30))
-print(df_rail[df_rail["Connection"] == "South Line"][["Station"]].tail(20))
-print(df_rail[df_rail["Connection"] == "West Line"][["Station"]].tail(15))
-print(df_rail[df_rail["Connection"] == "North Line"][["Station"]].tail(15))
+if __name__ == "__main__":
+    print(df_rail.columns)
+    print(df_rail.head(20))
+    print(df_rail[["Connection", "Station"]].head(40))
+    print(df_rail[["Connection", "Station"]].tail(30))
+    print(df_rail[df_rail["Connection"] == "South Line"][["Station"]].tail(20))
+    print(df_rail[df_rail["Connection"] == "West Line"][["Station"]].tail(15))
+    print(df_rail[df_rail["Connection"] == "North Line"][["Station"]].tail(15))

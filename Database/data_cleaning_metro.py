@@ -1,6 +1,5 @@
 import pandas as pd
 df=pd.read_csv("chennai_metro_rail_limited_chennai.csv")
-print(df.columns)
 extension = pd.DataFrame({
     "City": ["Chennai"] * 7,
     "Zone": [""] * 7,
@@ -19,11 +18,6 @@ extension = pd.DataFrame({
     "Layout": ["Elevated"] * 7
 })
 df = pd.concat([df, extension], ignore_index=True)
-print(
-    df[df["Corridor Name"] == "Corridor 1 Green Line"]
-    ["Station Name"]
-    .tolist()
-)
 df["Station Name"] = df["Station Name"].replace({
     "Gindy": "Guindy",
     "Liltle mount": "Little Mount",

@@ -3,6 +3,7 @@ import heapq
 from math import radians, sin, cos, sqrt, atan2
 from graph_finder import graph
 from node_finder import node_mode
+import copy
 with open("all_coords.json", "r") as f:
     all_coords = json.load(f)
 def haversine(lat1, lon1, lat2, lon2):
@@ -35,6 +36,7 @@ def build_weighted_graph(graph, all_coords, node_mode):
                 {
                     "to": neighbour,
                     "distance": distance,
+                    "cost":distance,
                     "mode": node_mode[node]
                 }
             )
@@ -44,7 +46,7 @@ def add_transfer_edges(
         weighted_graph,
         all_coords,
         node_mode,
-        radius_km=0.3):
+        radius_km=0.5):
 
     nodes = list(weighted_graph.keys())
 
@@ -71,6 +73,7 @@ def add_transfer_edges(
                     {
                         "to": node_b,
                         "distance": distance,
+                        "cost":distance,
                         "mode": "walk"
                     }
                 )
@@ -78,6 +81,7 @@ def add_transfer_edges(
                     {
                         "to": node_a,
                         "distance": distance,
+                        "cost":distance,
                         "mode": "walk"
                     }
                 )
@@ -101,9 +105,10 @@ def dijkstra(graph, source, destination):
             break
         for edge in graph[current_node]:
             neighbour = edge["to"]
-            weight = edge["distance"]
+            weight = edge["cost"]
             if edge["mode"] == "walk":
-                weight *= 3
+                 effective_walk = max(edge["cost"],0.05)
+                 weight = effective_walk * 3
             new_dist = current_dist + weight
             if new_dist < distances[neighbour]:
                 distances[neighbour] = new_dist
@@ -149,14 +154,20 @@ def explain_route(segments):
         print(
             f"Mode: {mode}"
         )
+        display_distance = distance
+
+        if mode == "walk":
+            display_distance = max(
+                distance,
+                0.05)
         print(
-        f"Distance: {distance} km\n")
+        f"Distance: {display_distance} km\n")
         
         if previous_mode and previous_mode != mode:
             transfers += 1
         previous_mode = mode
         if mode == "walk":
-            total_walk += distance
+            total_walk += max(distance,0.05)
         elif mode == "bus":
             total_bus += distance
         elif mode == "rail":
@@ -170,6 +181,42 @@ def explain_route(segments):
     print("Rail:", round(total_rail, 2), "km")
     print("Metro:", round(total_metro, 2), "km")
     print("Transfers:", transfers)
+
+def route_nodes(segments):
+    nodes = [segments[0][0]]
+    for _, end, _, _ in segments:
+        nodes.append(end)
+    return nodes
+
+
+
+def get_candidate_routes(
+        weighted_graph,
+        source,
+        destination,
+        k=10):
+    graph_copy = copy.deepcopy(weighted_graph)
+    routes = []
+    for _ in range(k):
+        result = dijkstra(
+            graph_copy,
+            source,
+            destination
+        )
+        if result is None:
+            break
+        segments, distance = result
+        routes.append(
+            (segments, distance)
+        )
+        path_nodes = route_nodes(segments)
+        for i in range(len(path_nodes)-1):
+            a = path_nodes[i]
+            b = path_nodes[i+1]
+            for edge in graph_copy[a]:
+                if edge["to"] == b:
+                    edge["cost"] *= 1.5
+    return routes
 
 
 
@@ -185,19 +232,23 @@ weighted_graph = add_transfer_edges(
     all_coords,
     node_mode
 )
-result = dijkstra(
+routes = get_candidate_routes(
     weighted_graph,
     "Velacherry RS",
-    "LIC"
+    "LIC",
+    k=10
 )
 
-segments, distance = result
+for idx, (segments, distance) in enumerate(routes):
 
-print("Weighted Distance:", distance)
+    print(
+        f"\nRoute {idx+1}"
+    )
 
-explain_route(segments)
-print("Velacherry RS:", all_coords["Velacherry RS"])
-print("VELACHERY:", all_coords["VELACHERY"])
+    print(
+        "Distance:",
+        round(distance, 2)
+    )
 
-print("D.M.S:", all_coords["D.M.S"])
-print("AG-DMS:", all_coords["AG-DMS"])
+    explain_route(segments)
+
