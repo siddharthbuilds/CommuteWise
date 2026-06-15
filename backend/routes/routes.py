@@ -17,7 +17,7 @@ class Routes:
     def get_rating(self,max_values):
         self.rating=0
         current_values=[self.distance,self.duration,self.expenditure,self.timedelay,self.carbonrate]
-        rating_weights=[0.20,0.35,0.25,0.05,0.15]
+        rating_weights=[0.20,0.35,0.25,0.10,0.10]
         i=0
         while(i<5):
             normalised_value=((1-(current_values[i]/max_values[i]))*100)
