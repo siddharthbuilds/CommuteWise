@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CommuteWise</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logo.svg" alt="logo" class="logo-icon" />
+      <span class="logo-text">CommuteWise</span>
+    </div>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="#">How It Works</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+      </nav>
+      <span class="live-badge"><span class="dot"></span> Live Transit</span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Smarter routes.<br/><span class="green">Greener Chennai.</span></h1>
+      <p>Find the best balance of time, reliability,<br/>and sustainability for your daily commute.</p>
+    </div>
+    <div class="hero-img">
+      <img src="assets/hero-illustration.png" alt="Chennai transit" />
+    </div>
+  </section>
+
+  <!-- SEARCH BAR -->
+  <section class="search-section">
+    <form class="search-form" id="searchForm">
+      <div class="search-row">
+        <div class="input-group">
+          <span class="input-icon green-icon"><i class="fa-solid fa-circle-dot"></i></span>
+          <input type="text" id="source" placeholder="From — Enter origin" required />
+        </div>
+        <div class="input-group">
+          <span class="input-icon red-icon"><i class="fa-solid fa-location-dot"></i></span>
+          <input type="text" id="destination" placeholder="To — Enter destination" required />
+          <button type="button" class="swap-btn" onclick="swapLocations()"><i class="fa-solid fa-arrow-up-arrow-down"></i></button>
+        </div>
+        <div class="input-group">
+          <span class="input-icon"><i class="fa-regular fa-calendar"></i></span>
+          <input type="datetime-local" id="datetime" />
+        </div>
+      </div>
+      <button type="submit" class="find-btn">Find Best Routes <i class="fa-solid fa-arrow-right"></i></button>
+    </form>
+
+    <div class="transit-status">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Chennai Transit Status:</span>
+      <span class="status-badge normal">Normal</span>
+      <span class="status-text">No major delays reported</span>
+      <a href="#" class="link-green">See Live Map →</a>
+    </div>
+  </section>
+
+  <!-- RESULTS SECTION (hidden until search) -->
+  <section class="results-section" id="resultsSection" style="display:none;">
+    <div class="results-layout">
+
+      <!-- LEFT: FILTERS -->
+      <aside class="filters">
+        <h3>Route Preferences</h3>
+        <p class="filters-sub">Prioritize what matters most to you.</p>
+        <div class="filter-options" id="filterOptions">
+          <label class="filter-option active" data-sort="rating">
+            <span class="filter-icon gold"><i class="fa-solid fa-star"></i></span>
+            <div>
+              <strong>Best Overall</strong>
+              <p>Balanced score across all factors</p>
+            </div>
+            <input type="radio" name="sort" value="rating" checked />
+          </label>
+          <label class="filter-option" data-sort="duration">
+            <span class="filter-icon blue"><i class="fa-solid fa-bolt"></i></span>
+            <div>
+              <strong>Fastest Route</strong>
+              <p>Minimum travel time</p>
+            </div>
+            <input type="radio" name="sort" value="duration" />
+          </label>
+          <label class="filter-option" data-sort="carbonrate">
+            <span class="filter-icon green"><i class="fa-solid fa-leaf"></i></span>
+            <div>
+              <strong>Greenest Route</strong>
+              <p>Lowest carbon emissions</p>
+            </div>
+            <input type="radio" name="sort" value="carbonrate" />
+          </label>
+          <label class="filter-option" data-sort="expenditure">
+            <span class="filter-icon orange"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+            <div>
+              <strong>Cheapest Route</strong>
+              <p>Lowest travel cost</p>
+            </div>
+            <input type="radio" name="sort" value="expenditure" />
+          </label>
+        </div>
+      </aside>
+
+      <!-- RIGHT: ROUTE CARDS + MAP + INSIGHTS -->
+      <div class="results-main">
+        <div class="results-header">
+          <div>
+            <h2>Recommended Routes</h2>
+            <p>We analyzed multiple options for you</p>
+          </div>
+        </div>
+
+        <div class="route-cards" id="routeCards"></div>
+
+        <!-- MAP PLACEHOLDER -->
+        <div class="map-placeholder">
+          <div class="map-label">Map View</div>
+          <p>Route map will appear here once Google Maps API key is configured.</p>
+        </div>
+
+        <!-- INSIGHTS + ENVIRONMENTAL IMPACT -->
+        <div class="bottom-grid">
+          <div class="insights-box">
+            <h3><i class="fa-solid fa-robot"></i> CommuteWise Insights</h3>
+            <ul id="insightsList"></ul>
+          </div>
+          <div class="impact-box">
+            <h3><i class="fa-solid fa-leaf"></i> Environmental Impact</h3>
+            <div class="impact-stats" id="impactStats"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY COMMUTEWISE (shown on home) -->
+  <section class="why-section" id="whySection">
+    <h2>Why CommuteWise?</h2>
+    <div class="why-cards">
+      <div class="why-card">
+        <span class="why-icon green-bg"><i class="fa-regular fa-clock"></i></span>
+        <h4>Save Time</h4>
+        <p>ML-powered predictions for accurate travel time and fewer surprises.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon purple-bg"><i class="fa-solid fa-shield-halved"></i></span>
+        <h4>Be Reliable</h4>
+        <p>Real-time & historical delay insights for smarter decisions.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon green-bg"><i class="fa-solid fa-leaf"></i></span>
+        <h4>Go Green</h4>
+        <p>See the carbon impact of your commute and choose greener routes.</p>
+      </div>
+    </div>
+
+    <div class="impact-banner">
+      <div>
+        <h4>Your Impact Matters</h4>
+        <p>Small choices today, big impact tomorrow.</p>
+        <button class="outline-btn">View My Impact</button>
+      </div>
+      <div class="impact-stat">
+        <span class="stat-label">CO₂ Saved This Month</span>
+        <span class="stat-value">2.4 kg</span>
+        <span class="stat-sub">vs fastest routes</span>
+      </div>
+    </div>
+
+    <div class="cta-banner">
+      <span class="why-icon green-bg small"><i class="fa-solid fa-leaf"></i></span>
+      <p>Greener commutes lead to better cities.<br/>Let's build a sustainable Chennai together!</p>
+      <i class="fa-solid fa-chevron-right"></i>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Made with <i class="fa-solid fa-heart red"></i> for Chennai Commuters</span>
+    <span>Data Sources <i class="fa-brands fa-github"></i></span>
+  </footer>
+
+  <!-- ERROR BANNER -->
+  <div id="errorBanner" style="display:none;background:#fff3f3;color:#c62828;padding:14px 48px;border-bottom:1px solid #ffcdd2;font-size:0.9rem;"></div>
+
+  <!-- PATH MODAL -->
+  <div id="pathModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:999;align-items:center;justify-content:center;">
+    <div style="background:#fff;border-radius:16px;padding:28px;max-width:420px;width:90%;max-height:80vh;overflow-y:auto;">
+      <h3 style="margin-bottom:16px;color:#2d7a3a;">Full Route Path</h3>
+      <div id="pathContent"></div>
+      <button onclick="document.getElementById('pathModal').style.display='none'" style="margin-top:20px;width:100%;padding:10px;border-radius:8px;border:none;background:#2d7a3a;color:#fff;font-weight:600;cursor:pointer;">Close</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5834 @@
+{
+    "Chennai Airport": [
+        12.9941,
+        80.1709
+    ],
+    "Meenambakkam": [
+        12.9814,
+        80.1793
+    ],
+    "Nanganallur road": [
+        12.9892,
+        80.1878
+    ],
+    "Alandur": [
+        12.9976,
+        80.2014
+    ],
+    "Saidapet": [
+        13.0211,
+        80.2369
+    ],
+    "Nandanam": [
+        13.0298,
+        80.2435
+    ],
+    "Teynampet": [
+        13.0368,
+        80.2454
+    ],
+    "AG-DMS": [
+        13.0442,
+        80.2492
+    ],
+    "Thousand Lights": [
+        13.0567,
+        80.2541
+    ],
+    "LIC": [
+        13.0617,
+        80.2644
+    ],
+    "Government Estate": [
+        13.0673,
+        80.2714
+    ],
+    "Chennai Central": [
+        13.0815,
+        80.2728
+    ],
+    "Highcourt": [
+        13.0864,
+        80.2858
+    ],
+    "Manadi": [
+        13.0945,
+        80.2831
+    ],
+    "Washermenpet": [
+        13.0978,
+        80.2796
+    ],
+    "Sir Theagaraya College": [
+        13.1009,
+        80.2828
+    ],
+    "Tondiarpet": [
+        13.107,
+        80.2882
+    ],
+    "New Washermenpet": [
+        13.1118,
+        80.2917
+    ],
+    "Tollgate": [
+        13.1219,
+        80.2952
+    ],
+    "Kaladipet": [
+        13.1311,
+        80.2977
+    ],
+    "Thiruvottiyur": [
+        13.1517,
+        80.3025
+    ],
+    "Wimco Nagar": [
+        13.1646,
+        80.3011
+    ],
+    "Egmore": [
+        13.0792,
+        80.2612
+    ],
+    "Nehru Park": [
+        13.0793,
+        80.2491
+    ],
+    "Kilpauk": [
+        13.0778,
+        80.2403
+    ],
+    "Pachaiyappa's College": [
+        13.0771,
+        80.2289
+    ],
+    "Shenoy Nagar": [
+        13.0754,
+        80.221
+    ],
+    "Anna Nagar East": [
+        13.0827,
+        80.2173
+    ],
+    "Anna Nagar Tower": [
+        13.0847,
+        80.2112
+    ],
+    "Thirumangalam": [
+        13.0851,
+        80.1997
+    ],
+    "Koyembedu": [
+        13.0734,
+        80.1951
+    ],
+    "CMBT": [
+        13.0674,
+        80.2054
+    ],
+    "Arumbakkam": [
+        13.0617,
+        80.2117
+    ],
+    "Vadapalani": [
+        13.0503,
+        80.2118
+    ],
+    "Ashok Nagar KK Nagar": [
+        13.0354,
+        80.2113
+    ],
+    "Ekkattuthangal": [
+        13.0169,
+        80.2056
+    ],
+    "St Thomas Mount": [
+        12.9928,
+        80.2001
+    ],
+    "Central Metro": [
+        13.0815,
+        80.2728
+    ],
+    "Guindy": [
+        13.0084,
+        80.2212
+    ],
+    "Little Mount": [
+        13.0142,
+        80.2378
+    ],
+    "Ambattur RS": [
+        13.1192,
+        80.1541
+    ],
+    "Athipattu Pudhunagar RS": [
+        13.2327,
+        80.3168
+    ],
+    "Athipattu RS": [
+        13.2425,
+        80.3194
+    ],
+    "Avadi RS": [
+        13.1165,
+        80.0984
+    ],
+    "Basin Bridge RS": [
+        13.1017,
+        80.2701
+    ],
+    "Chengalpattu Junction RS": [
+        12.6931,
+        79.9774
+    ],
+    "Chennai Beach RS": [
+        13.0943,
+        80.2889
+    ],
+    "Chennai Central MMC": [
+        13.0827,
+        80.2745
+    ],
+    "Chennai Egmore RS; Rail Terminus": [
+        13.0792,
+        80.2612
+    ],
+    "Chennai Fort RS": [
+        13.0864,
+        80.2883
+    ],
+    "Chennai Park RS; Chennai Central": [
+        13.0799,
+        80.2725
+    ],
+    "Chepauk RS": [
+        13.0645,
+        80.2817
+    ],
+    "Chetpat RS": [
+        13.0694,
+        80.2443
+    ],
+    "Chintadripet RS": [
+        13.0745,
+        80.2759
+    ],
+    "Chromepet RS": [
+        12.9515,
+        80.1411
+    ],
+    "Ennore RS": [
+        13.2163,
+        80.3228
+    ],
+    "Greenways Road RS": [
+        13.0214,
+        80.2604
+    ],
+    "Guduvancheri RS": [
+        12.8427,
+        80.0633
+    ],
+    "Guindy RS": [
+        13.0084,
+        80.2212
+    ],
+    "Gummidipoondi RS": [
+        13.4111,
+        80.1232
+    ],
+    "Hindu College RS": [
+        13.1206,
+        80.0784
+    ],
+    "Indira Nagar RS": [
+        12.9972,
+        80.2536
+    ],
+    "Kasthurba Nagar RS": [
+        13.0069,
+        80.2547
+    ],
+    "Kathivakkam RS": [
+        13.1972,
+        80.3164
+    ],
+    "Kattangulathur RS": [
+        12.8197,
+        80.0401
+    ],
+    "Kodambakkam RS": [
+        13.0487,
+        80.2281
+    ],
+    "Korattur RS": [
+        13.1114,
+        80.1785
+    ],
+    "Korukkupet RS": [
+        13.1147,
+        80.2746
+    ],
+    "Kotturpuram RS": [
+        13.0219,
+        80.2464
+    ],
+    "Light House RS; Marina Beach": [
+        13.0411,
+        80.2767
+    ],
+    "Mambalam RS; T Nagar": [
+        13.0401,
+        80.2323
+    ],
+    "Mandaiveli RS": [
+        13.0233,
+        80.2694
+    ],
+    "Maraimalai Nagar RS": [
+        12.7981,
+        80.0244
+    ],
+    "Minambakkam RS": [
+        12.9863,
+        80.1818
+    ],
+    "Minjur RS": [
+        13.2725,
+        80.2625
+    ],
+    "Mundagakanniamman": [
+        13.0312,
+        80.2678
+    ],
+    "Nandiambakkam RS": [
+        13.2561,
+        80.3019
+    ],
+    "Nungambakkam RS": [
+        13.0617,
+        80.2343
+    ],
+    "Palavanthangal RS": [
+        12.9912,
+        80.1912
+    ],
+    "Pallavaram RS": [
+        12.9675,
+        80.1492
+    ],
+    "Paranur RS": [
+        12.7115,
+        79.9958
+    ],
+    "Park Town RS": [
+        13.0801,
+        80.2739
+    ],
+    "Pattabiram RS": [
+        13.1232,
+        80.0594
+    ],
+    "Pattaravakkam RS": [
+        13.1136,
+        80.1654
+    ],
+    "Perambur Carriage works RS": [
+        13.1075,
+        80.2336
+    ],
+    "Perambur Loco Works RS": [
+        13.1084,
+        80.2211
+    ],
+    "Perambur RS": [
+        13.1065,
+        80.2435
+    ],
+    "Perungalathur RS": [
+        12.9056,
+        80.0919
+    ],
+    "Perungudi RS": [
+        12.9654,
+        80.2415
+    ],
+    "Ponneri RS": [
+        13.3242,
+        80.1983
+    ],
+    "Potheri RS": [
+        12.8231,
+        80.0428
+    ],
+    "Putlur RS": [
+        13.1328,
+        79.9392
+    ],
+    "Royapuram RS": [
+        13.1021,
+        80.2918
+    ],
+    "Saidapet RS": [
+        13.0194,
+        80.2281
+    ],
+    "Sevvapet RS": [
+        13.1303,
+        79.9672
+    ],
+    "Singaperumal Koil RS": [
+        12.7636,
+        79.9778
+    ],
+    "St Thomas Mount RS": [
+        12.9928,
+        80.2001
+    ],
+    "Tambaram RS": [
+        12.9249,
+        80.1188
+    ],
+    "Tambaram Sanatorium RS": [
+        12.9366,
+        80.1292
+    ],
+    "Taramani RS": [
+        12.9772,
+        80.2428
+    ],
+    "Thirumayilai RS; Cultural Center": [
+        13.0336,
+        80.2692
+    ],
+    "Thiruninravur RS": [
+        13.1214,
+        80.0278
+    ],
+    "Thiruvallikeni RS; Marina Beach": [
+        13.0545,
+        80.2789
+    ],
+    "Thiruvanmiyur RS": [
+        12.9876,
+        80.2491
+    ],
+    "Tirusulam RS; Airport": [
+        12.9794,
+        80.1741
+    ],
+    "Tiruvallur RS": [
+        13.1422,
+        79.9111
+    ],
+    "Tiruvottiyur RS": [
+        13.1594,
+        80.3015
+    ],
+    "Tondiarpet RS": [
+        13.1206,
+        80.2863
+    ],
+    "Urapakkam RS": [
+        12.8647,
+        80.0769
+    ],
+    "V O C Nagar RS": [
+        13.1368,
+        80.2891
+    ],
+    "Vandalur RS": [
+        12.8892,
+        80.0817
+    ],
+    "Velacherry RS": [
+        12.9796,
+        80.2211
+    ],
+    "Veppampattu RS": [
+        13.1245,
+        80.0039
+    ],
+    "Villivakkam RS": [
+        13.1067,
+        80.2052
+    ],
+    "Vyasarpadi Jeeva RS": [
+        13.1042,
+        80.2573
+    ],
+    "Washermanpet RS": [
+        13.0978,
+        80.2796
+    ],
+    "Wimco Nagar RS": [
+        13.1646,
+        80.3011
+    ],
+    "100 FEET ROAD JN.": [
+        13.0722,
+        80.2078
+    ],
+    "230 K.V.TOWER": [
+        13.0642,
+        80.1714
+    ],
+    "2ND WATER TANK ON SECOND AVE.": [
+        13.0854,
+        80.2148
+    ],
+    "A.G.S.OFFICER'S COLONY": [
+        12.9814,
+        80.1983
+    ],
+    "A.M.S.HOSPITAL": [
+        13.1172,
+        80.2844
+    ],
+    "A.V.CONSTRUCTION": [
+        13.0561,
+        80.1892
+    ],
+    "AACHI MASALA FOODS": [
+        13.1786,
+        80.1812
+    ],
+    "AAFS CROSS ROAD": [
+        13.0841,
+        80.2862
+    ],
+    "AAR COLONY": [
+        12.9364,
+        80.1492
+    ],
+    "AAYA KOLATHUR": [
+        12.9531,
+        79.9722
+    ],
+    "AAYURVEDA ASHRAMAM": [
+        13.0983,
+        80.1478
+    ],
+    "ABIRAMI MADAM": [
+        13.1092,
+        80.2986
+    ],
+    "ACS HOSPITAL": [
+        13.0483,
+        80.1411
+    ],
+    "ADAMBAKKAM P.S": [
+        12.9881,
+        80.2047
+    ],
+    "ADI DRAVIDAR HOSTEL": [
+        13.0114,
+        80.2294
+    ],
+    "ADYAR B.S.": [
+        13.0075,
+        80.2575
+    ],
+    "ADYAR BRIDGE INDRA NAGAR RD": [
+        13.0125,
+        80.2594
+    ],
+    "ADYAR DEPOT": [
+        13.0061,
+        80.2581
+    ],
+    "ADYAR GANDHI NAGAR": [
+        13.0128,
+        80.2536
+    ],
+    "ADYAR GATE": [
+        13.0286,
+        80.2503
+    ],
+    "ADYAR O.T.": [
+        13.0089,
+        80.2517
+    ],
+    "AGARAM": [
+        13.1097,
+        80.2272
+    ],
+    "AGARAM KANDIGAI": [
+        12.8275,
+        80.1347
+    ],
+    "AGARAM MEL": [
+        13.0514,
+        80.0592
+    ],
+    "AGARAMTHEN": [
+        12.8456,
+        80.1414
+    ],
+    "AGS COLONY": [
+        12.9714,
+        80.2189
+    ],
+    "AIR NAGAR": [
+        13.1581,
+        80.2972
+    ],
+    "AIRFORCE STATION": [
+        12.9239,
+        80.1286
+    ],
+    "AIRPORT METRO": [
+        12.9941,
+        80.1709
+    ],
+    "AKARAMBAKKAM": [
+        13.3442,
+        80.1189
+    ],
+    "ALAGESA NAGAR": [
+        12.7042,
+        79.9886
+    ],
+    "ALAGESAN NAGAR": [
+        12.9341,
+        80.1197
+    ],
+    "ALAMADHI": [
+        13.2081,
+        80.1172
+    ],
+    "ALAMADHI OLD": [
+        13.2125,
+        80.1094
+    ],
+    "ALAMARAM RD. JN.": [
+        12.8986,
+        80.2241
+    ],
+    "ALAMATHI": [
+        13.2081,
+        80.1172
+    ],
+    "ALANDUR METRO R.S.": [
+        12.9976,
+        80.2014
+    ],
+    "ALAPAKKAM": [
+        13.0456,
+        80.1633
+    ],
+    "ALLIKULAM": [
+        13.0817,
+        80.2711
+    ],
+    "ALWAR THIRUNAGAR": [
+        13.0428,
+        80.1889
+    ],
+    "AMANAMBAKKAM": [
+        12.6841,
+        80.0436
+    ],
+    "AMARAMBEDU": [
+        13.0036,
+        80.0514
+    ],
+    "AMARAMBEDU CHATRAM": [
+        13.0011,
+        80.0567
+    ],
+    "AMARAMBEDU EAST": [
+        13.0042,
+        80.0544
+    ],
+    "AMARAMBEDU ROAD": [
+        13.0083,
+        80.0494
+    ],
+    "AMBATTUR I.E.": [
+        13.1028,
+        80.1725
+    ],
+    "AMBATTUR O.T.": [
+        13.1172,
+        80.1517
+    ],
+    "AMBATTUR R.S.": [
+        13.1192,
+        80.1541
+    ],
+    "AMBEDKAR GROUND": [
+        13.1044,
+        80.2522
+    ],
+    "AMBEDKAR NAGAR": [
+        12.9589,
+        80.1444
+    ],
+    "AMINJIKARAI": [
+        13.0728,
+        80.2239
+    ],
+    "AMIRTHANALLUR": [
+        13.3853,
+        80.1414
+    ],
+    "AMMA NAGAR": [
+        13.0911,
+        80.1814
+    ],
+    "AMMAN KULAM": [
+        13.1675,
+        80.2989
+    ],
+    "AMMANAMBAKKAM": [
+        12.6841,
+        80.0436
+    ],
+    "AMMUR COLONY": [
+        13.1514,
+        79.7994
+    ],
+    "AMUTHAM STORES": [
+        13.0233,
+        80.2031
+    ],
+    "AMUTHAMBEDU-II": [
+        13.1114,
+        80.0617
+    ],
+    "ANAICUTCHE": [
+        13.2542,
+        80.1872
+    ],
+    "ANAIKATTUCHERY(DIV STAGE)": [
+        13.1364,
+        80.0381
+    ],
+    "ANAKAPUTHUR": [
+        12.9772,
+        80.1331
+    ],
+    "ANAKAPUTHUR AMMANKOVIL": [
+        12.9794,
+        80.1311
+    ],
+    "ANDARKUPPAM": [
+        13.1542,
+        80.2644
+    ],
+    "ANDERSONPET": [
+        13.0117,
+        79.9536
+    ],
+    "ANGADU": [
+        13.2281,
+        80.1692
+    ],
+    "ANGALAMMAN KOIL": [
+        13.1117,
+        80.2789
+    ],
+    "ANGALAMMAN KOIL(ARASAMARAM)": [
+        13.0414,
+        80.1714
+    ],
+    "ANJATHAMMAN KOIL": [
+        13.1692,
+        80.3014
+    ],
+    "ANJUGAM SCHOOL": [
+        13.0294,
+        80.2233
+    ],
+    "ANNA NAGAR": [
+        13.085,
+        80.2101
+    ],
+    "ANNA NAGAR CIRCLE": [
+        13.0847,
+        80.2112
+    ],
+    "ANNA NAGAR COLONY": [
+        13.0789,
+        80.2206
+    ],
+    "ANNA NAGAR EAST": [
+        13.0827,
+        80.2173
+    ],
+    "ANNA NAGAR ROUNTANA(METRO)": [
+        13.0844,
+        80.2178
+    ],
+    "ANNA NAGAR WEST": [
+        13.0886,
+        80.2017
+    ],
+    "ANNA POORNA HOTEL/DAMS RD": [
+        13.0644,
+        80.2672
+    ],
+    "ANNA ROAD P.O./DAMS ROAD": [
+        13.0642,
+        80.2678
+    ],
+    "ANNA SQUARE": [
+        13.0619,
+        80.2844
+    ],
+    "ANNAI SATHYA NAGAR": [
+        13.0039,
+        80.2458
+    ],
+    "ANNAIKATTU CHERY": [
+        13.1364,
+        80.0381
+    ],
+    "ANNAIKATTUCHERY": [
+        13.1364,
+        80.0381
+    ],
+    "ANNAMALAICHERY": [
+        13.3986,
+        80.3125
+    ],
+    "ANNAMBEDU": [
+        13.1142,
+        80.0489
+    ],
+    "ARAKKAMBAKKAM": [
+        13.1658,
+        80.0911
+    ],
+    "ARAKKAMBAKKAM RD.JN.": [
+        13.1594,
+        80.0936
+    ],
+    "ARANI": [
+        13.3267,
+        80.0889
+    ],
+    "ARANVOYAL": [
+        13.0931,
+        79.9753
+    ],
+    "ARANVOYAL KUPPAM": [
+        13.0972,
+        79.9692
+    ],
+    "ARASANKAZHANI": [
+        12.8631,
+        80.1906
+    ],
+    "ARIKABEDU": [
+        13.1894,
+        80.1136
+    ],
+    "ARIKAMBEDU": [
+        13.1894,
+        80.1136
+    ],
+    "ARIYALUR": [
+        13.1908,
+        80.2567
+    ],
+    "ARIYAPAKKAM": [
+        12.6314,
+        79.9431
+    ],
+    "ARUMANDAI RD.JN.": [
+        13.2625,
+        80.1583
+    ],
+    "ARUMBAKKAM": [
+        13.0617,
+        80.2117
+    ],
+    "ARUN HOTEL": [
+        13.0722,
+        80.2047
+    ],
+    "ARUN NAGAR": [
+        13.1119,
+        80.0894
+    ],
+    "ARUNGAL": [
+        12.7483,
+        80.0617
+    ],
+    "ARUNODHAYA NAGAR": [
+        13.1422,
+        80.2861
+    ],
+    "ASHOK LEYLAND": [
+        13.1092,
+        80.2917
+    ],
+    "ASHOK LEYLAND MARK.DIV.": [
+        13.0292,
+        80.2447
+    ],
+    "ASHOK NAGAR METRO R.S.": [
+        13.0354,
+        80.2113
+    ],
+    "ASHOK PILLAR": [
+        13.0344,
+        80.2117
+    ],
+    "ASTHINAPURAM": [
+        12.9436,
+        80.1481
+    ],
+    "ATHANOOR RD JN": [
+        12.8422,
+        80.0433
+    ],
+    "ATHIPATTU KRISHANER KOIL": [
+        13.2458,
+        80.3117
+    ],
+    "ATHIPATTU PUDU NAGAR": [
+        13.2327,
+        80.3168
+    ],
+    "ATHIPEDU CAMP ROAD": [
+        13.1622,
+        80.1417
+    ],
+    "ATHIPET I.C.F. COLONY": [
+        13.0978,
+        80.1656
+    ],
+    "ATHIPET JN": [
+        13.0994,
+        80.1611
+    ],
+    "ATHIPETTU R.S.": [
+        13.2425,
+        80.3194
+    ],
+    "ATHUPAKKAM": [
+        13.3769,
+        80.0719
+    ],
+    "ATHUR": [
+        12.6711,
+        79.9575
+    ],
+    "AVADI": [
+        13.1165,
+        80.0984
+    ],
+    "AVADI CIRCLE": [
+        13.1189,
+        80.1017
+    ],
+    "AVADI MOSQUE": [
+        13.1156,
+        80.0936
+    ],
+    "AVADI ROAD JN.": [
+        13.1114,
+        80.1344
+    ],
+    "AVENJIPETTAI": [
+        13.4328,
+        80.1111
+    ],
+    "AVOOR": [
+        13.3103,
+        80.1444
+    ],
+    "AVVAI HOME": [
+        12.9989,
+        80.2694
+    ],
+    "AYAICHERI": [
+        13.1311,
+        80.0442
+    ],
+    "AYALCHERY": [
+        13.1311,
+        80.0442
+    ],
+    "AYALOOR": [
+        13.3114,
+        80.0417
+    ],
+    "AYANALLUR": [
+        13.3642,
+        80.0381
+    ],
+    "AYANAVARAM B.S.": [
+        13.0967,
+        80.2328
+    ],
+    "AYAPPAKKAM": [
+        13.1019,
+        80.1436
+    ],
+    "AYAPPAKKAM TNHB": [
+        13.0964,
+        80.1419
+    ],
+    "AYATHUR CHATHIRAM": [
+        13.1256,
+        79.9536
+    ],
+    "AYURVEDHA ASHARAMAM": [
+        13.0983,
+        80.1478
+    ],
+    "AYYAPPA NAGAR": [
+        13.0319,
+        80.1694
+    ],
+    "AZEEZEE NAGAR": [
+        13.0117,
+        80.1894
+    ],
+    "AZHAKESAN NAGAR": [
+        12.9341,
+        80.1197
+    ],
+    "AZHINJIVAKKAM RD.JN.": [
+        13.2356,
+        80.1764
+    ],
+    "AZHINJIVAKKAM VILLAGE": [
+        13.2422,
+        80.1811
+    ],
+    "BACK WATER BRIDGE": [
+        13.2319,
+        80.3275
+    ],
+    "BALAJI NAGAR (BHARATH ENG COL)": [
+        12.8986,
+        80.1417
+    ],
+    "BALAJI NAGAR RD.JN.": [
+        12.9114,
+        80.1394
+    ],
+    "BALAMMA NAGAR": [
+        13.1517,
+        80.2911
+    ],
+    "BANGARUPET": [
+        13.0642,
+        79.9111
+    ],
+    "BARATHI NAGAR": [
+        13.1014,
+        80.2178
+    ],
+    "BDO OFFICE": [
+        12.9247,
+        80.1128
+    ],
+    "BEEMANTHANGAL": [
+        13.0031,
+        79.9886
+    ],
+    "BESANT NAGAR": [
+        13.0003,
+        80.2667
+    ],
+    "BHARANIPUTHUR": [
+        13.0247,
+        80.1364
+    ],
+    "BHARATH ENGG. COLL": [
+        12.8953,
+        80.1431
+    ],
+    "BHARATHI NAGAR": [
+        13.1014,
+        80.2178
+    ],
+    "BHARATHI NAGAR(PERIYAR PATAHI)": [
+        13.0611,
+        80.2214
+    ],
+    "BHONDHUR": [
+        12.9814,
+        79.9214
+    ],
+    "BOLLINENI/NOOKAMPALAYAM RD JN": [
+        12.8778,
+        80.2075
+    ],
+    "BOORIVAKKAM SCHOOL": [
+        13.2447,
+        79.9431
+    ],
+    "BRINDAVAN COLONY": [
+        13.0414,
+        80.1983
+    ],
+    "BROADWAY": [
+        13.0894,
+        80.2828
+    ],
+    "BSNL OFFICE": [
+        13.0567,
+        80.2453
+    ],
+    "BUDUR": [
+        13.2411,
+        80.2144
+    ],
+    "BUILDERS INDUSTRY": [
+        13.0314,
+        80.0886
+    ],
+    "BURIAL GROUND": [
+        13.0514,
+        80.2783
+    ],
+    "BURMAH SHELL PETROL BUNK": [
+        13.1311,
+        80.2917
+    ],
+    "BUS BAY-17TH KM": [
+        13.0417,
+        80.1194
+    ],
+    "BUTT ROAD": [
+        13.0069,
+        80.1986
+    ],
+    "C.I.T.COLONY": [
+        13.0333,
+        80.2547
+    ],
+    "C.K.C.": [
+        13.0811,
+        80.2194
+    ],
+    "C.R.P.CROSS RD.": [
+        13.2114,
+        80.1311
+    ],
+    "C.R.P.F": [
+        13.1256,
+        80.1117
+    ],
+    "C.V.D.MITNAMALLEE RD.JN.": [
+        13.1319,
+        80.0886
+    ],
+    "CAMP ROAD": [
+        12.9136,
+        80.1414
+    ],
+    "CANCER HOSPITAL SCAN CENTRE": [
+        13.0086,
+        80.2483
+    ],
+    "CENTRAL R.S.": [
+        13.0824,
+        80.2754
+    ],
+    "CHATHIRAM": [
+        13.0642,
+        80.0175
+    ],
+    "CHEMBAKKAM JUNCTION": [
+        12.9094,
+        80.1586
+    ],
+    "CHEMBAKKAM VILLAGE": [
+        12.9067,
+        80.1614
+    ],
+    "CHEMBARAMBAKKAM": [
+        13.0347,
+        80.0294
+    ],
+    "CHEMBARAMBAKKAM RD.JN.": [
+        13.0369,
+        80.0342
+    ],
+    "CHENGALIAMMAN KOVIL KANDIGAI": [
+        12.8094,
+        80.1386
+    ],
+    "CHENGALPET N.T.": [
+        12.6975,
+        79.9831
+    ],
+    "CHENGALPET O.T.": [
+        12.6914,
+        79.9744
+    ],
+    "CHENGAMMAL RD. JN.": [
+        12.7214,
+        80.0117
+    ],
+    "CHENNANG KARANAI": [
+        13.3931,
+        80.0536
+    ],
+    "CHEPAUK": [
+        13.0636,
+        80.2803
+    ],
+    "CHETPET": [
+        13.0694,
+        80.2443
+    ],
+    "CHETTIMEDU": [
+        13.2561,
+        80.1186
+    ],
+    "CHETTIPEDU": [
+        13.0231,
+        79.9911
+    ],
+    "CHEVVAIPETTAI R.S.": [
+        13.1303,
+        79.9672
+    ],
+    "CHIDAMBARAM STORES": [
+        13.0114,
+        80.1783
+    ],
+    "CHINAMBEDU COLONY": [
+        13.2986,
+        80.1653
+    ],
+    "CHINMAYA NAGAR": [
+        13.0531,
+        80.1917
+    ],
+    "CHINNA KODUNGAIYUR": [
+        13.1325,
+        80.2594
+    ],
+    "CHINNA MANGODU": [
+        13.3756,
+        80.3242
+    ],
+    "CHINNAKUVANAM": [
+        13.0789,
+        79.8647
+    ],
+    "CHINNAMADIYOOR": [
+        13.2722,
+        79.8894
+    ],
+    "CHINNAMBEDU VILLAGE": [
+        13.3014,
+        80.1694
+    ],
+    "CHIRUTHAVOOR JN.": [
+        12.7117,
+        80.1622
+    ],
+    "CHITHAKADU (DIV STAGE)": [
+        13.1092,
+        79.9942
+    ],
+    "CHITHALAPAKKAM": [
+        12.9069,
+        80.1878
+    ],
+    "CHITHALAPAKKAM TNHB": [
+        12.9036,
+        80.1894
+    ],
+    "CHITHATHUR COLONY": [
+        12.6975,
+        80.1417
+    ],
+    "CHITLAPAKKAM": [
+        12.9372,
+        80.1417
+    ],
+    "CHITTUKADU": [
+        13.1092,
+        79.9942
+    ],
+    "CHOLA MANDAL": [
+        12.9517,
+        80.2486
+    ],
+    "CHOOLAI MILL": [
+        13.0944,
+        80.2586
+    ],
+    "CHOOLAI P.O": [
+        13.0925,
+        80.2614
+    ],
+    "CHOOLAIMENI": [
+        13.0114,
+        80.0886
+    ],
+    "CHROMEPET": [
+        12.9515,
+        80.1411
+    ],
+    "CHURCH": [
+        13.0428,
+        80.2494
+    ],
+    "CIPET": [
+        13.0075,
+        80.2106
+    ],
+    "CLIVE BATTERY": [
+        13.1094,
+        80.2917
+    ],
+    "COLLECTOR NAGAR": [
+        13.0853,
+        80.1811
+    ],
+    "COLLEGE ROAD/METROLOG. DEPT.": [
+        13.0617,
+        80.2458
+    ],
+    "CONCORDE": [
+        13.0164,
+        80.1633
+    ],
+    "CONVENT": [
+        13.0975,
+        80.2925
+    ],
+    "CORBORUNDUM UNIVERSAL": [
+        13.1517,
+        80.3006
+    ],
+    "CORPN. PLAY GROUND": [
+        13.0417,
+        80.2144
+    ],
+    "CORPORATION OFFICE/STERLING RD": [
+        13.0594,
+        80.2417
+    ],
+    "CORPORATION SCHOOL": [
+        13.0886,
+        80.2644
+    ],
+    "COWL BAZAAR": [
+        12.9914,
+        80.1542
+    ],
+    "CPCL": [
+        13.1678,
+        80.2742
+    ],
+    "CRP TRUNING": [
+        13.2114,
+        80.1311
+    ],
+    "CYCLE SHOP": [
+        13.1086,
+        80.1611
+    ],
+    "D.B.JAIN COLLEGE": [
+        12.9372,
+        80.2456
+    ],
+    "D.J.MAT.SCHOOL": [
+        13.1119,
+        80.2242
+    ],
+    "D.L.F.": [
+        13.0189,
+        80.1672
+    ],
+    "D.M.S": [
+        13.0442,
+        80.2492
+    ],
+    "D.M.S. METRO": [
+        13.0442,
+        80.2492
+    ],
+    "D.P.I": [
+        13.0589,
+        80.2483
+    ],
+    "D1 POLICE STATION/DAMS ROAD": [
+        13.0644,
+        80.2672
+    ],
+    "DAMS ROAD": [
+        13.0642,
+        80.2678
+    ],
+    "DASAMAHAN": [
+        13.0983,
+        80.2542
+    ],
+    "DASAPRAKASH": [
+        13.0792,
+        80.2522
+    ],
+    "DASARATHAPURAM": [
+        13.0458,
+        80.1983
+    ],
+    "DEFENCE COLONY": [
+        13.0167,
+        80.2075
+    ],
+    "DEFENCE QUARTERS": [
+        13.1189,
+        80.1242
+    ],
+    "DEVAMBEDU": [
+        13.3644,
+        80.1742
+    ],
+    "DEVAR NAGAR (SIVASHAKTHI)": [
+        13.1417,
+        80.2114
+    ],
+    "DEVARIYAMBAKKAM": [
+        12.7836,
+        79.9214
+    ],
+    "DEVIK ESWARI NAGAR": [
+        13.1322,
+        80.2017
+    ],
+    "DHARGAS": [
+        12.9467,
+        80.1194
+    ],
+    "DHARGAS NAGAR": [
+        12.9442,
+        80.1136
+    ],
+    "DHARGAS/KOLLAMEDU JN.": [
+        13.1492,
+        80.1344
+    ],
+    "DHARMAPRAKASH/PETROL BUNK": [
+        13.0792,
+        80.2522
+    ],
+    "DHARMAPURAM KANDIGAI": [
+        13.4472,
+        80.0536
+    ],
+    "DOVETON": [
+        13.0886,
+        80.2575
+    ],
+    "DR.AMBEDHAR BRIDGE": [
+        13.0331,
+        80.2594
+    ],
+    "DR.AMBEDKAR LAW UNIV": [
+        12.9692,
+        80.2486
+    ],
+    "DRY CATTLLE FORM": [
+        13.2194,
+        80.1017
+    ],
+    "DUKKANAMPATTU": [
+        13.4414,
+        80.0886
+    ],
+    "DUNLOP": [
+        13.1094,
+        80.1694
+    ],
+    "DURGA NAGAR": [
+        12.9392,
+        80.1364
+    ],
+    "DURGAS": [
+        12.9467,
+        80.1194
+    ],
+    "E.B.STATION 500E": [
+        13.0744,
+        80.2367
+    ],
+    "EASWARAN TEMPLE/PTC QRTS.": [
+        12.9644,
+        80.2458
+    ],
+    "EB TRANSFORMER": [
+        13.1017,
+        80.1983
+    ],
+    "ECHANKADU": [
+        12.9367,
+        80.1947
+    ],
+    "ECHANKARANAI": [
+        12.7536,
+        79.9886
+    ],
+    "ECHANKUZHI": [
+        13.1931,
+        80.2914
+    ],
+    "ECHANKUZHI /MANALI NEW TOWN RD": [
+        13.1914,
+        80.2886
+    ],
+    "ECHUR JN.": [
+        12.9364,
+        79.9117
+    ],
+    "EGMORE": [
+        13.0792,
+        80.2612
+    ],
+    "EGMORE NORTH R.S.": [
+        13.0806,
+        80.2617
+    ],
+    "EKKADU CSI HOSPITAL": [
+        13.1294,
+        79.9242
+    ],
+    "EKKADU KANDIGAI": [
+        13.1117,
+        79.9314
+    ],
+    "EKKADU WATER TANK(TEACHERS COL": [
+        13.1256,
+        79.9286
+    ],
+    "EKKATTUTHANGAL": [
+        13.0169,
+        80.2056
+    ],
+    "ELAMBAKKAM": [
+        13.0117,
+        79.8436
+    ],
+    "ELAMBAKKAM COLONY": [
+        13.0089,
+        79.8486
+    ],
+    "ELANGO NAGAR OFF.COLONY": [
+        13.1194,
+        80.1831
+    ],
+    "ELAVAMBEDU": [
+        13.1986,
+        80.2314
+    ],
+    "ELAVUR": [
+        13.4756,
+        80.1142
+    ],
+    "ELLAIAMMAN KOIL": [
+        12.9947,
+        80.2589
+    ],
+    "ELLAIAMMAN NAGAR": [
+        13.1742,
+        80.2886
+    ],
+    "ELLAIMMAN KOIL": [
+        12.9947,
+        80.2589
+    ],
+    "ELLAMPETTAI": [
+        13.3514,
+        80.0217
+    ],
+    "ENAMBAKKAM": [
+        13.3725,
+        80.0089
+    ],
+    "ENG.COLLEGE": [
+        13.0119,
+        80.2361
+    ],
+    "ENNORE": [
+        13.2163,
+        80.3228
+    ],
+    "ENNORE E.B. MAIN GATE": [
+        13.2114,
+        80.3189
+    ],
+    "ENNORE PORT MAIN GATE": [
+        13.2614,
+        80.3342
+    ],
+    "ENNORE THERMAL POWER": [
+        13.2047,
+        80.3175
+    ],
+    "EQUVARPALAYAM": [
+        13.4114,
+        80.0117
+    ],
+    "ERAIYUR JUNCTION": [
+        12.9814,
+        79.9442
+    ],
+    "ERANKUPPAM": [
+        13.2114,
+        80.2536
+    ],
+    "ERIKARAI": [
+        13.0517,
+        80.1914
+    ],
+    "ERNAVOOR": [
+        13.1678,
+        80.3014
+    ],
+    "ERNAVOOR GATE": [
+        13.1594,
+        80.2986
+    ],
+    "ERUMAIYUR-II": [
+        12.9142,
+        80.0633
+    ],
+    "ETTAYAPURAM": [
+        12.9425,
+        80.1517
+    ],
+    "EZHICHUR ROAD JN": [
+        12.8114,
+        79.9536
+    ],
+    "F.C.I OLD": [
+        13.1256,
+        80.2189
+    ],
+    "FIRE STATION": [
+        13.0783,
+        80.2583
+    ],
+    "FISH MARKET": [
+        13.0361,
+        80.2714
+    ],
+    "FORD": [
+        12.7481,
+        79.9914
+    ],
+    "FORESHORE ESTATE": [
+        13.0294,
+        80.2783
+    ],
+    "FORT RAILWAY STATION": [
+        13.0864,
+        80.2883
+    ],
+    "G.R.KANDIKAI": [
+        13.4311,
+        80.0381
+    ],
+    "GANDHI ROAD": [
+        12.9275,
+        80.1114
+    ],
+    "GANDHI STATUE": [
+        13.0483,
+        80.2806
+    ],
+    "GANESH PURAM": [
+        13.1017,
+        80.2617
+    ],
+    "GANGAI ADI KUPPAM": [
+        13.2356,
+        80.3225
+    ],
+    "GAS COMPANY": [
+        13.0211,
+        80.2394
+    ],
+    "GASSGI RATE COMPANY": [
+        13.1114,
+        80.2886
+    ],
+    "GEEYEE HOUSING": [
+        13.1364,
+        80.1894
+    ],
+    "GEMINI": [
+        13.0514,
+        80.2503
+    ],
+    "GEMINI P.H": [
+        13.0506,
+        80.2508
+    ],
+    "GNAYARU": [
+        13.2783,
+        80.2242
+    ],
+    "GOLDEN FLAT": [
+        13.0906,
+        80.1814
+    ],
+    "GOVARDANAGIRI": [
+        13.1194,
+        80.1214
+    ],
+    "GOVERNMENT ESTATE METRO": [
+        13.0673,
+        80.2714
+    ],
+    "GOVERNMENT SCHOOL / HOSPITAL": [
+        13.0564,
+        80.2114
+    ],
+    "GOVINDARAJAPURAM": [
+        12.9311,
+        80.0886
+    ],
+    "GOVT. GIRLS H.SC": [
+        13.1164,
+        80.1506
+    ],
+    "GOVT.GIRLS SCHOOL": [
+        13.0367,
+        80.2644
+    ],
+    "GOVT.HARJNHOSTL": [
+        13.0814,
+        80.2114
+    ],
+    "GOVT.HOSTEL": [
+        13.0564,
+        80.2236
+    ],
+    "GRAND LINE": [
+        13.1972,
+        80.1783
+    ],
+    "GUDALOOR TEA SHOP": [
+        12.7242,
+        80.0217
+    ],
+    "GUDUVANCHERY": [
+        12.8427,
+        80.0633
+    ],
+    "GUINDY METRO": [
+        13.0084,
+        80.2212
+    ],
+    "GUINDY R.S": [
+        13.0084,
+        80.2212
+    ],
+    "GUINDY RACE COURSE": [
+        13.0017,
+        80.2219
+    ],
+    "GUINDY RACE COURSE OFFICE": [
+        13.0031,
+        80.2256
+    ],
+    "GUINDY TVK ESTATE": [
+        13.0114,
+        80.2178
+    ],
+    "GUMMIDIPOONDI": [
+        13.4111,
+        80.1232
+    ],
+    "GUMMUDIPOONDI R.S.": [
+        13.4111,
+        80.1232
+    ],
+    "GURUNANAK COLLEGE": [
+        12.9947,
+        80.2289
+    ],
+    "GURUVOYAL KARANIBATTAI": [
+        13.2094,
+        80.1842
+    ],
+    "GURUVOYAL VILLAGE": [
+        13.2042,
+        80.1889
+    ],
+    "H.V.F.MAIN GATE": [
+        13.1256,
+        80.0883
+    ],
+    "HAPPY SHOPPY": [
+        12.9114,
+        80.1486
+    ],
+    "HASTHINAPURAM": [
+        12.9436,
+        80.1481
+    ],
+    "HINDU VIDYALAYA": [
+        12.9414,
+        80.1389
+    ],
+    "HINDUSTAN ENG. COLLEGE": [
+        12.8275,
+        80.2458
+    ],
+    "HINDY VIDYALAYA": [
+        12.9414,
+        80.1389
+    ],
+    "HOTEL ARUN": [
+        13.0722,
+        80.2047
+    ],
+    "I.C.F": [
+        13.0972,
+        80.2144
+    ],
+    "I.C.I.": [
+        13.1044,
+        80.1783
+    ],
+    "I.O.C.": [
+        13.1278,
+        80.2806
+    ],
+    "I.R.T. RD.JN.": [
+        12.7936,
+        79.9986
+    ],
+    "ICF ANNEXE": [
+        13.0964,
+        80.2078
+    ],
+    "II ND MAIN ROAD": [
+        13.0811,
+        80.2144
+    ],
+    "IIT": [
+        13.0064,
+        80.2394
+    ],
+    "ILLALUR JUNCTION": [
+        12.7092,
+        80.1814
+    ],
+    "ILLANTHOPE": [
+        13.1114,
+        80.2711
+    ],
+    "INAM AGARAM": [
+        13.0486,
+        80.0494
+    ],
+    "INDIA CEMENT": [
+        13.0039,
+        80.2289
+    ],
+    "INDIRA COLONY": [
+        13.0364,
+        80.1914
+    ],
+    "INDIRA NAGAR": [
+        12.9972,
+        80.2536
+    ],
+    "INDIRA NAGAR WATER TANK": [
+        12.9942,
+        80.2514
+    ],
+    "INDRA GANDHI STATUE": [
+        12.9678,
+        80.1494
+    ],
+    "INJAMBAKKAM": [
+        12.9214,
+        80.2517
+    ],
+    "IRANKUPPAM": [
+        13.2114,
+        80.2536
+    ],
+    "IRULAPALAYAM": [
+        13.0214,
+        80.0086
+    ],
+    "IRULAPALAYAM RD JN.": [
+        13.0242,
+        80.0117
+    ],
+    "IRUMBULIYUR": [
+        12.9186,
+        80.1114
+    ],
+    "IRUNKATTUKOTTAI": [
+        13.0086,
+        79.9742
+    ],
+    "IYYAPPANMADAM": [
+        13.1017,
+        80.2914
+    ],
+    "IYYAPPANTHANGAL": [
+        13.0311,
+        80.1389
+    ],
+    "J.J.NAGAR EAST": [
+        13.0844,
+        80.1889
+    ],
+    "J.J.NAGAR WEST": [
+        13.0864,
+        80.1764
+    ],
+    "J.S.GRAND PALACE": [
+        12.9231,
+        80.1214
+    ],
+    "JAFFARKHAN PET": [
+        13.0239,
+        80.2114
+    ],
+    "JAIGOPAL GARODIA HR.SEC.SCH": [
+        13.0381,
+        80.2178
+    ],
+    "JAIHIND INDUSTRIES": [
+        13.1114,
+        80.1417
+    ],
+    "JAMALAYA": [
+        13.1006,
+        80.2433
+    ],
+    "JEYAPURAM": [
+        13.3114,
+        80.1117
+    ],
+    "JN OF III AND 1ST AVE": [
+        13.0814,
+        80.2214
+    ],
+    "JN. OF R.GARDEN & PEVR H.RD.,": [
+        13.0767,
+        80.2289
+    ],
+    "JN. OF VELACHERY & TAMBARAM JN": [
+        12.9236,
+        80.1197
+    ],
+    "JN.,OF PONNERI RD,&ERANOOR": [
+        13.1611,
+        80.2942
+    ],
+    "JN.OF BAJANAI KOIL ST.": [
+        13.0644,
+        80.1814
+    ],
+    "JN.OF CENTRAL AVENUE&ERIKARAI": [
+        13.0536,
+        80.1886
+    ],
+    "JN.OF MAMBAKKAM & O.BAKKAM RD.": [
+        12.8711,
+        80.1583
+    ],
+    "JN.OF MAMBAKKAM RD & ATANOORRD": [
+        12.8422,
+        80.0433
+    ],
+    "JN.OF MANALI RD.CHINNA KODUNR": [
+        13.1294,
+        80.2586
+    ],
+    "JN.OF RACE COURSE RD": [
+        13.0039,
+        80.2247
+    ],
+    "JN.OF.ORAKADU RD & S/VARAM RD": [
+        13.2281,
+        80.1914
+    ],
+    "JN.OF.PALAVANTHANGAL &GST RD": [
+        12.9928,
+        80.1936
+    ],
+    "JN.OF.VLY-TBM RD&MVKM-K.K": [
+        12.9167,
+        80.1514
+    ],
+    "Jn.OF P.T.R Rd/KAMARAJ Rd": [
+        12.9914,
+        80.2564
+    ],
+    "K.K.NAGAR": [
+        13.0361,
+        80.1983
+    ],
+    "K.K.NAGAR B.S.": [
+        13.0369,
+        80.1986
+    ],
+    "K.K.NAGAR DEPOT": [
+        13.0364,
+        80.1956
+    ],
+    "K.K.NAGAR WEST": [
+        13.0347,
+        80.1894
+    ],
+    "K.KANNADASAN NAGAR": [
+        13.1258,
+        80.2547
+    ],
+    "K.M.C.": [
+        13.0778,
+        80.2403
+    ],
+    "KADAMBUR": [
+        12.7531,
+        80.0036
+    ],
+    "KADAPAKKAM": [
+        13.1789,
+        80.2742
+    ],
+    "KADAPERI": [
+        12.9331,
+        80.1194
+    ],
+    "KADHAVOOR": [
+        13.0942,
+        79.8886
+    ],
+    "KADHAVOOR RD.JN.": [
+        13.0975,
+        79.8914
+    ],
+    "KADUMBADIAMMAN KOIL": [
+        13.1292,
+        80.2861
+    ],
+    "KADUMPADIAMMAN KOIL": [
+        13.1292,
+        80.2861
+    ],
+    "KAIVELI": [
+        12.9692,
+        80.2192
+    ],
+    "KAKKALUR": [
+        13.1256,
+        79.9142
+    ],
+    "KAKKAN BRIDGE": [
+        13.0117,
+        80.2394
+    ],
+    "KALAVAKKAM": [
+        12.7169,
+        80.2289
+    ],
+    "KALAVAKKAM TEA STALL": [
+        12.7142,
+        80.2272
+    ],
+    "KALAYANAKUPPAM RD JN.": [
+        13.1294,
+        80.0483
+    ],
+    "KALAYANAKUPPAM VILLAGE": [
+        13.1364,
+        80.0411
+    ],
+    "KALIVANTHAPATTU": [
+        12.7364,
+        80.0031
+    ],
+    "KALLIKUPPAM": [
+        13.1256,
+        80.1814
+    ],
+    "KALLIKUPPAM RED HILLS RD.JN.": [
+        13.1311,
+        80.1783
+    ],
+    "KALLUR": [
+        13.4394,
+        80.0114
+    ],
+    "KALMANDAPAM P.S.": [
+        13.1092,
+        80.2922
+    ],
+    "KALPANA LAMPS/MADHAVARAM": [
+        13.1517,
+        80.2314
+    ],
+    "KALSAR ENG.COLLEGE": [
+        13.0031,
+        80.0114
+    ],
+    "KALYANAKUPPAM": [
+        13.1364,
+        80.0411
+    ],
+    "KAMABAR ARANGAM": [
+        13.0567,
+        80.1983
+    ],
+    "KAMARAJ NAGAR": [
+        12.9839,
+        80.2589
+    ],
+    "KAMATCHI HOSPITAL": [
+        12.9414,
+        80.2178
+    ],
+    "KANADASAN NAGAR": [
+        13.1258,
+        80.2547
+    ],
+    "KANAGAMACHATHIRAM": [
+        13.1114,
+        79.7422
+    ],
+    "KANAKAM MAIN ROAD": [
+        12.9942,
+        80.2422
+    ],
+    "KANATHUR": [
+        12.8711,
+        80.2486
+    ],
+    "KANCHI SWEETS (SRINIVASA NAGAR": [
+        12.9231,
+        80.1342
+    ],
+    "KANCHIVOYAL": [
+        13.2986,
+        80.2325
+    ],
+    "KANDAN KOLLAI": [
+        13.1311,
+        80.3014
+    ],
+    "KANDANCHAVADI": [
+        12.9644,
+        80.2456
+    ],
+    "KANDIGAI": [
+        12.8317,
+        80.1389
+    ],
+    "KANDIGAI JUNCTION": [
+        12.8336,
+        80.1364
+    ],
+    "KANDIGAI SCHOOL": [
+        12.8294,
+        80.1411
+    ],
+    "KANNACHERY": [
+        13.0483,
+        79.7814
+    ],
+    "KANNADAPALAYAM": [
+        13.2014,
+        80.1364
+    ],
+    "KANNAGI NAGAR S.C.B.": [
+        12.9367,
+        80.2314
+    ],
+    "KANNAPALAYAM": [
+        13.0694,
+        80.0633
+    ],
+    "KANNAPALAYAM AYALCHERY JN.": [
+        13.0722,
+        80.0586
+    ],
+    "KANNIAMMAN NAGAR": [
+        13.1417,
+        80.1286
+    ],
+    "KANNIAMPALAYAM": [
+        13.2936,
+        80.0811
+    ],
+    "KANNIGAIPEIR": [
+        13.2842,
+        80.1347
+    ],
+    "KANNIVAKKAM": [
+        12.8094,
+        80.0764
+    ],
+    "KARANAI": [
+        12.8433,
+        80.2078
+    ],
+    "KARANODAI": [
+        13.2567,
+        80.1683
+    ],
+    "KARANODAI SCHOOL": [
+        13.2536,
+        80.1694
+    ],
+    "KARAPAKKAM": [
+        12.9219,
+        80.2289
+    ],
+    "KARASANGAL": [
+        12.8931,
+        80.1017
+    ],
+    "KARAYANCAHVADI": [
+        13.0483,
+        80.1172
+    ],
+    "KARAYANMEDU": [
+        13.2389,
+        80.1633
+    ],
+    "KARGIL NAGAR": [
+        13.1611,
+        80.3019
+    ],
+    "KARGIL NAGAR(JUMPING STG)": [
+        13.1625,
+        80.3014
+    ],
+    "KARIMEDU": [
+        13.1672,
+        80.2914
+    ],
+    "KARISHMA NAGAR WATER BRG": [
+        12.9342,
+        80.1583
+    ],
+    "KARUKKU": [
+        13.1194,
+        80.1678
+    ],
+    "KARUMANOOR KANDIGAI": [
+        13.3886,
+        80.0381
+    ],
+    "KARUMARI AMMAN ARCH": [
+        13.0514,
+        80.1486
+    ],
+    "KARUMBAKKAM": [
+        12.6778,
+        80.1514
+    ],
+    "KARUNAKARACHERY": [
+        13.1114,
+        80.0617
+    ],
+    "KARUNEELAM ROAD JN": [
+        12.7214,
+        80.0117
+    ],
+    "KARUNGUDI PALLAM": [
+        13.0214,
+        80.2753
+    ],
+    "KASANOOR": [
+        13.3856,
+        79.9114
+    ],
+    "KATHIRVEDU": [
+        13.1492,
+        80.1983
+    ],
+    "KATHIVAKKAM J.J.NAGAR": [
+        13.1994,
+        80.3142
+    ],
+    "KATRAMBAKKAM": [
+        12.9814,
+        80.0386
+    ],
+    "KATTU ROAD JN": [
+        13.0483,
+        80.0811
+    ],
+    "KATTUPALLI": [
+        13.3114,
+        80.3411
+    ],
+    "KATTUPALLIVILLA": [
+        13.3086,
+        80.3386
+    ],
+    "KATTUR": [
+        13.3117,
+        80.2886
+    ],
+    "KATTUR CROSS ROAD": [
+        13.3142,
+        80.2842
+    ],
+    "KATTUR ROAD JN.": [
+        13.2567,
+        80.2644
+    ],
+    "KAVALPATHY": [
+        13.4694,
+        80.0714
+    ],
+    "KAVANGARAI": [
+        13.1683,
+        80.1694
+    ],
+    "KAVANOOR": [
+        12.9414,
+        80.0433
+    ],
+    "KAVANOOR KOOT ROAD": [
+        12.9367,
+        80.0486
+    ],
+    "KAVARAIPALAYAM": [
+        13.1136,
+        80.1089
+    ],
+    "KAVARAPED": [
+        13.3517,
+        80.1414
+    ],
+    "KAYAAR": [
+        12.7236,
+        80.1517
+    ],
+    "KAYALARMEDU": [
+        13.2786,
+        80.1694
+    ],
+    "KEELMANI": [
+        13.1972,
+        79.7314
+    ],
+    "KEERAPAKKAM": [
+        12.8014,
+        80.0911
+    ],
+    "KELAMBAKKAM": [
+        12.7831,
+        80.2239
+    ],
+    "KELAMBAKKAM RD JN.": [
+        12.7856,
+        80.2211
+    ],
+    "KELAMBAKKAM RD.JN.": [
+        12.7856,
+        80.2211
+    ],
+    "KELLEYS": [
+        13.0858,
+        80.2442
+    ],
+    "KESAVA CROSS ROAD": [
+        13.0842,
+        80.2811
+    ],
+    "KILAMBAKKAM JN.": [
+        12.8617,
+        80.0783
+    ],
+    "KILAMBAKKAM WATER TANK": [
+        12.8586,
+        80.0754
+    ],
+    "KILKATTALAI": [
+        12.9644,
+        80.1983
+    ],
+    "KILKONDAIYUR": [
+        13.1536,
+        79.9886
+    ],
+    "KILPAUK GARDEN": [
+        13.0822,
+        80.2336
+    ],
+    "KILPAUK WATER TANK": [
+        13.0789,
+        80.2425
+    ],
+    "KIZH NALLATHUR": [
+        13.1294,
+        79.9392
+    ],
+    "KIZHANOOR": [
+        13.2114,
+        79.9886
+    ],
+    "KIZHKALVOY": [
+        13.2867,
+        80.1114
+    ],
+    "KODUNGAIYUR O.T.": [
+        13.1311,
+        80.2542
+    ],
+    "KODUNGAIYUR PARVATHI NAGA": [
+        13.1364,
+        80.2514
+    ],
+    "KOILPATHAGAI RD.JN.": [
+        13.1492,
+        80.1114
+    ],
+    "KOILPATHAGAI(BHARATHI NAGAR)": [
+        13.1456,
+        80.1086
+    ],
+    "KOLADI GROUND": [
+        13.0694,
+        80.1286
+    ],
+    "KOLADI SCHOOL": [
+        13.0667,
+        80.1314
+    ],
+    "KOLAPAKKAM": [
+        13.0114,
+        80.1411
+    ],
+    "KOLAPAKKAM PUO": [
+        13.0089,
+        80.1436
+    ],
+    "KOLAPPANCHERY": [
+        13.0536,
+        80.0811
+    ],
+    "KOLATHUR": [
+        13.1233,
+        80.2117
+    ],
+    "KOLATHUR/NEHRU RD JN": [
+        13.1214,
+        80.2144
+    ],
+    "KOLLAICHERI": [
+        12.9814,
+        80.0817
+    ],
+    "KOLLUMEDU": [
+        13.1514,
+        80.1314
+    ],
+    "KOLUR": [
+        13.2972,
+        80.2114
+    ],
+    "KOLUR KALVOY": [
+        13.2942,
+        80.2086
+    ],
+    "KOMAN NAGAR RD JN.": [
+        13.2436,
+        80.3189
+    ],
+    "KONDAKKARAI": [
+        13.1814,
+        80.2886
+    ],
+    "KONDANCHERY CHRISTHUVA SABAI": [
+        13.0414,
+        79.9142
+    ],
+    "KONEMEDU JN.": [
+        13.1783,
+        80.1414
+    ],
+    "KONIMEDU": [
+        13.3756,
+        80.1417
+    ],
+    "KONIMEDU RD. JN.": [
+        13.3714,
+        80.1389
+    ],
+    "KOOTHAVAKKAM SCHOOL": [
+        12.6972,
+        79.8867
+    ],
+    "KOOVAM": [
+        13.0142,
+        79.8814
+    ],
+    "KOPPUR SCHOOL": [
+        13.1242,
+        79.9886
+    ],
+    "KORATTUR": [
+        13.1114,
+        80.1785
+    ],
+    "KORUKKUPET": [
+        13.1147,
+        80.2746
+    ],
+    "KORUKKUPET R.S.": [
+        13.1147,
+        80.2746
+    ],
+    "KOSAPALAYAM": [
+        13.1514,
+        79.9114
+    ],
+    "KOSAPPUR": [
+        13.1789,
+        80.2214
+    ],
+    "KOSAPPUR ROAD": [
+        13.1714,
+        80.2289
+    ],
+    "KOSAPUR RD. JN.,": [
+        13.1694,
+        80.2314
+    ],
+    "KOSAVAMPETTAI": [
+        13.4114,
+        80.0536
+    ],
+    "KOTHARI": [
+        13.1864,
+        80.2711
+    ],
+    "KOTTIVAKKAM": [
+        12.9692,
+        80.2589
+    ],
+    "KOTTUR NSK STATUE": [
+        13.0169,
+        80.2436
+    ],
+    "KOTTURPURAM": [
+        13.0219,
+        80.2464
+    ],
+    "KOTYAMEDU": [
+        13.3114,
+        80.1583
+    ],
+    "KOVALAM": [
+        12.7886,
+        80.2494
+    ],
+    "KOVILAMBAKKAM": [
+        12.9497,
+        80.1911
+    ],
+    "KOVILAMCHERRY VILLAGE": [
+        12.8364,
+        80.0114
+    ],
+    "KOVOOR": [
+        13.0122,
+        80.1417
+    ],
+    "KOVOOR RD JN": [
+        13.0111,
+        80.1467
+    ],
+    "KOVUR EB": [
+        13.0136,
+        80.1389
+    ],
+    "KOYAMBAKKAM": [
+        13.2561,
+        80.2214
+    ],
+    "KOYAMBEDU": [
+        13.0734,
+        80.1951
+    ],
+    "KOYAMBEDU MARKET": [
+        13.0694,
+        80.1917
+    ],
+    "KOYAMBEDU P.S": [
+        13.0697,
+        80.2014
+    ],
+    "KOYAMBEDU SCHOOL": [
+        13.0714,
+        80.1983
+    ],
+    "KRISHNA KARANAI": [
+        12.7011,
+        80.1914
+    ],
+    "KRISHNAN TEMPLE/PONDY BAZAR": [
+        13.0427,
+        80.2375
+    ],
+    "KRISHNAPURAM": [
+        13.1169,
+        80.1464
+    ],
+    "KRS PALLAVAN PHARM COLLEGE": [
+        12.9814,
+        79.9414
+    ],
+    "KUMANANCHAVADI": [
+        13.0486,
+        80.1256
+    ],
+    "KUMARAN KUNDRAM": [
+        12.9458,
+        80.1414
+    ],
+    "KUMARAN NAGAR": [
+        13.0242,
+        80.2144
+    ],
+    "KUMIZHI": [
+        12.8014,
+        80.1411
+    ],
+    "KUMMANUR": [
+        13.2536,
+        80.1314
+    ],
+    "KUMUNANCHAVADI": [
+        13.0486,
+        80.1256
+    ],
+    "KUNDRATHUR B.S.": [
+        12.9944,
+        80.0933
+    ],
+    "KUNDRATHUR MURUGAN TEMPLE": [
+        12.9975,
+        80.0886
+    ],
+    "KUNDRATHUR REGISTER OFFICE": [
+        12.9917,
+        80.0964
+    ],
+    "KUNNAM": [
+        12.9861,
+        79.9014
+    ],
+    "KUNNAM VILLAGE": [
+        12.9842,
+        79.8986
+    ],
+    "KUNNAVAKKAM": [
+        12.7314,
+        79.9142
+    ],
+    "KUPPAM": [
+        13.1114,
+        80.3014
+    ],
+    "KUPPAMMA NAGAR": [
+        13.1517,
+        80.1114
+    ],
+    "KURUVIAGARAM JN": [
+        13.3442,
+        80.1017
+    ],
+    "KUTHAMBAKKAM": [
+        13.0314,
+        80.0031
+    ],
+    "KUTHAMKULAM": [
+        13.2842,
+        80.2014
+    ],
+    "KUTHANOOR ROAD JN.": [
+        12.9236,
+        80.0381
+    ],
+    "L&T CORNER": [
+        13.0142,
+        80.1944
+    ],
+    "L&T HARBOUR": [
+        13.2986,
+        80.3286
+    ],
+    "LADY MCTM SCHOOL/MILLERS RD": [
+        13.0894,
+        80.2486
+    ],
+    "LAKSHMI APPARTMENTS": [
+        13.0286,
+        80.2314
+    ],
+    "LAKSHMIPURAM": [
+        13.1367,
+        80.2058
+    ],
+    "LAKSHMIPURAM JN./AROBINDO SCHL": [
+        13.1394,
+        80.2014
+    ],
+    "LAKSHMIPURAM SCHOOL": [
+        13.1361,
+        80.2078
+    ],
+    "LIFT GATE": [
+        13.1142,
+        80.0811
+    ],
+    "LINGAPPAN PETTAI": [
+        13.1114,
+        79.7914
+    ],
+    "LITTLE MOUNT METRO": [
+        13.0142,
+        80.2378
+    ],
+    "LOCO BRIDGE": [
+        13.1064,
+        80.2311
+    ],
+    "LOYOLA COLLEGE": [
+        13.0628,
+        80.2344
+    ],
+    "LUCAS TVS": [
+        13.1075,
+        80.1814
+    ],
+    "LUZ": [
+        13.0339,
+        80.2625
+    ],
+    "M.F.L.": [
+        13.1586,
+        80.2672
+    ],
+    "M.F.L. NAGAR(JUMPING STG)": [
+        13.1564,
+        80.2694
+    ],
+    "M.G.R.CENTRAL": [
+        13.0824,
+        80.2754
+    ],
+    "M.G.R.KOYAMBEDU": [
+        13.0734,
+        80.1951
+    ],
+    "M.G.R.NAGAR": [
+        13.0361,
+        80.2044
+    ],
+    "M.K.B.NAGAR": [
+        13.1239,
+        80.2594
+    ],
+    "M.K.B.NAGAR EAST": [
+        13.1214,
+        80.2644
+    ],
+    "M.M.B.T.": [
+        13.1536,
+        80.2458
+    ],
+    "M.M.C": [
+        13.1492,
+        80.2311
+    ],
+    "M.M.D.A.COLONY": [
+        13.0642,
+        80.2144
+    ],
+    "M.M.D.A.COLONY RD.JN.": [
+        13.0614,
+        80.2178
+    ],
+    "MADAMBAKKAM KOIL": [
+        12.8986,
+        80.1694
+    ],
+    "MADAMBAKKAM RICE MILL": [
+        12.8942,
+        80.1714
+    ],
+    "MADANAKUPPAM": [
+        13.1425,
+        80.1814
+    ],
+    "MADARAPAKKAM": [
+        13.5064,
+        80.0342
+    ],
+    "MADARAPAKKAM CROSS ROAD": [
+        13.4986,
+        80.0514
+    ],
+    "MADHAVARAM": [
+        13.1444,
+        80.2311
+    ],
+    "MADHAVARAM B.S.": [
+        13.1536,
+        80.2458
+    ],
+    "MADHAVARAM MILLK COLONY": [
+        13.1492,
+        80.2422
+    ],
+    "MADHAVARAM POST BOX": [
+        13.1417,
+        80.2344
+    ],
+    "MADHAVARAM VILLAGE": [
+        13.1464,
+        80.2289
+    ],
+    "MADHURAMANGALAM ROAD JN": [
+        12.9814,
+        79.7914
+    ],
+    "MADHYAKAILASH": [
+        13.0064,
+        80.2481
+    ],
+    "MADIPAKKAM B.S.": [
+        12.9622,
+        80.2036
+    ],
+    "MADIPAKKAM RD. JN.": [
+        12.9694,
+        80.2075
+    ],
+    "MADIPAKKAM RD. JN./POONIAMMAN": [
+        12.9667,
+        80.2092
+    ],
+    "MADURAPAKKAM": [
+        12.8614,
+        80.1694
+    ],
+    "MADURAPAKKAM RD.JN.": [
+        12.8711,
+        80.1644
+    ],
+    "MADURAVOYAL": [
+        13.0656,
+        80.1636
+    ],
+    "MADURAVOYAL ERIKARAI": [
+        13.0642,
+        80.1583
+    ],
+    "MADURAVOYAL JN": [
+        13.0661,
+        80.1686
+    ],
+    "MADURAVOYAL MARKET": [
+        13.0631,
+        80.1614
+    ],
+    "MAGARAL KANDIGAI": [
+        13.2389,
+        80.1242
+    ],
+    "MAHALAKSHMI NAGAR": [
+        12.9194,
+        80.1342
+    ],
+    "MAHALINGAPURAM": [
+        13.0514,
+        80.2361
+    ],
+    "MAHARANI": [
+        13.1094,
+        80.2792
+    ],
+    "MAHENDRA CITY MAIN GATE": [
+        12.7214,
+        79.9942
+    ],
+    "MAHENDRA CITY(CHETTY PUNNIYAM)": [
+        12.7194,
+        79.9886
+    ],
+    "MAHINDRA IND.PARK": [
+        12.7214,
+        79.9942
+    ],
+    "MALAI PATTU": [
+        12.9514,
+        80.0417
+    ],
+    "MALANTHUR": [
+        12.6414,
+        79.9114
+    ],
+    "MALAYAMBAKKAM EAST": [
+        13.0242,
+        80.0786
+    ],
+    "MALLIGAI NAGAR AVE": [
+        13.1492,
+        80.2086
+    ],
+    "MALROSAPURAM": [
+        12.7114,
+        79.9814
+    ],
+    "MAMALLAPURAM": [
+        12.6208,
+        80.1944
+    ],
+    "MAMBAKKAM": [
+        12.8364,
+        80.1583
+    ],
+    "MAMBAKKAM KOOT ROAD": [
+        12.8392,
+        80.1542
+    ],
+    "MAMBAKKAM RICE MILL": [
+        12.8341,
+        80.1611
+    ],
+    "MAMBAKKAM TEMPLE": [
+        12.8375,
+        80.1594
+    ],
+    "MAMPALLAM": [
+        13.2786,
+        80.0381
+    ],
+    "MANALAI SEEKADU": [
+        13.0642,
+        80.1517
+    ],
+    "MANALI": [
+        13.1664,
+        80.2647
+    ],
+    "MANALI ARIYALUR RD JN.": [
+        13.1742,
+        80.2614
+    ],
+    "MANALI MARKET": [
+        13.1642,
+        80.2625
+    ],
+    "MANALI NEW TOWN": [
+        13.1978,
+        80.2847
+    ],
+    "MANALI RD JN.": [
+        13.1414,
+        80.2694
+    ],
+    "MANALI SEKADU": [
+        13.0642,
+        80.1517
+    ],
+    "MANALLUR": [
+        13.4864,
+        80.0536
+    ],
+    "MANAMATHI": [
+        12.6711,
+        80.1114
+    ],
+    "MANAMATHI JN.": [
+        12.6736,
+        80.1086
+    ],
+    "MANAMATHI ROAD JN": [
+        12.6754,
+        80.1017
+    ],
+    "MANAMATHI SCHOOL": [
+        12.6689,
+        80.1136
+    ],
+    "MANAPAKKAM P.U.O": [
+        13.0211,
+        80.1786
+    ],
+    "MANAPAKKAM VILLAGE": [
+        13.0183,
+        80.1814
+    ],
+    "MANAVALAN NAGAR": [
+        13.1278,
+        79.9189
+    ],
+    "MANCHANKARANAI": [
+        13.2644,
+        80.1417
+    ],
+    "MANDAVELI": [
+        13.0233,
+        80.2694
+    ],
+    "MANDAVELI (OONAMANCHERI)": [
+        12.8514,
+        80.1114
+    ],
+    "MANGADU": [
+        13.0214,
+        80.1172
+    ],
+    "MANGADU RD JN": [
+        13.0311,
+        80.1194
+    ],
+    "MANIMANGALAM": [
+        12.9114,
+        80.0436
+    ],
+    "MANIMANGALAM RD. JN.": [
+        12.9239,
+        80.0592
+    ],
+    "MANIMANGALAM VILLAGE": [
+        12.9086,
+        80.0411
+    ],
+    "MANIMEDU (AKASH NAGAR)": [
+        12.9364,
+        80.0381
+    ],
+    "MANJAMBAKKAM LINK RD.": [
+        13.1594,
+        80.2194
+    ],
+    "MANNIVAKKAM": [
+        12.8942,
+        80.0786
+    ],
+    "MANNIVAKKAM ROAD JN.": [
+        12.8986,
+        80.0814
+    ],
+    "MANNIVAKKAM W.TANK": [
+        12.8911,
+        80.0756
+    ],
+    "MANNUR": [
+        13.0117,
+        79.9414
+    ],
+    "MANNUR VILLAGE": [
+        13.0089,
+        79.9386
+    ],
+    "MANTHOPU": [
+        13.0411,
+        80.2114
+    ],
+    "MAPPEDU RD. JN.": [
+        12.8483,
+        80.1414
+    ],
+    "MARAIMALAI NAGAR": [
+        12.7981,
+        80.0244
+    ],
+    "MARAIMALAI NAGAR I.E.": [
+        12.8014,
+        80.0194
+    ],
+    "MARAIMALAI NAGAR P.S.JN.": [
+        12.7956,
+        80.0272
+    ],
+    "MATERNITY HOSPITAL": [
+        13.0725,
+        80.2542
+    ],
+    "MATHUR": [
+        13.1714,
+        80.2436
+    ],
+    "MATHUR M.M.D.A.": [
+        13.1642,
+        80.2536
+    ],
+    "MATHUR M.M.D.A. GATE": [
+        13.1611,
+        80.2567
+    ],
+    "MATHUR RD. JN.,": [
+        13.1742,
+        80.2394
+    ],
+    "MATHUR ROAD": [
+        13.1742,
+        80.2394
+    ],
+    "MAYLAIMA NAGAR": [
+        12.9364,
+        80.2114
+    ],
+    "MEDAVAKKAM": [
+        12.9167,
+        80.1914
+    ],
+    "MEDAVAKKAM COLONY": [
+        12.9114,
+        80.1942
+    ],
+    "MEDAVAKKAM RD.JN.": [
+        12.9242,
+        80.1886
+    ],
+    "MEDHUR": [
+        13.3442,
+        80.2414
+    ],
+    "MEDURAMALAICHERYJN": [
+        13.3486,
+        80.2456
+    ],
+    "MEENAKSHI AMMAN DENTAL COLL": [
+        13.0456,
+        80.1583
+    ],
+    "MEENAMABAKKAM OLD AIRPORT": [
+        12.9911,
+        80.1814
+    ],
+    "MELAPPEDU": [
+        13.1417,
+        80.0814
+    ],
+    "MELKALVOY": [
+        13.2986,
+        80.1114
+    ],
+    "MELKONDAIYUR": [
+        13.1442,
+        79.9914
+    ],
+    "MELKOTTIYUR": [
+        12.8428,
+        80.1586
+    ],
+    "MELMALLIKAIPATTU": [
+        13.0314,
+        80.0314
+    ],
+    "MELNALLATHUR": [
+        13.1194,
+        79.9431
+    ],
+    "MELPAKKAM": [
+        13.0986,
+        80.0411
+    ],
+    "MELPAKKAM RD. JN.": [
+        13.1014,
+        80.0436
+    ],
+    "MENAMBEDU": [
+        13.1256,
+        80.1486
+    ],
+    "MEPPUR": [
+        13.0364,
+        80.0617
+    ],
+    "MEPPADU HOSPITAL": [
+        13.0425,
+        80.0594
+    ],
+    "MEPPEDU": [
+        13.0364,
+        80.0617
+    ],
+    "MEPPEDU ROAD JN": [
+        13.0314,
+        80.0689
+    ],
+    "MEPZ": [
+        12.9366,
+        80.1292
+    ],
+    "METHA NAGAR ENTRANCE(ADKUPM)": [
+        13.1514,
+        80.2594
+    ],
+    "METRO GRAND CITY": [
+        13.0642,
+        80.0436
+    ],
+    "METTU SEKANYAM": [
+        13.2561,
+        80.2014
+    ],
+    "METTUKANDIGAI": [
+        13.4114,
+        80.0381
+    ],
+    "METTUPALAYAM": [
+        13.0944,
+        80.2286
+    ],
+    "METTUPALAYAM ROAD JN.": [
+        13.0917,
+        80.2311
+    ],
+    "MEYYUR": [
+        13.1972,
+        79.9142
+    ],
+    "MILLERS ROAD": [
+        13.0894,
+        80.2486
+    ],
+    "MINJUR": [
+        13.2725,
+        80.2625
+    ],
+    "MINJUR B.D.O": [
+        13.2689,
+        80.2594
+    ],
+    "MINJUR N.T.": [
+        13.2764,
+        80.2667
+    ],
+    "MINJUR O.T": [
+        13.2642,
+        80.2586
+    ],
+    "MITTANAMALLEE": [
+        13.1364,
+        80.0886
+    ],
+    "MITTANAMALLEE TURNING": [
+        13.1319,
+        80.0886
+    ],
+    "MOGAIPAIR ROAD JN.": [
+        13.0789,
+        80.1814
+    ],
+    "MOGALIVAKKAM / MARI AMMN KOIL": [
+        13.0164,
+        80.1694
+    ],
+    "MOGAPPAIR ROAD JN": [
+        13.0789,
+        80.1814
+    ],
+    "MOOGAMBIGAI COMPLEX": [
+        13.0814,
+        80.1983
+    ],
+    "MOOLACHATHIRAM": [
+        13.1642,
+        80.2289
+    ],
+    "MOOLAI ROAD": [
+        13.1517,
+        80.2886
+    ],
+    "MOOLAKADAI": [
+        13.1286,
+        80.2536
+    ],
+    "MOOLAKARAI": [
+        12.9214,
+        80.1694
+    ],
+    "MOONDRAM KATTALAI": [
+        12.9914,
+        80.1114
+    ],
+    "MOOTAKARAN CHAVADI": [
+        12.9467,
+        80.2486
+    ],
+    "MOOVAR STATUE": [
+        13.0827,
+        80.2173
+    ],
+    "MOOVARASANPET": [
+        12.9736,
+        80.1894
+    ],
+    "MORAI": [
+        13.1694,
+        80.0911
+    ],
+    "MOULIVAKKAM": [
+        13.0114,
+        80.1583
+    ],
+    "MOULIVAKKAM RD.JN.": [
+        13.0086,
+        80.1611
+    ],
+    "MOULIVAKKAM/MANGAU RD JN": [
+        13.0136,
+        80.1542
+    ],
+    "MRL/CPCL": [
+        13.1678,
+        80.2742
+    ],
+    "MUDHUKUR CROSS ROAD": [
+        13.3886,
+        80.1114
+    ],
+    "MUDICHUR": [
+        12.9114,
+        80.0814
+    ],
+    "MUDICHUR RD JN.": [
+        12.9186,
+        80.1114
+    ],
+    "MUDICHUR RD.JN.": [
+        12.9186,
+        80.1114
+    ],
+    "MUDICHUR VILLAGE": [
+        12.9086,
+        80.0764
+    ],
+    "MUGALIVAKKAM": [
+        13.0164,
+        80.1694
+    ],
+    "MUGALIVAKKAM ARASAMARAM": [
+        13.0142,
+        80.1714
+    ],
+    "MUGALIVAKKAM RD. JN.": [
+        13.0194,
+        80.1644
+    ],
+    "MULLAI NAGAR": [
+        13.1114,
+        80.2589
+    ],
+    "MULLIPAKKAM": [
+        12.6314,
+        80.0536
+    ],
+    "MURUGAN KALYANA MANDABAM": [
+        13.1164,
+        80.1536
+    ],
+    "MURUGAN KOIL / GIRUGAMBAKKAM": [
+        13.0114,
+        80.1514
+    ],
+    "MURUKKANCHERI": [
+        13.2114,
+        80.2289
+    ],
+    "MUTHAMIL NAGAR": [
+        13.1342,
+        80.2458
+    ],
+    "MUTHAPUDUPET": [
+        13.1364,
+        80.1117
+    ],
+    "MUTHUMARIAMMAN KOIL": [
+        13.0483,
+        80.2114
+    ],
+    "MUTTUKKADU": [
+        12.8083,
+        80.2436
+    ],
+    "MUTTUKKADU BOAT YARD": [
+        12.8114,
+        80.2486
+    ],
+    "MYLAI ROAD JN": [
+        13.0314,
+        80.2586
+    ],
+    "MYLAPORE": [
+        13.0384,
+        80.27
+    ],
+    "N.BAKKAM KALAIGNAR NAGAR": [
+        13.1092,
+        80.1414
+    ],
+    "N.G.O.COLONY": [
+        12.9814,
+        80.1944
+    ],
+    "N.S.K NAGAR": [
+        13.0728,
+        80.2189
+    ],
+    "NADUVANKARAI": [
+        13.0806,
+        80.2144
+    ],
+    "NADUVANKARAI BRIDGE": [
+        13.0789,
+        80.2167
+    ],
+    "NADUVEERAPATTU": [
+        12.9364,
+        80.0583
+    ],
+    "NAGALKENI": [
+        12.9644,
+        80.1389
+    ],
+    "NAGARAJKANDIGAI": [
+        13.4311,
+        80.0536
+    ],
+    "NAGATHAMMAL KOIL": [
+        13.0242,
+        80.1889
+    ],
+    "NALAMBUR SERVICE RD": [
+        13.0414,
+        80.0114
+    ],
+    "NALLUR": [
+        13.2389,
+        80.1914
+    ],
+    "NALLUR PUDU NAGAR": [
+        13.2422,
+        80.1886
+    ],
+    "NANDAMBAKKAM": [
+        13.0117,
+        80.1894
+    ],
+    "NANDAMBAKKAM VILLAGE": [
+        13.0089,
+        80.1867
+    ],
+    "NANGANALLUR": [
+        12.9814,
+        80.1894
+    ],
+    "NAPALAYAM": [
+        13.2114,
+        80.2786
+    ],
+    "NARAYANAPURAM": [
+        12.9378,
+        80.2114
+    ],
+    "NASIC NAGAR": [
+        13.1114,
+        80.0986
+    ],
+    "NATHAMBEDU COLONY": [
+        13.1417,
+        80.0886
+    ],
+    "NATHAMBEDU ROAD JN.": [
+        13.1464,
+        80.0914
+    ],
+    "NATHAMUNI TALKIES": [
+        13.0975,
+        80.2014
+    ],
+    "NATHANALLUR": [
+        12.8364,
+        79.9114
+    ],
+    "NATURE CARE HOSPITAL": [
+        13.0414,
+        80.2536
+    ],
+    "NAVALUR": [
+        12.8458,
+        80.2264
+    ],
+    "NAVALUR CHURCH": [
+        12.8422,
+        80.2289
+    ],
+    "NAVALUR SCB": [
+        12.8486,
+        80.2214
+    ],
+    "NAZARATHPET": [
+        13.0417,
+        80.0614
+    ],
+    "NCTPS": [
+        13.2536,
+        80.3286
+    ],
+    "NEDUGUNDRAM": [
+        12.8714,
+        80.1114
+    ],
+    "NEELAMANGALAM": [
+        12.7836,
+        80.0114
+    ],
+    "NEELANKARAI": [
+        12.9497,
+        80.2514
+    ],
+    "NEITHAVOYAL": [
+        13.3114,
+        80.2644
+    ],
+    "NELLIKUPPAM": [
+        12.7242,
+        80.1417
+    ],
+    "NEMAM": [
+        13.0417,
+        79.9886
+    ],
+    "NEMILICHERI": [
+        13.1114,
+        80.0278
+    ],
+    "NERKUNDRAM": [
+        13.0644,
+        80.1783
+    ],
+    "NESAMANI NAGAR": [
+        12.9364,
+        80.1914
+    ],
+    "NESAPAKKAM": [
+        13.0314,
+        80.1914
+    ],
+    "NESAPAKKAM MGR STATUE": [
+        13.0289,
+        80.1936
+    ],
+    "NEW AVENUE": [
+        13.0842,
+        80.1694
+    ],
+    "NEW ERUMAIVETTIPALAYAM": [
+        13.2364,
+        80.1942
+    ],
+    "NEW NAGAR": [
+        13.1114,
+        80.2814
+    ],
+    "NEW ROAD": [
+        13.1514,
+        80.3014
+    ],
+    "NEYVELI": [
+        13.0364,
+        79.8114
+    ],
+    "NOLAMBUR SAKTHI NAGAR": [
+        13.0694,
+        80.1694
+    ],
+    "NOOTHANCHERI": [
+        12.9114,
+        80.1583
+    ],
+    "NOOTHANCHERI CROSS RD.": [
+        12.9142,
+        80.1542
+    ],
+    "NUCLEUS COMPANY": [
+        13.1114,
+        80.1486
+    ],
+    "NUNGAMBAKKAM R.S.": [
+        13.0617,
+        80.2343
+    ],
+    "ODEANMANI": [
+        13.0942,
+        80.2914
+    ],
+    "OIL MILL": [
+        13.1114,
+        80.1286
+    ],
+    "OILCHERY": [
+        12.8714,
+        80.0114
+    ],
+    "OKK.THORAIPAKM SEC.COLONY": [
+        12.9364,
+        80.2414
+    ],
+    "OLD ERUMAI VETTI PALAYAM": [
+        13.2289,
+        80.1914
+    ],
+    "OLD PERUNGALATHUR": [
+        12.9167,
+        80.0886
+    ],
+    "OLD&NEW ERUMAI VETTI PALAYAM": [
+        13.2325,
+        80.1928
+    ],
+    "OONAMANCHERI": [
+        12.8514,
+        80.1114
+    ],
+    "OOTHUKADU CROSS RD": [
+        12.7836,
+        79.9114
+    ],
+    "ORAGADAM": [
+        12.8364,
+        79.9536
+    ],
+    "ORAGADAM O.T.": [
+        13.1444,
+        80.1417
+    ],
+    "ORAGADAM POLICE STATION": [
+        12.8342,
+        79.9514
+    ],
+    "ORAGADAM RD JN": [
+        13.1417,
+        80.1444
+    ],
+    "ORAGADAM ROAD JN": [
+        13.1417,
+        80.1444
+    ],
+    "ORAKKADU": [
+        13.2281,
+        80.1914
+    ],
+    "OTTIAMBAKKAM": [
+        12.8711,
+        80.2014
+    ],
+    "P.OR & SONS": [
+        13.0811,
+        80.2736
+    ],
+    "P1.POLICE STATION": [
+        13.0942,
+        80.2917
+    ],
+    "PADAPPAI": [
+        12.8914,
+        80.0194
+    ],
+    "PADAVATTAMMAN KOIL": [
+        13.0114,
+        80.2114
+    ],
+    "PADAVATTAMMAN KOVIL": [
+        13.0114,
+        80.2114
+    ],
+    "PADAVATTAMMAN SCHOOL": [
+        13.0086,
+        80.2142
+    ],
+    "PADI RD. EAST AVENUE RD.JN.": [
+        13.0886,
+        80.1783
+    ],
+    "PADIKUPPAM": [
+        13.0814,
+        80.1742
+    ],
+    "PADIYANALLUR": [
+        13.1944,
+        80.1694
+    ],
+    "PADURMEDU": [
+        13.0914,
+        80.0314
+    ],
+    "PAGALMEDU": [
+        13.3442,
+        80.0814
+    ],
+    "PAKKAM": [
+        13.1786,
+        80.0314
+    ],
+    "PAKKAM RD.JN.": [
+        13.1714,
+        80.0364
+    ],
+    "PAKKAM VILLAGE": [
+        13.1814,
+        80.0286
+    ],
+    "PALACE GARDEN": [
+        13.0364,
+        80.0536
+    ],
+    "PALAKKA COMPANY": [
+        13.1642,
+        80.2986
+    ],
+    "PALAVAKKAM": [
+        12.9589,
+        80.2536
+    ],
+    "PALAVAKKAM CROSS ROAD": [
+        12.9567,
+        80.2514
+    ],
+    "PALAVASTHIC CHEMICALS": [
+        13.1114,
+        80.2364
+    ],
+    "PALAVEDU": [
+        13.1492,
+        80.0764
+    ],
+    "PALLAKANDIGAI": [
+        13.4114,
+        80.0536
+    ],
+    "PALLAVAN NAGAR": [
+        13.0789,
+        80.1644
+    ],
+    "PALLAVARAM": [
+        12.9675,
+        80.1492
+    ],
+    "PALLAVARAM GATE": [
+        12.9714,
+        80.1517
+    ],
+    "PALLAVARAM NEW BRIDGE": [
+        12.9694,
+        80.1467
+    ],
+    "PALLAVARAM R.S.": [
+        12.9675,
+        80.1492
+    ],
+    "PALLIKARANAI": [
+        12.9364,
+        80.2144
+    ],
+    "PAMMADU KULAM RD.JN.": [
+        13.1914,
+        80.1414
+    ],
+    "PAMMADUKULAM": [
+        13.1972,
+        80.1389
+    ],
+    "PAMMADUKULAM COLONY": [
+        13.1942,
+        80.1364
+    ],
+    "PAMMAL": [
+        12.9786,
+        80.1342
+    ],
+    "PAMMAL ADAYAR BRIDGE": [
+        12.9867,
+        80.1414
+    ],
+    "PAMMAL KAMARAJAPURAM": [
+        12.9742,
+        80.1311
+    ],
+    "PAMMAL RD.JN.": [
+        12.9714,
+        80.1467
+    ],
+    "PAMMAL SANKAR NAGAR": [
+        12.9814,
+        80.1286
+    ],
+    "PANAIYUR": [
+        12.9114,
+        80.2486
+    ],
+    "PANAPAKKAM": [
+        13.0114,
+        79.9414
+    ],
+    "PANAPAKKAMEDU": [
+        13.0142,
+        79.9386
+    ],
+    "PANCHALAI": [
+        13.0942,
+        80.2536
+    ],
+    "PANDESWARAM": [
+        13.1786,
+        80.1114
+    ],
+    "PANDITHAMEDU": [
+        13.2561,
+        80.0814
+    ],
+    "PANDY KAVANOOR JN.": [
+        13.1986,
+        80.1814
+    ],
+    "PANJETTI": [
+        13.2864,
+        80.1644
+    ],
+    "PANRUTTI": [
+        12.8714,
+        80.0036
+    ],
+    "PAPPANCHATRAM": [
+        13.0364,
+        80.0114
+    ],
+    "PARATHUR": [
+        13.2114,
+        80.1983
+    ],
+    "PARIVAKKAM": [
+        13.0536,
+        80.0886
+    ],
+    "PARIVAKKAM JN.": [
+        13.0514,
+        80.0861
+    ],
+    "PARIVAKKAM ROAD JN.": [
+        13.0567,
+        80.0911
+    ],
+    "PARRYS": [
+        13.0894,
+        80.2856
+    ],
+    "PARRYS\\BROADWAY": [
+        13.0894,
+        80.2828
+    ],
+    "PARUTHIPATTU RD. JN.": [
+        13.1114,
+        80.1114
+    ],
+    "PATAMANTHIR": [
+        13.2536,
+        80.2644
+    ],
+    "PATHIRIVEDU": [
+        13.4311,
+        80.1114
+    ],
+    "PATTABIRAM": [
+        13.1232,
+        80.0594
+    ],
+    "PATTAMANDIRI": [
+        13.2536,
+        80.2644
+    ],
+    "PATTIKULAM COLONY": [
+        13.1256,
+        80.2814
+    ],
+    "PATTINATHAMMAN KOVIL": [
+        13.1514,
+        80.3014
+    ],
+    "PATTUNOOL CHATRAM": [
+        13.0417,
+        80.0914
+    ],
+    "PATTUR": [
+        13.0189,
+        80.1194
+    ],
+    "PAVENTHER SALAI": [
+        13.0814,
+        80.1694
+    ],
+    "PAYYANOOR": [
+        12.6086,
+        80.1536
+    ],
+    "PAZAVANTHANGAL ROAD JN.": [
+        12.9928,
+        80.1936
+    ],
+    "PAZHANTHANDALAM": [
+        12.9536,
+        80.0886
+    ],
+    "PAZHANTHANDALAM ROAD JN.": [
+        12.9514,
+        80.0911
+    ],
+    "PAZHAVERKADU": [
+        13.4194,
+        80.3144
+    ],
+    "PENNALUR E.B.": [
+        12.9914,
+        79.9644
+    ],
+    "PERAMBAKKAM": [
+        13.0214,
+        79.7942
+    ],
+    "PERAMBAKKAM L.N.KOIL": [
+        13.0189,
+        79.7914
+    ],
+    "PERAMBUR": [
+        13.1065,
+        80.2435
+    ],
+    "PERAMBUR MARKET": [
+        13.1083,
+        80.2411
+    ],
+    "PERATHUR": [
+        13.1536,
+        79.9114
+    ],
+    "PERATHUR COLONY": [
+        13.1514,
+        79.9142
+    ],
+    "PERAVALLUR KUMARAN NAGAR": [
+        13.1114,
+        80.2286
+    ],
+    "PERIAMULLAIVOYAL": [
+        13.2561,
+        80.2583
+    ],
+    "PERIMAL KOIL": [
+        13.0536,
+        80.0536
+    ],
+    "PERIYA ARUNGAL": [
+        12.7414,
+        80.0583
+    ],
+    "PERIYA COLONY": [
+        13.1114,
+        80.2114
+    ],
+    "PERIYA KOTTAMEDU": [
+        13.2986,
+        80.1114
+    ],
+    "PERIYAL NEMBILI VILLAGE": [
+        13.3442,
+        80.3014
+    ],
+    "PERIYAPALAYAM": [
+        13.3214,
+        80.1417
+    ],
+    "PERIYAPALAYAM RD JN.": [
+        13.2514,
+        80.1611
+    ],
+    "PERIYAPANICHERI": [
+        13.0089,
+        80.1342
+    ],
+    "PERIYAR BRIDGE": [
+        13.0714,
+        80.2736
+    ],
+    "PERIYAR NAGAR": [
+        13.1167,
+        80.2214
+    ],
+    "PERLIYAMBAKKAM": [
+        12.7442,
+        79.9414
+    ],
+    "PERUMAL KOIL": [
+        13.0536,
+        80.0536
+    ],
+    "PERUMAL NAGAR JN.": [
+        12.9414,
+        80.1886
+    ],
+    "PERUMALPATTU": [
+        13.1114,
+        79.9886
+    ],
+    "PERUMATTU NALLUR": [
+        12.8114,
+        80.0583
+    ],
+    "PERUMBAKKAM HOUSING BOARD": [
+        12.8942,
+        80.2114
+    ],
+    "PERUMBAKKAM LIMIT": [
+        12.8986,
+        80.2144
+    ],
+    "PERUMBEDU": [
+        13.2644,
+        80.1942
+    ],
+    "PERUMBEDUKUPPAM": [
+        13.2614,
+        80.1914
+    ],
+    "PERUMBUR": [
+        13.1065,
+        80.2435
+    ],
+    "PERUMPAKKAM S.C.B.": [
+        12.8942,
+        80.2114
+    ],
+    "PERUNGALATHUR": [
+        12.9056,
+        80.0919
+    ],
+    "PERUNGAVOOR": [
+        13.1814,
+        80.2114
+    ],
+    "PERUNGUDI": [
+        12.9654,
+        80.2415
+    ],
+    "PERUNTHANDALAM JN": [
+        12.6414,
+        80.1114
+    ],
+    "PERUVOYAL": [
+        13.3114,
+        80.1694
+    ],
+    "PETAI/PALAYAPAL": [
+        13.3164,
+        80.1389
+    ],
+    "PETROL BUNK": [
+        13.0814,
+        80.2414
+    ],
+    "PETTAI": [
+        13.3164,
+        80.1389
+    ],
+    "PILLAIPAKKAM": [
+        12.9644,
+        79.9886
+    ],
+    "PILLAIPAKKAM ROAD JN": [
+        12.9694,
+        79.9914
+    ],
+    "PILLAYAR KOIL": [
+        13.0414,
+        80.1942
+    ],
+    "PILLI LINE": [
+        13.1114,
+        80.2886
+    ],
+    "POGALMEDU": [
+        13.3442,
+        80.0814
+    ],
+    "POLICE QUARTERS": [
+        13.0414,
+        80.2078
+    ],
+    "POLIVAKKAM": [
+        13.0644,
+        79.9364
+    ],
+    "POLLACHIAMMANKULAM": [
+        13.1642,
+        80.3014
+    ],
+    "POLYTECHNIC": [
+        13.0039,
+        80.2458
+    ],
+    "PONDY BAZAAR": [
+        13.0427,
+        80.2375
+    ],
+    "PONDY BAZAAR/VIVEK & CO": [
+        13.0414,
+        80.2342
+    ],
+    "PONMAR": [
+        12.8483,
+        80.1783
+    ],
+    "PONNERI": [
+        13.3242,
+        80.1983
+    ],
+    "PONNIAMMAN KOIL RD. JN.": [
+        12.9667,
+        80.2092
+    ],
+    "POOCHIATHIPEDU": [
+        13.1536,
+        80.1286
+    ],
+    "POOMPUHAR": [
+        13.1286,
+        80.2114
+    ],
+    "POONAMALLEE": [
+        13.0472,
+        80.0936
+    ],
+    "POONAMALLEE RD JN.": [
+        13.0483,
+        80.1114
+    ],
+    "POONCHERY ROAD JN": [
+        12.6014,
+        80.1694
+    ],
+    "POONGERI JN.": [
+        12.6014,
+        80.1694
+    ],
+    "POONGULAM COLONY": [
+        13.4114,
+        80.0764
+    ],
+    "POONTHANDALAM": [
+        12.9414,
+        80.0633
+    ],
+    "POONTHANDALAM RD.JN.": [
+        12.9442,
+        80.0592
+    ],
+    "POOVALAMBEDU": [
+        13.4364,
+        80.0114
+    ],
+    "POOVALLI KUPPAM": [
+        13.0514,
+        80.0764
+    ],
+    "PORUR": [
+        13.0381,
+        80.1561
+    ],
+    "PORUR GARDEN": [
+        13.0417,
+        80.1614
+    ],
+    "PORUR JN": [
+        13.0367,
+        80.1536
+    ],
+    "POSTAL AUDIT OFFICE": [
+        13.0644,
+        80.2589
+    ],
+    "POSTAL COLONY": [
+        13.0314,
+        80.2214
+    ],
+    "POTHERI EAST": [
+        12.8231,
+        80.0428
+    ],
+    "POTHUR": [
+        13.1814,
+        80.1414
+    ],
+    "POZHICHALUR": [
+        12.9886,
+        80.1417
+    ],
+    "PRATHYANGIRA DEVI TEMPLE": [
+        12.8644,
+        80.2458
+    ],
+    "PREETHI NAGAR": [
+        13.0842,
+        80.1414
+    ],
+    "PTC QUARTER / ESWARANTEMPLE": [
+        12.9644,
+        80.2458
+    ],
+    "PUDHU NAGAR": [
+        13.1514,
+        80.2214
+    ],
+    "PUDHUCHERYMEDU": [
+        13.3114,
+        80.1114
+    ],
+    "PUDU COLONY": [
+        13.1114,
+        80.1694
+    ],
+    "PUDU NALLUR": [
+        12.9114,
+        80.0114
+    ],
+    "PUDUKUPPAM": [
+        13.1814,
+        80.3014
+    ],
+    "PUDUNALLUR": [
+        12.9114,
+        80.0114
+    ],
+    "PUDUPAKKAM": [
+        12.8189,
+        80.2144
+    ],
+    "PUDUPAKKAM P.U.O.": [
+        12.8142,
+        80.2114
+    ],
+    "PUDUPAKKAM RD JN": [
+        12.8214,
+        80.2178
+    ],
+    "PUDUPAKKAM/VANDALOOR RD.J": [
+        12.8242,
+        80.2086
+    ],
+    "PUDUPATTU ROAD JN": [
+        12.9364,
+        79.9414
+    ],
+    "PUDUPATTU VILLAGE": [
+        12.9314,
+        79.9386
+    ],
+    "PUDUPEDU RD JN/SOMANGALAM": [
+        12.9467,
+        80.0381
+    ],
+    "PUDUPEDU RD.JN.": [
+        12.9514,
+        80.0414
+    ],
+    "PUDUPEIR ROAD JN": [
+        13.2867,
+        80.1314
+    ],
+    "PUDUR": [
+        13.1167,
+        80.1389
+    ],
+    "PUDUR HIGH SCHOOL": [
+        13.1142,
+        80.1414
+    ],
+    "PUDUVALLUR JN.": [
+        13.2842,
+        80.1347
+    ],
+    "PUDUVOYAL": [
+        13.3436,
+        80.1589
+    ],
+    "PULICUT PANCHAYAT LIMIT": [
+        13.4142,
+        80.3114
+    ],
+    "PULIKULAM": [
+        13.2561,
+        80.0314
+    ],
+    "PULIPAKKAM": [
+        12.7194,
+        79.9942
+    ],
+    "PULIYUR": [
+        13.0536,
+        80.2214
+    ],
+    "PULIYUR KANDIGAI": [
+        13.4311,
+        80.0114
+    ],
+    "PUSHPA NAGAR": [
+        13.0564,
+        80.2314
+    ],
+    "PUSHPAGIRI": [
+        13.0114,
+        80.0114
+    ],
+    "PUSHPAGIRI RD. JN.": [
+        13.0142,
+        80.0144
+    ],
+    "PUTHAGARAM": [
+        13.1367,
+        80.2014
+    ],
+    "PUTHUCHATHIRAM": [
+        13.0364,
+        79.9722
+    ],
+    "PUTHUR MEPPEDU 6TH STREET": [
+        13.0314,
+        80.0586
+    ],
+    "PUZHITHIVAKKAM MRTS": [
+        12.9714,
+        80.2114
+    ],
+    "PUZHITHIVAKKAM RD JN.": [
+        12.9742,
+        80.2086
+    ],
+    "PUZHUTHIVAKKAM": [
+        12.9714,
+        80.2114
+    ],
+    "Q.M ARTS (MEN)": [
+        13.0442,
+        80.2786
+    ],
+    "Q.M.ARTS COLLEGE": [
+        13.0428,
+        80.2764
+    ],
+    "Q.M.C": [
+        13.0428,
+        80.2764
+    ],
+    "R.A.PURAM 3RD CROSS STREET": [
+        13.0244,
+        80.2536
+    ],
+    "R.R.KANDIGAI": [
+        13.4114,
+        80.0381
+    ],
+    "RAIL NAGAR/SRIDEVI KARUMARIAMM": [
+        13.0742,
+        80.1694
+    ],
+    "RAJAPALAYAM": [
+        13.2561,
+        80.2914
+    ],
+    "RAJESWARI NAGAR": [
+        13.0114,
+        80.1314
+    ],
+    "RAMAPURAM": [
+        13.0214,
+        80.1814
+    ],
+    "RAMAPURAM JN.": [
+        13.0236,
+        80.1783
+    ],
+    "RAMAPURAM MIOT": [
+        13.0211,
+        80.1811
+    ],
+    "RAMAPURAM PILLAIYAR KOIL": [
+        13.0194,
+        80.1842
+    ],
+    "RAMASAMY NAGAR": [
+        13.0842,
+        80.1364
+    ],
+    "RATION SHOP": [
+        13.0414,
+        80.2144
+    ],
+    "REDHILLS": [
+        13.1864,
+        80.1694
+    ],
+    "REGAL": [
+        13.1094,
+        80.2914
+    ],
+    "RETTAMBEDU": [
+        13.3442,
+        80.2114
+    ],
+    "RETTERI": [
+        13.1414,
+        80.2114
+    ],
+    "ROYAL NAGAR/MAC NAGAR": [
+        13.0194,
+        80.1583
+    ],
+    "ROYAPETTA HOSPITAL": [
+        13.0536,
+        80.2586
+    ],
+    "ROYAPURAM P.S": [
+        13.1021,
+        80.2918
+    ],
+    "S.H.B": [
+        13.0414,
+        80.2414
+    ],
+    "S.I.V.E.T": [
+        12.9214,
+        80.1694
+    ],
+    "S.P. KOIL RAILWAY GATE": [
+        12.7636,
+        79.9778
+    ],
+    "S.R.GATE": [
+        13.1514,
+        80.2742
+    ],
+    "S.R.KANDIGAI": [
+        13.4114,
+        80.0381
+    ],
+    "S.R.P. COLONY": [
+        13.1114,
+        80.2286
+    ],
+    "S.S.MOTOR": [
+        13.0364,
+        80.1414
+    ],
+    "SADANANDAPURAM": [
+        12.9036,
+        80.1114
+    ],
+    "SAIDAPET": [
+        13.0194,
+        80.2281
+    ],
+    "SAIDAPET WEST": [
+        13.0214,
+        80.2214
+    ],
+    "SAIDAPET WEST (JAYARAJ THE)": [
+        13.0189,
+        80.2236
+    ],
+    "SAIDAPET WEST PARSN NAGAR": [
+        13.0164,
+        80.2214
+    ],
+    "SAKTHI VINAYAGAR KOIL": [
+        13.0314,
+        80.1889
+    ],
+    "SALAIYANKANDIGI": [
+        13.4114,
+        80.0536
+    ],
+    "SALAMANGALAM ROAD JN": [
+        12.8914,
+        80.0436
+    ],
+    "SALAVANKUPPAM/DEVANORI": [
+        12.7836,
+        79.9214
+    ],
+    "SALIGRAMAM": [
+        13.0536,
+        80.1983
+    ],
+    "SALT OFFICE": [
+        13.0942,
+        80.2914
+    ],
+    "SAMIYAR PANNAI": [
+        12.9214,
+        80.2414
+    ],
+    "SAMSUNG ELECTRIC CO": [
+        12.9814,
+        79.9714
+    ],
+    "SANAPUTHUR": [
+        13.3856,
+        80.1414
+    ],
+    "SANKARA HEALTH CENTRE": [
+        12.9567,
+        80.1342
+    ],
+    "SANTHOME P.O": [
+        13.0332,
+        80.2778
+    ],
+    "SARAPANCHERY": [
+        12.8714,
+        79.9886
+    ],
+    "SARMA NAGAR": [
+        13.1114,
+        80.2514
+    ],
+    "SATHANKUPPAM": [
+        12.7814,
+        80.2214
+    ],
+    "SATHIYAMOORTHY NAGAR": [
+        13.1114,
+        80.2589
+    ],
+    "SATHUMA NAGAR": [
+        13.1492,
+        80.2972
+    ],
+    "SATHYA LOK GURUKULAM": [
+        12.8714,
+        80.0886
+    ],
+    "SATHYAMURTHY NAGAR": [
+        13.1114,
+        80.2589
+    ],
+    "SAYANI": [
+        13.0964,
+        80.2367
+    ],
+    "SAYANI/AYNAVARAM": [
+        13.0967,
+        80.2328
+    ],
+    "SBI": [
+        13.0414,
+        80.2414
+    ],
+    "SCREW FACTORY": [
+        13.1611,
+        80.2972
+    ],
+    "SCULPTURE ARTS COLLEGE": [
+        12.6242,
+        80.1914
+    ],
+    "SEAVOIL": [
+        13.1814,
+        80.3014
+    ],
+    "SECRETARIAT": [
+        13.0795,
+        80.2878
+    ],
+    "SECRETARIAT COLONY": [
+        13.0914,
+        80.2414
+    ],
+    "SEEMAVARAM": [
+        13.2986,
+        80.2114
+    ],
+    "SEKANYAM": [
+        13.2561,
+        80.2014
+    ],
+    "SELLIMEDU RD JN": [
+        12.6867,
+        80.1114
+    ],
+    "SELVAM SCHOOL": [
+        13.1114,
+        80.1414
+    ],
+    "SEMILIVARAM": [
+        13.2422,
+        80.1417
+    ],
+    "SEMMANCHERI": [
+        12.8464,
+        80.2247
+    ],
+    "SEMMANCHERI KUPPAM": [
+        12.8414,
+        80.2486
+    ],
+    "SEMMANCHERI S.C.B.": [
+        12.8492,
+        80.2214
+    ],
+    "SENKADU": [
+        12.7536,
+        79.9914
+    ],
+    "SENNEERKUPPAM": [
+        13.0567,
+        80.1114
+    ],
+    "SENTHIL NAGAR": [
+        13.1256,
+        80.1983
+    ],
+    "SETC QUARTERS": [
+        13.0694,
+        80.2054
+    ],
+    "SETHUPAKKAM": [
+        13.2114,
+        80.0381
+    ],
+    "SETTIMEDU": [
+        13.2561,
+        80.1186
+    ],
+    "SHAKTHI NAGAR": [
+        13.0364,
+        80.1414
+    ],
+    "SHANTHI/DAMS RD.": [
+        13.0642,
+        80.2678
+    ],
+    "SHENOY NAGAR METRO": [
+        13.0754,
+        80.221
+    ],
+    "SHIVASHANMUGAPURAM": [
+        13.1114,
+        80.2886
+    ],
+    "SHOLAVARAM": [
+        13.2411,
+        80.1467
+    ],
+    "SHOLAVARAM P.S.": [
+        13.2389,
+        80.1494
+    ],
+    "SHOZHANGANALLUR": [
+        12.8978,
+        80.2278
+    ],
+    "SHOZHANGANALLUR P.U.OFFICE": [
+        12.8942,
+        80.2242
+    ],
+    "SHOZHIPALAYAM": [
+        12.8714,
+        80.2314
+    ],
+    "SIDCO": [
+        13.0114,
+        80.2178
+    ],
+    "SIDCO ESTATE PHASE II": [
+        13.1028,
+        80.1725
+    ],
+    "SIDCO NAGAR": [
+        13.0942,
+        80.2014
+    ],
+    "SIKKARAYAPURAM": [
+        13.0036,
+        80.0986
+    ],
+    "SILANTHIKUTTAI": [
+        12.9814,
+        80.2456
+    ],
+    "SIMPSON": [
+        13.0714,
+        80.2711
+    ],
+    "SINGAPERUMALL KOIL": [
+        12.7636,
+        79.9778
+    ],
+    "SIPCOT": [
+        12.8275,
+        80.2211
+    ],
+    "SIRANJEEVI NAGAR": [
+        13.1414,
+        80.0886
+    ],
+    "SIRUCHERI": [
+        12.8314,
+        80.2114
+    ],
+    "SIRUKALATHUR": [
+        12.9814,
+        80.0764
+    ],
+    "SIRUKUNDRAM ROAD JN": [
+        12.6414,
+        80.1417
+    ],
+    "SIRUNIAM RD.JN.": [
+        13.2414,
+        80.1694
+    ],
+    "SIRUSERI I.T.PARK": [
+        12.8275,
+        80.2211
+    ],
+    "SIRUVAPURI": [
+        13.3442,
+        80.1414
+    ],
+    "SITHUKADU": [
+        13.1092,
+        79.9942
+    ],
+    "SLUM CLEARANCE BOARD": [
+        13.0414,
+        80.2644
+    ],
+    "SOKANDI": [
+        12.6314,
+        80.1114
+    ],
+    "SOLAMANGALAM RD JN": [
+        12.8914,
+        80.0436
+    ],
+    "SOMANGALAM": [
+        12.9114,
+        80.0436
+    ],
+    "SOMANGALAM RD /AMARAMBEDU RDJN": [
+        12.9886,
+        80.0414
+    ],
+    "SOMANGALAM RD JN/N.V.R.D.JN.": [
+        12.9364,
+        80.0592
+    ],
+    "SONALUR / PUDUR": [
+        12.8364,
+        80.1783
+    ],
+    "SORANJERI": [
+        13.1014,
+        80.0214
+    ],
+    "SORPONDERIKARAI": [
+        13.1611,
+        80.3014
+    ],
+    "SOTHUPERMEDU": [
+        13.2314,
+        80.1583
+    ],
+    "SOWBAKKIYA NAGAR": [
+        12.9364,
+        80.1414
+    ],
+    "SOZHIPALAYAM": [
+        12.8714,
+        80.2314
+    ],
+    "SPORTS UNIVERSITY": [
+        12.8483,
+        80.1542
+    ],
+    "SRI RAM ENGG.COLLEGE": [
+        13.1114,
+        79.9886
+    ],
+    "SRINIVASA NAGAR": [
+        12.9231,
+        80.1342
+    ],
+    "SRINIVASA PERUMAL KOIL": [
+        13.1114,
+        80.2914
+    ],
+    "SRINIVASA THEATER": [
+        12.9364,
+        80.1242
+    ],
+    "SRIPERUMBUDUR": [
+        12.9694,
+        79.9414
+    ],
+    "SRIUNGAVOOR": [
+        13.1814,
+        80.2114
+    ],
+    "SRP TOOLS": [
+        12.9678,
+        80.2494
+    ],
+    "ST THOMAS MOUNT METRO": [
+        12.9976,
+        80.2014
+    ],
+    "ST THOMAS MOUNT PO": [
+        12.9986,
+        80.2014
+    ],
+    "ST THOMAS MOUNT R.S": [
+        12.9928,
+        80.2001
+    ],
+    "STEPHEN CHURCH": [
+        13.1114,
+        80.2886
+    ],
+    "STERLING RD./METROLOG. DEPT.": [
+        13.0617,
+        80.2458
+    ],
+    "STERLING ROAD": [
+        13.0594,
+        80.2417
+    ],
+    "SULERIKADU": [
+        12.7214,
+        80.2436
+    ],
+    "SUMENTHIRAMEDU ROAD JN": [
+        13.3442,
+        80.1347
+    ],
+    "SUN THEATER": [
+        13.0368,
+        80.2454
+    ],
+    "SUNDARASOZHAPURAM": [
+        13.1014,
+        80.1114
+    ],
+    "SUNGUVARCHATHIRAM": [
+        12.9414,
+        79.8114
+    ],
+    "SUNNAMBU KALVOY": [
+        13.1514,
+        80.2986
+    ],
+    "SUNNAMBU KOLATHUR": [
+        12.9414,
+        80.1886
+    ],
+    "SUNNAMBUKULAM": [
+        13.5364,
+        80.1114
+    ],
+    "SURAPEDU": [
+        13.1492,
+        80.1814
+    ],
+    "T.B.INSTITUTE": [
+        13.0789,
+        80.2425
+    ],
+    "T.B.SANATORIUM": [
+        12.9366,
+        80.1292
+    ],
+    "T.N.C.F": [
+        13.0064,
+        80.2394
+    ],
+    "T.NAGAR": [
+        13.0427,
+        80.2375
+    ],
+    "T.V.S": [
+        13.0644,
+        80.2672
+    ],
+    "T.V.T RLY GATE": [
+        13.1594,
+        80.3015
+    ],
+    "TAMARAIPAKKAM": [
+        13.1814,
+        79.9414
+    ],
+    "TAMARAIPAKKAM RD.JN.": [
+        13.1786,
+        79.9442
+    ],
+    "TAMARAPAKKAM KOOT RD": [
+        13.1814,
+        79.9414
+    ],
+    "TAMBARAM": [
+        12.9249,
+        80.1188
+    ],
+    "TAMBARAM EAST": [
+        12.9236,
+        80.1214
+    ],
+    "TAMBARAM NEW TERMINUS": [
+        12.9214,
+        80.1114
+    ],
+    "TAMBARAM TOWN LIMIT": [
+        12.9114,
+        80.0919
+    ],
+    "TAMBARAM WEST": [
+        12.9249,
+        80.1188
+    ],
+    "TARAMANI": [
+        12.9772,
+        80.2428
+    ],
+    "TAYLORS ROAD": [
+        13.0811,
+        80.2414
+    ],
+    "TEACHERS COLONY": [
+        12.9814,
+        80.2589
+    ],
+    "TELEPHONE COLONY 1ST STREET": [
+        12.9814,
+        80.1983
+    ],
+    "TEMPLE JN.": [
+        13.0414,
+        80.1942
+    ],
+    "TEMPLE TOWER": [
+        13.0368,
+        80.2454
+    ],
+    "THADANDAR NAGAR": [
+        13.0189,
+        80.2286
+    ],
+    "THAI MOOGAMBIGAI": [
+        13.0483,
+        80.1411
+    ],
+    "THAI MOOGAMBIGAI TEMPLE": [
+        13.0483,
+        80.1411
+    ],
+    "THAILAPURAM": [
+        12.9414,
+        80.0114
+    ],
+    "THAIYUR KOMAN NAGAR": [
+        12.7483,
+        80.2214
+    ],
+    "THALAMBUR": [
+        12.8514,
+        80.2114
+    ],
+    "THALAYARIPALAYM": [
+        13.3856,
+        80.2114
+    ],
+    "THAMBUCHETTY ST": [
+        13.0942,
+        80.2914
+    ],
+    "THANDALACHERI": [
+        13.1814,
+        80.0536
+    ],
+    "THANDALAM": [
+        13.0231,
+        80.0114
+    ],
+    "THANDALAM RD JN.": [
+        13.0264,
+        80.0142
+    ],
+    "THANDALAM VILLAGE": [
+        13.0231,
+        80.0114
+    ],
+    "THANDARAI": [
+        13.0114,
+        80.0381
+    ],
+    "THANDAVARAYAN PALAYAM": [
+        13.2561,
+        80.1914
+    ],
+    "THANGAL": [
+        13.1311,
+        80.2977
+    ],
+    "THANGAL ERIKKARAI": [
+        13.1342,
+        80.2942
+    ],
+    "THANI POONDI": [
+        13.4114,
+        79.9114
+    ],
+    "THANIKACHALAM NAGAR": [
+        13.1367,
+        80.2214
+    ],
+    "THANTHONI AMMAN NAGAR": [
+        12.9114,
+        80.1414
+    ],
+    "THAPAL PETTI (MADHAVARAM)": [
+        13.1417,
+        80.2344
+    ],
+    "THARAPAKKAM MAIN RD": [
+        13.0086,
+        80.1414
+    ],
+    "THARATCHI COLONY": [
+        13.1414,
+        79.9114
+    ],
+    "THATCHUR ROAD JN": [
+        13.3114,
+        80.1694
+    ],
+    "THATHANMANJI": [
+        13.3442,
+        80.2114
+    ],
+    "THAZHAMBEDU": [
+        13.1814,
+        80.1114
+    ],
+    "THAZHAMBUR PANCHAYAT OFFICE": [
+        12.8514,
+        80.2114
+    ],
+    "THAZHAMBUR ROAD JN": [
+        12.8542,
+        80.2086
+    ],
+    "THAZHANKUPPAM": [
+        13.2114,
+        80.3228
+    ],
+    "THEAGARAYA COLLEGE": [
+        13.1009,
+        80.2828
+    ],
+    "THENDRAL NAGAR": [
+        13.1114,
+        80.1114
+    ],
+    "THERASAPURAM": [
+        13.4114,
+        80.3014
+    ],
+    "THEYAMPAKKAM": [
+        13.1942,
+        80.2114
+    ],
+    "THIAGARAYA NAGAR": [
+        13.0427,
+        80.2375
+    ],
+    "THIDEER NAGAR": [
+        13.0742,
+        80.2714
+    ],
+    "THIDEERKUPPAM(THOPPU)": [
+        13.1972,
+        80.3142
+    ],
+    "THILAIGANGA SUBWAY": [
+        12.9942,
+        80.1986
+    ],
+    "THILLAI GANGA NAGAR SUBWAY": [
+        12.9942,
+        80.1986
+    ],
+    "THILLAIGAANGA NAGAR SUBWAY": [
+        12.9942,
+        80.1986
+    ],
+    "THIRISULAM SAKHI NAGAR": [
+        12.9764,
+        80.1783
+    ],
+    "THIRU.VI.KA.NAGAR": [
+        13.1114,
+        80.2286
+    ],
+    "THIRUMANAN": [
+        13.1114,
+        80.0114
+    ],
+    "THIRUMANGALAM": [
+        13.0851,
+        80.1997
+    ],
+    "THIRUMAZHISAI": [
+        13.0536,
+        80.0594
+    ],
+    "THIRUMUDIVAKKAM": [
+        12.9644,
+        80.0914
+    ],
+    "THIRUMUDIVAKKAM SIDCO": [
+        12.9611,
+        80.0886
+    ],
+    "THIRUMUDIVAKKAM SIDCO-I": [
+        12.9611,
+        80.0886
+    ],
+    "THIRUMULLAIVOYAL": [
+        13.1256,
+        80.1344
+    ],
+    "THIRUMULLAIVOYAL COLONY": [
+        13.1286,
+        80.1286
+    ],
+    "THIRUMULLAIVOYAL SIDCO": [
+        13.1214,
+        80.1389
+    ],
+    "THIRNEERMALAI": [
+        12.9644,
+        80.1114
+    ],
+    "THIRUNEERMALAI MADHURAVOYAL JN": [
+        12.9694,
+        80.1142
+    ],
+    "THIRUNEERMALAI RD JN.": [
+        12.9675,
+        80.1214
+    ],
+    "THIRUNEERMALAI RD.JN.": [
+        12.9675,
+        80.1214
+    ],
+    "THIRUNILAI": [
+        13.2722,
+        80.1694
+    ],
+    "THIRUNILLAI RD.JN.": [
+        13.2694,
+        80.1667
+    ],
+    "THIRUNILLAI WATER TANK": [
+        13.2754,
+        80.1714
+    ],
+    "THIRUNINDRAVOOR": [
+        13.1214,
+        80.0278
+    ],
+    "THIRUPALAIVANAM": [
+        13.4311,
+        80.2594
+    ],
+    "THIRUPORUR": [
+        12.7242,
+        80.1914
+    ],
+    "THIRUSOOLAM NATIONAL AIRPORT": [
+        12.9794,
+        80.1741
+    ],
+    "THIRUTHUVELI": [
+        12.7536,
+        79.9114
+    ],
+    "THIRUVALLUR": [
+        13.1422,
+        79.9111
+    ],
+    "THIRUVALLUR COLLECTOR OFF": [
+        13.1364,
+        79.9086
+    ],
+    "THIRUVALUVAR RD.JN.": [
+        13.1114,
+        80.1886
+    ],
+    "THIRUVANMIYUR": [
+        12.9876,
+        80.2491
+    ],
+    "THIRUVANMIYUR R.S.": [
+        12.9876,
+        80.2491
+    ],
+    "THIRUVEDANTHAI": [
+        12.7914,
+        80.2494
+    ],
+    "THIRUVERKADU": [
+        13.0714,
+        80.1242
+    ],
+    "THIRUVOTRIYUR": [
+        13.1594,
+        80.3015
+    ],
+    "THIRUVOTRIYUR RAILWAY QUARTERS": [
+        13.1536,
+        80.2986
+    ],
+    "THIRUVOTRIYUR TEMPLE": [
+        13.1564,
+        80.3014
+    ],
+    "THOMMARAM BEDU": [
+        13.1414,
+        80.0536
+    ],
+    "THORAPAKKAM": [
+        12.9436,
+        80.2414
+    ],
+    "THORAPAKKAM CHECKPOST": [
+        12.9467,
+        80.2442
+    ],
+    "THORAPPAKKAM P.T.C COLONY": [
+        12.9364,
+        80.2414
+    ],
+    "THORAPPAKKAM TEA SHOP": [
+        12.9414,
+        80.2386
+    ],
+    "THOTTIKALAI JN.": [
+        13.2842,
+        80.2114
+    ],
+    "THOZHUDUR": [
+        13.3114,
+        80.0536
+    ],
+    "THREE STATUE (AYANAMBAKKAM)": [
+        13.0814,
+        80.1414
+    ],
+    "THRUVOTRIYUR TEMPLE": [
+        13.1564,
+        80.3014
+    ],
+    "THUMBAKKAM": [
+        13.2561,
+        80.0536
+    ],
+    "TOLL PLAZA": [
+        12.9692,
+        80.2456
+    ],
+    "TOLLGATE": [
+        13.1219,
+        80.2952
+    ],
+    "TONDAIAYRPET": [
+        13.1206,
+        80.2863
+    ],
+    "TRAFFIC AID POST": [
+        13.0644,
+        80.2114
+    ],
+    "TRAVELLERS BANGALOW": [
+        12.9214,
+        80.1114
+    ],
+    "TRIPLICANE": [
+        13.0536,
+        80.2736
+    ],
+    "TRIPLICANE OT.": [
+        13.0564,
+        80.2714
+    ],
+    "TRUSTPURAM": [
+        13.0483,
+        80.2214
+    ],
+    "TSR RAJALAKSHMI NAGAR": [
+        13.1256,
+        80.0214
+    ],
+    "TULUKATHAMMAN KOIL": [
+        13.0414,
+        80.1814
+    ],
+    "TVS MCC MOTORS": [
+        13.0414,
+        80.1114
+    ],
+    "U.S.I.S.": [
+        13.0514,
+        80.2536
+    ],
+    "ULLAGARAM": [
+        12.9714,
+        80.1983
+    ],
+    "UNIVESITY CLUB/ MINERVA": [
+        13.0644,
+        80.2814
+    ],
+    "UPPALAYAM": [
+        13.0942,
+        80.0411
+    ],
+    "UPPARA PALAYAM": [
+        13.1814,
+        80.1114
+    ],
+    "UPPARAPALAYAM & POTHUR": [
+        13.1842,
+        80.1142
+    ],
+    "URAPAKKAM": [
+        12.8647,
+        80.0769
+    ],
+    "URAPAKKAM BRIDGE": [
+        12.8694,
+        80.0814
+    ],
+    "UTHAMAR GANDHISALAI (CORP.OFF)": [
+        13.0594,
+        80.2417
+    ],
+    "UTHANDI VILLAGE": [
+        12.9014,
+        80.2494
+    ],
+    "UTHUKOTTAI": [
+        13.3364,
+        79.8942
+    ],
+    "V.HOUSE P.S": [
+        13.0483,
+        80.2786
+    ],
+    "V.M.STREET": [
+        13.0364,
+        80.2644
+    ],
+    "V.S.B.GARDEN": [
+        13.0842,
+        80.1214
+    ],
+    "VAANAGARAM": [
+        13.0614,
+        80.1414
+    ],
+    "VADAKKU MALAIAMBAKKAM": [
+        13.0142,
+        80.0633
+    ],
+    "VADAMADURAI": [
+        13.3114,
+        80.0114
+    ],
+    "VADAMADURAI KANDIGAI": [
+        13.3086,
+        80.0142
+    ],
+    "VADAMANGALAM ROAD JN": [
+        12.9814,
+        79.9114
+    ],
+    "Vadanemili": [
+        12.7536,
+        80.2486
+    ],
+    "VADAPALANI": [
+        13.0503,
+        80.2118
+    ],
+    "VADAPALANI P.S.": [
+        13.0486,
+        80.2114
+    ],
+    "VADAPERUMBAKKAM": [
+        13.1644,
+        80.2114
+    ],
+    "VADATHUR": [
+        12.9114,
+        79.9114
+    ],
+    "VADHATTUR JN.": [
+        12.9142,
+        79.9142
+    ],
+    "VALARPURAM": [
+        13.0114,
+        79.9114
+    ],
+    "VALASAI ELLUPAI RD JN": [
+        13.1942,
+        79.8886
+    ],
+    "VALASARAVAKKAM": [
+        13.0411,
+        80.1786
+    ],
+    "VALLAKKOTTAI": [
+        12.8714,
+        79.9414
+    ],
+    "VALLALAR NAGAR": [
+        13.1094,
+        80.2792
+    ],
+    "VALLAM": [
+        12.6972,
+        79.9414
+    ],
+    "VALLANUR P.U.O": [
+        13.1814,
+        80.1214
+    ],
+    "VALLIYUR SCHOOL": [
+        13.1114,
+        79.7914
+    ],
+    "VALLUR": [
+        13.2114,
+        80.3014
+    ],
+    "VALLUR SCHOOL": [
+        13.2142,
+        80.2986
+    ],
+    "VANAGARAM": [
+        13.0614,
+        80.1414
+    ],
+    "VANDALUR GATE": [
+        12.8892,
+        80.0817
+    ],
+    "VANDALUR ROAD.JN.": [
+        12.8942,
+        80.0886
+    ],
+    "VANDALUR ZOO": [
+        12.8892,
+        80.0817
+    ],
+    "VANIMAHAL": [
+        13.0414,
+        80.2414
+    ],
+    "VANJIVANCHERY": [
+        12.9114,
+        80.0381
+    ],
+    "VANUVAMBEDU": [
+        12.9814,
+        80.1944
+    ],
+    "VANUVAMPET": [
+        12.9814,
+        80.1944
+    ],
+    "VANUVAMPET R.S.": [
+        12.9814,
+        80.1944
+    ],
+    "VARADARAJA PURAM": [
+        12.9114,
+        80.0886
+    ],
+    "VARADHARAJA THEATER": [
+        13.0114,
+        80.2114
+    ],
+    "VARANAVASI": [
+        12.8364,
+        79.8886
+    ],
+    "VASANTHAM NAGAR": [
+        13.1114,
+        80.1114
+    ],
+    "VASANTHI AMMAN KOIL": [
+        12.9414,
+        80.1983
+    ],
+    "VATTAMBAKKAM": [
+        12.8414,
+        79.9914
+    ],
+    "VATTAMBAKKAM RD JN": [
+        12.8386,
+        79.9942
+    ],
+    "VAYALUR": [
+        12.5442,
+        80.1694
+    ],
+    "VAYALUR CROSS ROAD": [
+        12.5414,
+        80.1667
+    ],
+    "VAZHUTHALAMBEDU": [
+        12.9644,
+        80.0381
+    ],
+    "VAZHUTHALAMBEDU RD. JN": [
+        12.9614,
+        80.0411
+    ],
+    "VAZHUTHIGAIMEDU": [
+        13.2561,
+        80.2414
+    ],
+    "VEENUS": [
+        13.1114,
+        80.2214
+    ],
+    "VEERABADRA NAGAR": [
+        12.9414,
+        80.1914
+    ],
+    "VEERAPURAM": [
+        13.1814,
+        80.0911
+    ],
+    "VEERAPURAM RD JN.": [
+        13.1786,
+        80.0942
+    ],
+    "VELACHERY": [
+        12.9796,
+        80.2211
+    ],
+    "VELACHERY R.S.": [
+        12.9796,
+        80.2211
+    ],
+    "VELACHERY VIJAYA NAGAR": [
+        12.9786,
+        80.2236
+    ],
+    "VELANGADUPAKKAM": [
+        13.1914,
+        80.1914
+    ],
+    "VELAPPANCHAVADI": [
+        13.0486,
+        80.1414
+    ],
+    "VELLAI KULAM AMBEDKAR STATUJN": [
+        13.1364,
+        79.9086
+    ],
+    "VELLAIKAL": [
+        12.9414,
+        80.1886
+    ],
+    "VELLAKULAM JN.": [
+        13.1364,
+        79.9086
+    ],
+    "VELLALA ST.JN.": [
+        13.0942,
+        80.2314
+    ],
+    "VELLAVEDU": [
+        13.0644,
+        80.0411
+    ],
+    "VELS UNIVERSITY": [
+        12.9814,
+        80.1644
+    ],
+    "VEMBAKKAM": [
+        13.2114,
+        80.2114
+    ],
+    "VEMBEDU": [
+        12.6942,
+        80.1414
+    ],
+    "VENBAKKAM": [
+        12.7214,
+        79.9886
+    ],
+    "VENGADU ROAD JN": [
+        12.9414,
+        79.9886
+    ],
+    "VENGAIVASAL P.H.CENTRE": [
+        12.9114,
+        80.1783
+    ],
+    "VENGAIVASAL RD JN": [
+        12.9142,
+        80.1754
+    ],
+    "VENGAIVASAL RD.JN.": [
+        12.9142,
+        80.1754
+    ],
+    "VENGAL": [
+        13.2561,
+        79.9414
+    ],
+    "VENGAL CROSS ROAD": [
+        13.2536,
+        79.9386
+    ],
+    "VENGALKUPPAM": [
+        13.2586,
+        79.9442
+    ],
+    "VENGAMBAKKAM": [
+        12.8586,
+        80.1342
+    ],
+    "VENGAMBAKKAM / V.RD JN": [
+        12.8542,
+        80.1314
+    ],
+    "VENGAMBAKKAM RD JN.": [
+        12.8542,
+        80.1314
+    ],
+    "VENGATAPURAM": [
+        13.1114,
+        80.1342
+    ],
+    "VENGOOR JUNCTION": [
+        13.0114,
+        79.9114
+    ],
+    "VENKADAMANGALAM": [
+        12.8483,
+        80.1414
+    ],
+    "VENKADU": [
+        12.9414,
+        79.9886
+    ],
+    "VENKAMBAKKAM": [
+        12.8586,
+        80.1342
+    ],
+    "VENKAMPAKKAM VILLAGE": [
+        12.8586,
+        80.1342
+    ],
+    "VENKATACHALAM NAGAR": [
+        13.1114,
+        80.1114
+    ],
+    "VENKATAMANGALAM": [
+        12.8483,
+        80.1414
+    ],
+    "VENKATAPURAM": [
+        13.1114,
+        80.1342
+    ],
+    "VENKATESAPERUMAL KOIL": [
+        13.1114,
+        80.2914
+    ],
+    "VENKATESAPURAM": [
+        13.1114,
+        80.1342
+    ],
+    "VENKATHAKULAM": [
+        13.1364,
+        79.9086
+    ],
+    "VENKATHUR": [
+        13.1342,
+        79.9214
+    ],
+    "VEPPAMPATTU E.WARAN NAGAR": [
+        13.1214,
+        80.0067
+    ],
+    "VEPPAMPATTU R.S.": [
+        13.1245,
+        80.0039
+    ],
+    "VEPPATHUR": [
+        13.2561,
+        80.0536
+    ],
+    "VEPPUMPATTU PULIYAMARAM": [
+        13.1242,
+        80.0011
+    ],
+    "VERKADU": [
+        13.0714,
+        80.1242
+    ],
+    "VETERINARY HOSPITAL": [
+        13.0942,
+        80.2414
+    ],
+    "VETTUVANKENI": [
+        12.9367,
+        80.2514
+    ],
+    "VICHOOR": [
+        13.2114,
+        80.2414
+    ],
+    "VICTORIA TEACHERS COLONY": [
+        12.9364,
+        80.1414
+    ],
+    "VIDYODAYA": [
+        13.0483,
+        80.2367
+    ],
+    "VIJAYA NAGAR": [
+        12.9786,
+        80.2236
+    ],
+    "VIJAYALAKSHMI APARTMENTS": [
+        13.0286,
+        80.2144
+    ],
+    "VILAMBAKKAM": [
+        13.3442,
+        80.1342
+    ],
+    "VILINJAMBAKKAM AMMAN KOIL": [
+        13.1114,
+        80.1114
+    ],
+    "VILLIVAKKAM": [
+        13.1067,
+        80.2052
+    ],
+    "VINAYAGAPURAM": [
+        13.1414,
+        80.2114
+    ],
+    "VINAYAGAR KOIL": [
+        13.0414,
+        80.1942
+    ],
+    "VIRUGAMBAKKAM": [
+        13.0514,
+        80.1886
+    ],
+    "VIRUGAMBAKKAM MARKET": [
+        13.0486,
+        80.1914
+    ],
+    "VISHNUVAKKAM": [
+        13.1364,
+        79.8414
+    ],
+    "VIVEK & CO (KRISHNAN KOIL)": [
+        13.0414,
+        80.2342
+    ],
+    "VIVEKANANDA HOUSE": [
+        13.0494,
+        80.2803
+    ],
+    "VIVEKANANDA NAGAR": [
+        13.1367,
+        80.2114
+    ],
+    "VOC NAGAR JN.": [
+        13.1368,
+        80.2891
+    ],
+    "VYASARPADI": [
+        13.1042,
+        80.2573
+    ],
+    "WALAJABAD": [
+        12.7914,
+        79.8114
+    ],
+    "WATER PIPE THATHANKUPPAM": [
+        13.1114,
+        80.1942
+    ],
+    "WATER SUPPLY HEAD WORK": [
+        13.1014,
+        80.2886
+    ],
+    "WEELS INDIA RD.JN.": [
+        13.1014,
+        80.1783
+    ],
+    "WESLEY H.S": [
+        13.0536,
+        80.2586
+    ],
+    "WOMEN'S POLYTECHNIC": [
+        13.0039,
+        80.2458
+    ],
+    "Y.M.I.A": [
+        13.0242,
+        80.2514
+    ],
+    "THIRUNEERMALAI": [
+        12.9598,
+        80.1184
+    ],
+    "VADANEMILI": [
+        12.8215,
+        80.2438
+    ]
+}
