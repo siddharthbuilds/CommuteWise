@@ -32,6 +32,7 @@ def build_weighted_graph(graph, all_coords, node_mode):
                 lat2,
                 lon2
             )
+            distance = max(distance, 0.05)
             weighted_graph[node].append(
                 {
                     "to": neighbour,
