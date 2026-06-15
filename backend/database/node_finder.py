@@ -1,8 +1,8 @@
-from data_cleaning_bus import df_bus
-from data_cleaning_electric_train import df_rail
-from data_cleaning_metro import df
+from database.data_cleaning_bus import df_bus
+from database.data_cleaning_electric_train import df_rail
+from database.data_cleaning_metro import df
 import json
-with open("all_coords.json", "r") as f:
+with open("./database/all_coords.json", "r") as f:
     all_coords = json.load(f)
 bus_nodes = set(
     df_bus["stop_name"].dropna().str.strip()

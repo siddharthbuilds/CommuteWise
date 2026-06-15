@@ -1,11 +1,11 @@
 import json
 import heapq
 from math import radians, sin, cos, sqrt, atan2
-from graph_finder import graph
-from node_finder import node_mode
+from database.graph_finder import graph
+from database.node_finder import node_mode
 import copy
 
-with open("all_coords.json", "r") as f:
+with open("./database/all_coords.json", "r") as f:
     all_coords = json.load(f)
 
 def haversine(lat1, lon1, lat2, lon2):

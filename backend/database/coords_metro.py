@@ -1,4 +1,4 @@
-from data_cleaning_metro import df
+from database.data_cleaning_metro import df
 import json
 metro_coords = {
     # Blue Line
@@ -50,5 +50,5 @@ metro_coords["Guindy"] = metro_coords.pop("Gindy")
 metro_coords["Little Mount"] = metro_coords.pop("Liltle mount")
 print(metro_nodes - set(metro_coords.keys()))
 
-with open("metro_coords.json", "w") as f:
+with open("./database/metro_coords.json", "w") as f:
     json.dump(metro_coords, f, indent=4)

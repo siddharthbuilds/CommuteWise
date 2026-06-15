@@ -1,4 +1,4 @@
-from data_cleaning_electric_train import df_rail
+from database.data_cleaning_electric_train import df_rail
 import json
 stations = sorted(
     df_rail["Station"]
@@ -103,5 +103,5 @@ print(
     rail_nodes -
     set(chennai_stations_coords.keys())
 )
-with open("rail_coords.json", "w") as f:
+with open("./database/rail_coords.json", "w") as f:
     json.dump(chennai_stations_coords, f, indent=4)

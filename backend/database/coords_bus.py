@@ -1,6 +1,6 @@
-from data_cleaning_bus import df_bus
-from bat1 import bus_coords_batch_1
-from bat2 import bus_coords_batch_2
+from database.data_cleaning_bus import df_bus
+from database.bat1 import bus_coords_batch_1
+from database.bat2 import bus_coords_batch_2
 import json
 unique_stops = sorted(df_bus["stop_name"].unique())
 print(unique_stops)
@@ -696,5 +696,5 @@ missing = (
     set(df_bus["stop_name"])
     - set(chennai_bus_stops_coords.keys())
 )
-with open("bus_coords.json", "w") as f:
+with open("./database/bus_coords.json", "w") as f:
     json.dump(chennai_bus_stops_coords, f, indent=4)

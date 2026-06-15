@@ -1,6 +1,6 @@
 import pandas as pd
 from collections import defaultdict
-df_bus=pd.read_csv("route_detail (1).csv")
+df_bus=pd.read_csv("./database/route_detail (1).csv")
 route = "1"
 bus_graph = defaultdict(set)
 df_bus["stop_id"] = df_bus["stop_id"].astype(int)

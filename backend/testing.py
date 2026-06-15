@@ -2,7 +2,7 @@ import sys
 import os
 
 
-from djikstra import find_routes,explain_route
+from database.djikstra import find_routes,explain_route
 from location import locate
 
 [l1,l2] = locate("Phoenix MarketCity Chennai")
