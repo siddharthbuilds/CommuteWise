@@ -1,4 +1,4 @@
-from graph_finder import graph
+from graph_finder import graph,df,df_rail,df_bus
 from collections import deque
 
 def bfs(graph, start, end):
@@ -36,4 +36,22 @@ def bfs(graph, start, end):
                 queue.append(neighbour)
 
     return None
+print("Total nodes:", len(graph))
+print("Airport exists:", "Chennai Airport" in graph)
+print("THIRUVOTRIYUR exists:", "THIRUVOTRIYUR" in graph)
+print("Velacherry RS exists:", "Velacherry RS" in graph)
+print("Airport neighbours:")
+print(graph["Chennai Airport"])
+print("THIRUVOTRIYUR neighbours:")
+print(graph["THIRUVOTRIYUR"])
+metro_nodes = set(df["Station Name"])
 
+rail_nodes = set(df_rail["Station"])
+
+bus_nodes = set(df_bus["stop_name"])
+
+print("Bus-Metro overlap:",
+      metro_nodes & bus_nodes)
+
+print("Bus-Rail overlap:",
+      rail_nodes & bus_nodes)

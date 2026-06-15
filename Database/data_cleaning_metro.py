@@ -1,6 +1,5 @@
 import pandas as pd
 df=pd.read_csv("chennai_metro_rail_limited_chennai.csv")
-print(df.head(20))
 print(df.columns)
 extension = pd.DataFrame({
     "City": ["Chennai"] * 7,
