@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from pydantic import BaseModel
+from routes.routes import Routes
+from routes.route_functions import get_all_routes, get_badges
 
 GOOGLE_API_KEY = ''
 app = FastAPI(title='CommuteWise')
@@ -19,45 +21,6 @@ class RouteRequest (BaseModel):
     date:str
     time:str
 
-class Routes:
-    def get_distance(self):
-        self.distance=0
-
-    def get_duration(self):
-        self.duration=0
-
-    def get_expenditure(self):
-        self.expenditure=0
-
-    def get_timedelay(self):
-        self.timedelay=0
-
-    def get_carbonrate(self):
-        self.carbonrate=0
-
-    def get_rating(self):
-        self.marks=0
-
-    def add_badge(self,str):
-        self.badge.append(str)
-    
-    def __init__(self,mode):
-        self.mode=mode
-        self.badges=[]
-        self.get_distance()
-        self.get_duration()
-        self.get_expenditure()
-        self.get_timedelay()
-        self.get_carbonrate()
-        self.get_rating()
-
-def get_all_routes(source,destination):
-    all_routes=[]
-    return all_routes
-
-def get_badges(all_routes):
-    return
-
 @app.get('/api/home')
 def home():
     return {"message": "Backend API works!!"}
@@ -65,7 +28,6 @@ def home():
 @app.post('/api/routes')
 def routes(data:RouteRequest):
     return {data.source}
-
 
 if __name__ == "__main__":
     uvicorn.run("main:app",host="127.0.0.1", port=8000, reload=True)
