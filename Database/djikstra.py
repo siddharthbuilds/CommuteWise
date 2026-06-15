@@ -18,7 +18,7 @@ def haversine(lat1, lon1, lat2, lon2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return R * c
 
-def build_weighted_graph(graph, all_coords):
+def build_weighted_graph(graph, all_coords, node_mode):
     weighted_graph = {}
     for node in graph:
         weighted_graph[node] = []
@@ -32,7 +32,11 @@ def build_weighted_graph(graph, all_coords):
                 lon2
             )
             weighted_graph[node].append(
-                (neighbour, distance)
+                {
+                    "to": neighbour,
+                    "distance": distance,
+                    "mode": node_mode[node]
+                }
             )
     return weighted_graph
 
@@ -40,10 +44,12 @@ def add_transfer_edges(
         weighted_graph,
         all_coords,
         node_mode,
-        radius_km=0.3,
-        walking_penalty=3):
+        radius_km=0.3):
+
     nodes = list(weighted_graph.keys())
+
     transfer_count = 0
+
     for i in range(len(nodes)):
         node_a = nodes[i]
         lat1, lon1 = all_coords[node_a]
@@ -61,17 +67,20 @@ def add_transfer_edges(
                 lon2
             )
             if distance <= radius_km:
-
-                walking_cost = distance * walking_penalty
-
                 weighted_graph[node_a].append(
-                    (node_b, walking_cost)
+                    {
+                        "to": node_b,
+                        "distance": distance,
+                        "mode": "walk"
+                    }
                 )
-
                 weighted_graph[node_b].append(
-                    (node_a, walking_cost)
+                    {
+                        "to": node_a,
+                        "distance": distance,
+                        "mode": "walk"
+                    }
                 )
-
                 transfer_count += 1
     print("Transfer edges:", transfer_count)
     return weighted_graph
@@ -90,53 +99,105 @@ def dijkstra(graph, source, destination):
             continue
         if current_node == destination:
             break
-        for neighbour, weight in graph[current_node]:
+        for edge in graph[current_node]:
+            neighbour = edge["to"]
+            weight = edge["distance"]
+            if edge["mode"] == "walk":
+                weight *= 3
             new_dist = current_dist + weight
             if new_dist < distances[neighbour]:
                 distances[neighbour] = new_dist
-                parent[neighbour] = current_node
+                parent[neighbour] = (
+                    current_node,
+                    edge
+                )
                 heapq.heappush(
                     pq,
                     (new_dist, neighbour)
                 )
-    if source == destination:
-        return [source]
     if destination not in parent:
         return None
-    path = []
-    curr = destination
-    while curr != source:
-        path.append(curr)
-        curr = parent[curr]
-    path.append(source)
-    path.reverse()
-    return path, distances[destination]
+    segments = []
+    current = destination
+    while current != source:
+        prev_node, edge = parent[current]
+        segments.append(
+            (
+                prev_node,
+                current,
+                edge["mode"],
+                edge["distance"]
+            )
+        )
+        current = prev_node
+    segments.reverse()
+    return segments, distances[destination]
+
+
+def explain_route(segments):
+    total_walk = 0
+    total_bus = 0
+    total_rail = 0
+    total_metro = 0
+    transfers = 0
+    previous_mode = None
+    print("\nROUTE\n")
+    for start, end, mode, distance in segments:
+        print(
+            f"{start} -> {end}"
+        )
+        print(
+            f"Mode: {mode}"
+        )
+        print(
+        f"Distance: {distance} km\n")
+        
+        if previous_mode and previous_mode != mode:
+            transfers += 1
+        previous_mode = mode
+        if mode == "walk":
+            total_walk += distance
+        elif mode == "bus":
+            total_bus += distance
+        elif mode == "rail":
+            total_rail += distance
+        elif mode == "metro":
+            total_metro += distance
+    print("Summary")
+    print("-------")
+    print("Walking:", round(total_walk, 2), "km")
+    print("Bus:", round(total_bus, 2), "km")
+    print("Rail:", round(total_rail, 2), "km")
+    print("Metro:", round(total_metro, 2), "km")
+    print("Transfers:", transfers)
+
 
 
 graph["THIRNEERMALAI"] = []
 graph["Vadanemili"] = []
 weighted_graph = build_weighted_graph(
     graph,
-    all_coords
+    all_coords,
+    node_mode
 )
-print(len(weighted_graph))
 weighted_graph = add_transfer_edges(
     weighted_graph,
     all_coords,
     node_mode
 )
-print(
-    dijkstra(
-        weighted_graph,
-        "LIC",
-        "Government Estate"
-    )
-)
-
-route = dijkstra(
+result = dijkstra(
     weighted_graph,
     "Velacherry RS",
     "LIC"
 )
 
-print(route)
+segments, distance = result
+
+print("Weighted Distance:", distance)
+
+explain_route(segments)
+print("Velacherry RS:", all_coords["Velacherry RS"])
+print("VELACHERY:", all_coords["VELACHERY"])
+
+print("D.M.S:", all_coords["D.M.S"])
+print("AG-DMS:", all_coords["AG-DMS"])
