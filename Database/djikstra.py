@@ -21,15 +21,17 @@ def haversine(lat1, lon1, lat2, lon2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return R * c
 
-def nearest_node(lat, lon, all_coords):
-    best_node = None
-    best_dist = float("inf")
+def nearest_nodes(lat, lon, all_coords, k=5):
+    distances = []
+
     for node, (nlat, nlon) in all_coords.items():
         d = haversine(lat, lon, nlat, nlon)
-        if d < best_dist:
-            best_dist = d
-            best_node = node
-    return best_node
+        distances.append((d, node))
+
+    distances.sort()
+
+    return [node for _, node in distances[:k]]
+
 
 def build_weighted_graph(graph, all_coords, node_mode):
     weighted_graph = {}
@@ -147,7 +149,40 @@ def get_candidate_routes(weighted_graph, source, destination, k=10):
                     edge["cost"] *= 1.5
     return routes
 
+def find_routes(source_lat, source_lon,
+                dest_lat, dest_lon):
 
+    source_candidates = nearest_nodes(
+        source_lat,
+        source_lon,
+        all_coords,
+        k=5
+    )
+
+    destination_candidates = nearest_nodes(
+        dest_lat,
+        dest_lon,
+        all_coords,
+        k=5
+    )
+
+    all_routes = []
+
+    for src in source_candidates:
+        for dst in destination_candidates:
+
+            routes = get_candidate_routes(
+                weighted_graph,
+                src,
+                dst,
+                k=2
+            )
+
+            all_routes.extend(routes)
+
+    all_routes.sort(key=lambda x: x[1])
+
+    return all_routes[:10]
 
 graph["THIRNEERMALAI"] = []
 graph["Vadanemili"] = []
@@ -157,19 +192,41 @@ weighted_graph = add_transfer_edges(weighted_graph, all_coords, node_mode)
 source_lat, source_lon = 12.99, 80.21
 dest_lat,   dest_lon   = 12.5,  80.13
 
-source      = nearest_node(source_lat, source_lon, all_coords)
-destination = nearest_node(dest_lat,   dest_lon,   all_coords)
+source_candidates = nearest_nodes(
+    source_lat,
+    source_lon,
+    all_coords,
+    k=5
+)
 
-print(f"Source node: {source}")
-print(f"Destination node: {destination}")
+destination_candidates = nearest_nodes(
+    dest_lat,
+    dest_lon,
+    all_coords,
+    k=5
+)
+all_routes = []
 
+for src in source_candidates:
+    for dst in destination_candidates:
 
-routes = get_candidate_routes(weighted_graph, source, destination, k=10)
+        routes = get_candidate_routes(
+            weighted_graph,
+            src,
+            dst,
+            k=2
+        )
+
+        all_routes.extend(routes)
+
+all_routes.sort(key=lambda x: x[1])
+
+routes = all_routes[:10]
+
 
 for idx, (segments, distance) in enumerate(routes):
     print(f"\nRoute {idx + 1}")
     print("Distance:", round(distance, 2))
     explain_route(segments)
 
-print(all_coords.get("VAYALUR CROSS ROAD"))
-print(all_coords.get("ADAMBAKKAM P.S"))
+
