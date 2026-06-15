@@ -19,12 +19,40 @@ class RouteRequest (BaseModel):
     date:str
     time:str
 
+class Routes:
+    def get_distance(self):
+        self.distance=0
+
+    def get_duration(self):
+        self.duration=0
+
+    def get_expenditure(self):
+        self.expenditure=0
+
+    def get_timedelay(self):
+        self.timedelay=0
+
+    def get_carbonrate(self):
+        self.carbonrate=0
+
+    def get_rating(self):
+        self.marks=0
+    
+    def __init__(self,mode):
+        self.mode=mode
+        self.get_distance()
+        self.get_duration()
+        self.get_expenditure()
+        self.get_timedelay()
+        self.get_carbonrate()
+        self.get_rating()
+
 @app.get('/api/home')
 def home():
     return {"message": "Backend API works!!"}
 
-@app.post('/api/getroutes')
-def get_routes(data:RouteRequest):
+@app.post('/api/routes')
+def routes(data:RouteRequest):
     return {data.source}
 
 
