@@ -1,27 +1,3 @@
-// ── Autocomplete ───────────────────────────────────────────────────────────
-function setupAutocomplete(inputId) {
-  const input = document.getElementById(inputId);
-  let dropdown = document.getElementById(inputId + '-suggestions');
-  if (!dropdown) {
-    dropdown = document.createElement('ul');
-    dropdown.id = inputId + '-suggestions';
-    dropdown.className = 'autocomplete-list';
-    input.parentElement.appendChild(dropdown);
-  }
-  input.addEventListener('input', () => {
-    dropdown.innerHTML = '';
-    const q = input.value.trim();
-    if (q.length < 2 || !ALL_STOPS.length) return;
-    fuzzyMatch(q).forEach(stop => {
-      const li = document.createElement('li');
-      li.textContent = stop;
-      li.addEventListener('mousedown', () => { input.value = stop; dropdown.innerHTML = ''; });
-      dropdown.appendChild(li);
-    });
-  });
-  input.addEventListener('blur', () => setTimeout(() => dropdown.innerHTML = '', 150));
-}
-
 // ── Swap ───────────────────────────────────────────────────────────────────
 function swapLocations() {
   const src = document.getElementById('source');
@@ -37,20 +13,35 @@ function setDefaultDatetime() {
     new Date(now - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
 }
 
-// ── Global segment store (avoids JSON-in-onclick issues) ───────────────────
-let _segmentStore = [];
+// ── Badge helpers ──────────────────────────────────────────────────────────
+const BADGE_CLASS = { Best: 'badge-best', Fastest: 'badge-fastest', Safest: 'badge-greenest', Cheapest: 'badge-cheapest' };
+const BADGE_LABEL = { Best: '🏆 Best', Fastest: '⚡ Fastest', Safest: '🛡️ Safest', Cheapest: '💰 Cheapest' };
+const CARD_CLASS  = { Best: 'best', Fastest: 'fastest', Safest: 'greenest', Cheapest: 'cheapest' };
 
-function showPath(idx) {
-  const segments = _segmentStore[idx];
-  if (!segments) return;
-  const modeIcon = { metro: '🚇', rail: '🚆', bus: '🚌', walk: '🚶' };
-  const rows = [
-    `<div class="path-stop"><span class="path-dot start"></span><span class="path-mode">${modeIcon[segments[0].mode] || '🚌'}</span><span>${segments[0].from}</span></div>`
-  ];
-  for (const seg of segments) {
-    rows.push(`<div class="path-stop"><span class="path-dot"></span><span class="path-mode">${modeIcon[seg.mode] || '🚌'}</span><span>${seg.to}</span></div>`);
+function primaryBadge(badges) {
+  for (const b of ['Best', 'Fastest', 'Safest', 'Cheapest']) {
+    if (badges.includes(b)) return b;
   }
-  document.getElementById('pathContent').innerHTML = rows.join('');
+  return null;
+}
+
+// ── Global segment store for modal ────────────────────────────────────────
+let _routeStore = [];
+
+function showRouteDetail(idx) {
+  const r = _routeStore[idx];
+  if (!r) return;
+  document.getElementById('pathContent').innerHTML = `
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="detail-row"><span class="detail-label">Mode</span><span>${r.mode}</span></div>
+      <div class="detail-row"><span class="detail-label">Distance</span><span>${r.distance} km</span></div>
+      <div class="detail-row"><span class="detail-label">Duration</span><span>${r.duration} min</span></div>
+      <div class="detail-row"><span class="detail-label">Cost</span><span>₹${r.expenditure}</span></div>
+      <div class="detail-row"><span class="detail-label">Expected Delay</span><span>${r.timedelay} min</span></div>
+      <div class="detail-row"><span class="detail-label">Carbon Rate</span><span>${r.carbonrate} kg CO₂</span></div>
+      <div class="detail-row"><span class="detail-label">Rating</span><span>${r.rating}/10</span></div>
+      <div class="detail-row"><span class="detail-label">Badges</span><span>${r.badges.length ? r.badges.join(', ') : '—'}</span></div>
+    </div>`;
   document.getElementById('pathModal').style.display = 'flex';
 }
 
@@ -60,34 +51,40 @@ let activeSortKey = 'rating';
 
 function renderCards(routes, sortKey) {
   activeSortKey = sortKey;
-  const sorted = [...routes].sort((a, b) =>
-    sortKey === 'rating' ? b.rating - a.rating : a[sortKey] - b[sortKey]
-  );
+
+  const sorted = [...routes].sort((a, b) => {
+    if (sortKey === 'rating')      return b.rating - a.rating;
+    if (sortKey === 'duration')    return a.duration - b.duration;
+    if (sortKey === 'carbonrate')  return a.carbonrate - b.carbonrate;
+    if (sortKey === 'expenditure') return a.expenditure - b.expenditure;
+    return 0;
+  });
+
+  _routeStore = sorted;
 
   const maxDur  = Math.max(...routes.map(r => r.duration));
   const maxCO2  = Math.max(...routes.map(r => r.carbonrate));
   const maxCost = Math.max(...routes.map(r => r.expenditure));
 
-  const badgeClass = { best: 'badge-best', fastest: 'badge-fastest', greenest: 'badge-greenest', cheapest: 'badge-cheapest' };
-  const cardClass  = { best: 'best', fastest: 'fastest', greenest: 'greenest', cheapest: 'cheapest' };
-  const badgeLabel = { best: '🏆 Best Overall', fastest: '⚡ Fastest', greenest: '🌿 Greenest', cheapest: '💰 Cheapest' };
-
-  // Store segments globally; use index in onclick
-  _segmentStore = sorted.map(r => r.segments);
+  const modeIcon = { Metro: '🚇', Bus: '🚌', Rail: '🚆', Walk: '🚶', Auto: '🛺' };
 
   document.getElementById('routeCards').innerHTML = sorted.map((r, idx) => {
-    const b = r.badges[0] || 'best';
-    const bd = r.modeBreakdown;
+    const pb = primaryBadge(r.badges);
+    const cardCls = pb ? CARD_CLASS[pb] : '';
+    const pctLess = Math.round(((2.1 - r.carbonrate) / 2.1) * 100);
+
     return `
-      <div class="route-card ${cardClass[b] || ''}">
-        <span class="card-badge ${badgeClass[b] || ''}">${badgeLabel[b] || ''}</span>
-        <div class="card-mode-row"><span class="mode-chip">${r.lineCode}</span></div>
-        <div class="card-title">${r.mode}</div>
+      <div class="route-card ${cardCls}">
+        ${pb ? `<span class="card-badge ${BADGE_CLASS[pb]}">${BADGE_LABEL[pb]}</span>` : '<span class="card-badge" style="visibility:hidden">—</span>'}
+        <div class="card-mode-row">
+          <span class="mode-chip">${modeIcon[r.mode] || '🚌'} ${r.mode}</span>
+        </div>
         <div class="card-duration">${r.duration} min</div>
+
         <div class="card-metric">
-          <div class="metric-label">Reliability</div>
-          <div class="progress-bar"><div class="progress-fill fill-green" style="width:${r.reliability}%"></div></div>
-          <div class="metric-value">${r.reliability}%</div>
+          <div class="metric-label">Rating</div>
+          <div class="progress-bar"><div class="progress-fill fill-green" style="width:${r.rating * 10}%"></div></div>
+          <div class="metric-value">${r.rating}/10</div>
         </div>
         <div class="card-metric">
           <div class="metric-label">Travel Time</div>
@@ -104,32 +101,27 @@ function renderCards(routes, sortKey) {
           <div class="progress-bar"><div class="progress-fill fill-orange" style="width:${Math.round(r.expenditure / maxCost * 100)}%"></div></div>
           <div class="metric-value">₹${r.expenditure}</div>
         </div>
-        <div class="card-score">Score: <span>${r.rating}/100</span></div>
-        <div class="card-stops">🚏 ${r.stops} stops · ${r.distance} km · ${r.transfers} transfer${r.transfers !== 1 ? 's' : ''}</div>
-        <div class="mode-breakdown">
-          ${bd.metro > 0 ? `<span class="mode-tag metro">🚇 Metro ${bd.metro.toFixed(1)}km</span>` : ''}
-          ${bd.rail  > 0 ? `<span class="mode-tag rail">🚆 Rail ${bd.rail.toFixed(1)}km</span>`   : ''}
-          ${bd.bus   > 0 ? `<span class="mode-tag bus">🚌 Bus ${bd.bus.toFixed(1)}km</span>`      : ''}
-          ${bd.walk  > 0 ? `<span class="mode-tag walk">🚶 Walk ${(bd.walk * 1000).toFixed(0)}m</span>` : ''}
-        </div>
-        <button class="view-btn" onclick="showPath(${idx})">View Stop Details →</button>
+
+        <div class="card-score">Distance: <span>${r.distance} km</span> · Delay: <span>+${r.timedelay} min</span></div>
+        ${r.badges.length ? `<div class="mode-breakdown">${r.badges.map(b => `<span class="mode-tag ${(b).toLowerCase()}">${BADGE_LABEL[b] || b}</span>`).join('')}</div>` : ''}
+        <button class="view-btn" onclick="showRouteDetail(${idx})">View Details →</button>
       </div>`;
   }).join('');
 }
 
 // ── Render insights ────────────────────────────────────────────────────────
 function renderInsights(routes) {
-  const best = routes[0];
-  const bd = best.modeBreakdown;
+  const best = routes.find(r => r.badges.includes('Best')) || routes[0];
+  const fastest = routes.find(r => r.badges.includes('Fastest')) || routes[0];
+  const cheapest = routes.find(r => r.badges.includes('Cheapest')) || routes[0];
+  const pctLess = Math.round(((2.1 - best.carbonrate) / 2.1) * 100);
+
   const insights = [
-    { icon: 'fa-circle-dot',           text: `${best.reliability}% on-time probability based on historical data.` },
-    { icon: 'fa-route',                text: `${best.stops} stops, ${best.distance} km via ${best.mode}.` },
+    { icon: 'fa-star',        text: `Best route: ${best.mode}, ${best.duration} min, rated ${best.rating}/10.` },
+    { icon: 'fa-bolt',        text: `Fastest option: ${fastest.mode} at ${fastest.duration} min (+${fastest.timedelay} min delay).` },
+    { icon: 'fa-indian-rupee-sign', text: `Cheapest option: ${cheapest.mode} at ₹${cheapest.expenditure}.` },
+    { icon: 'fa-leaf',        text: `Best route emits ${best.carbonrate} kg CO₂ — ${pctLess > 0 ? pctLess + '% less than driving' : 'comparable to driving'}.` },
   ];
-  if (best.transfers > 0)
-    insights.push({ icon: 'fa-arrow-right-arrow-left', text: `${best.transfers} transfer${best.transfers > 1 ? 's' : ''} required. Allow 3–5 mins per transfer.` });
-  if (bd.walk > 0)
-    insights.push({ icon: 'fa-person-walking', text: `~${(bd.walk * 1000).toFixed(0)}m walking included in this route.` });
-  insights.push({ icon: 'fa-leaf', text: `This route emits ${best.carbonrate} kg CO₂ — ${Math.round((1 - best.carbonrate / 2.1) * 100)}% less than driving.` });
 
   document.getElementById('insightsList').innerHTML = insights.map(i =>
     `<li><i class="fa-solid ${i.icon}"></i> ${i.text}</li>`
@@ -138,37 +130,28 @@ function renderInsights(routes) {
 
 // ── Render impact ──────────────────────────────────────────────────────────
 function renderImpact(routes) {
-  const best = routes[0];
+  const best = routes.find(r => r.badges.includes('Best')) || routes[0];
   const pctLess = Math.round(((2.1 - best.carbonrate) / 2.1) * 100);
   const trees = Math.max(1, Math.round((2.1 - best.carbonrate) / 0.35));
+
   document.getElementById('impactStats').innerHTML = `
     <div>
-      <div class="metric-label">Your Selected Route</div>
-      <div class="impact-num">${best.carbonrate} kg CO₂</div>
-      <div class="metric-label" style="color:#4caf63">Low Emission</div>
+      <div class="metric-label">Best Route CO₂</div>
+      <div class="impact-num">${best.carbonrate} kg</div>
+      <div class="metric-label" style="color:#4caf63">via ${best.mode}</div>
     </div>
     <div class="impact-stat-row">
       <div class="metric-label">Compared to Driving</div>
-      <div class="impact-compare">↓ ${pctLess}% less emissions</div>
+      <div class="impact-compare">↓ ${pctLess > 0 ? pctLess + '%' : '~0%'} less emissions</div>
     </div>
     <div>
       <div class="metric-label">Trees Equivalent</div>
       <div class="impact-num">${trees} Tree${trees !== 1 ? 's' : ''}</div>
-      <div class="metric-label">in one commute</div>
+      <div class="metric-label">per commute</div>
     </div>`;
 }
 
-// ── Render map area ────────────────────────────────────────────────────────
-function renderMapArea(routes) {
-  const best = routes[0];
-  const preview = best.path.slice(0, 5).join(' → ') + (best.path.length > 5 ? ` → … (${best.path.length} stops)` : '');
-  document.querySelector('.map-placeholder').innerHTML = `
-    <div class="map-label">Route Path</div>
-    <p style="font-size:0.82rem;padding:0 16px;color:#444;">${preview}</p>
-    <p style="font-size:0.75rem;color:#888;margin-top:4px;">Google Maps integration coming soon</p>`;
-}
-
-// ── Filters — set up ONCE on page load, delegate via currentRoutes ─────────
+// ── Filters — set up once ──────────────────────────────────────────────────
 document.querySelectorAll('.filter-option').forEach(opt => {
   opt.addEventListener('click', () => {
     if (!currentRoutes.length) return;
@@ -178,7 +161,7 @@ document.querySelectorAll('.filter-option').forEach(opt => {
   });
 });
 
-// ── Error / loading helpers ────────────────────────────────────────────────
+// ── Error / loading ────────────────────────────────────────────────────────
 function showError(msg) {
   document.getElementById('errorBanner').textContent = msg;
   document.getElementById('errorBanner').style.display = 'block';
@@ -197,104 +180,59 @@ function setLoading(text) {
   }
 }
 
-// ── Assign ratings ─────────────────────────────────────────────────────────
-function assignRatings(routes) {
-  const maxDur  = Math.max(...routes.map(r => r.duration));
-  const maxCost = Math.max(...routes.map(r => r.expenditure));
-  const maxCO2  = Math.max(...routes.map(r => r.carbonrate));
-  routes.forEach(r => {
-    const durScore  = (1 - r.duration / maxDur)   * 35;
-    const costScore = (1 - r.expenditure / maxCost) * 25;
-    const co2Score  = (1 - r.carbonrate / maxCO2)   * 20;
-    const relScore  = (r.reliability / 100)          * 20;
-    r.rating = Math.round(durScore + costScore + co2Score + relScore);
-  });
-
-  // Assign badges based on actual best in each category
-  const byDur  = [...routes].sort((a, b) => a.duration - b.duration);
-  const byCO2  = [...routes].sort((a, b) => a.carbonrate - b.carbonrate);
-  const byCost = [...routes].sort((a, b) => a.expenditure - b.expenditure);
-  const byRate = [...routes].sort((a, b) => b.rating - a.rating);
-
-  byRate[0].badges  = ['best'];
-  byDur[0].badges   = byDur[0].badges[0]  === 'best' ? ['best']     : ['fastest'];
-  byCO2[0].badges   = byCO2[0].badges[0]  === 'best' ? ['best']     : ['greenest'];
-  byCost[0].badges  = byCost[0].badges[0] === 'best' ? ['best']     : ['cheapest'];
-
-  // Any remaining without a badge get one
-  const used = new Set(routes.map(r => r.badges[0]));
-  const fallbacks = ['fastest', 'greenest', 'cheapest'];
-  routes.forEach(r => {
-    if (!r.badges.length) {
-      const fb = fallbacks.find(f => !used.has(f));
-      if (fb) { r.badges = [fb]; used.add(fb); }
-    }
-  });
-}
-
 // ── Form submit ────────────────────────────────────────────────────────────
 document.getElementById('searchForm').addEventListener('submit', async function (e) {
   e.preventDefault();
+
   const srcVal = document.getElementById('source').value.trim();
   const dstVal = document.getElementById('destination').value.trim();
+  const dtVal  = document.getElementById('datetime').value;
   if (!srcVal || !dstVal) return;
 
+  const date = dtVal ? dtVal.slice(0, 10) : new Date().toISOString().slice(0, 10);
+  const time = dtVal ? dtVal.slice(11, 16) : '08:00';
+
   document.getElementById('errorBanner').style.display = 'none';
-  setLoading('Loading graph…');
-  await loadGraphData();
+  setLoading('Finding routes…');
 
-  let srcLat, srcLon, dstLat, dstLon;
-  let srcLabel = srcVal, dstLabel = dstVal;
+  try {
+    const data = await fetchRoutes(srcVal, dstVal, date, time);
+    setLoading('');
 
-  const exactSrc = ALL_STOPS.find(s => s.toLowerCase() === srcVal.toLowerCase());
-  const exactDst = ALL_STOPS.find(s => s.toLowerCase() === dstVal.toLowerCase());
+    if (!data.routes || !data.routes.length) {
+      showError(`No routes found between "${srcVal}" and "${dstVal}".`);
+      return;
+    }
 
-  if (exactSrc) {
-    [srcLat, srcLon] = ALL_COORDS[exactSrc];
-    srcLabel = exactSrc;
-  } else {
-    setLoading('Locating origin…');
-    const geo = await geocode(srcVal);
-    if (!geo) { setLoading(''); showError(`Could not locate "${srcVal}". Try a stop name from the autocomplete.`); return; }
-    srcLat = geo.lat; srcLon = geo.lon;
+    currentRoutes = data.routes;
+
+    // Reset filter to Best Overall
+    document.querySelectorAll('.filter-option').forEach(o => o.classList.remove('active'));
+    document.querySelector('[data-sort="rating"]').classList.add('active');
+
+    document.getElementById('whySection').style.display = 'none';
+    const resultsSection = document.getElementById('resultsSection');
+    resultsSection.style.display = 'block';
+    resultsSection.scrollIntoView({ behavior: 'smooth' });
+
+    renderCards(currentRoutes, 'rating');
+    renderInsights(currentRoutes);
+    renderImpact(currentRoutes);
+
+    // Update map area
+    document.querySelector('.map-placeholder').innerHTML = `
+      <div class="map-label">Route Overview</div>
+      <p style="font-size:0.82rem;color:#444;">${srcVal} → ${dstVal}</p>
+      <p style="font-size:0.75rem;color:#888;margin-top:4px;">${data.routes.length} route${data.routes.length !== 1 ? 's' : ''} found · Google Maps integration coming soon</p>`;
+
+  } catch (err) {
+    setLoading('');
+    if (err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
+      showError('Cannot reach the backend. Make sure the FastAPI server is running at http://localhost:8000');
+    } else {
+      showError(`Error: ${err.message}`);
+    }
   }
-
-  if (exactDst) {
-    [dstLat, dstLon] = ALL_COORDS[exactDst];
-    dstLabel = exactDst;
-  } else {
-    setLoading('Locating destination…');
-    const geo = await geocode(dstVal);
-    if (!geo) { setLoading(''); showError(`Could not locate "${dstVal}". Try a stop name from the autocomplete.`); return; }
-    dstLat = geo.lat; dstLon = geo.lon;
-  }
-
-  setLoading('Finding best routes…');
-  await new Promise(r => setTimeout(r, 10));
-  const rawRoutes = findRoutes(srcLat, srcLon, dstLat, dstLon);
-  setLoading('');
-
-  if (!rawRoutes.length) {
-    showError(`No route found between "${srcLabel}" and "${dstLabel}".`);
-    return;
-  }
-
-  currentRoutes = rawRoutes.map((r, i) => summariseRoute(r, i));
-  assignRatings(currentRoutes);
-
-  // Reset filter to Best Overall
-  document.querySelectorAll('.filter-option').forEach(o => o.classList.remove('active'));
-  document.querySelector('[data-sort="rating"]').classList.add('active');
-
-  document.getElementById('whySection').style.display = 'none';
-  const resultsSection = document.getElementById('resultsSection');
-  resultsSection.style.display = 'block';
-  resultsSection.scrollIntoView({ behavior: 'smooth' });
-
-  renderCards(currentRoutes, 'rating');
-  renderInsights(currentRoutes);
-  renderImpact(currentRoutes);
-  renderMapArea(currentRoutes);
 });
 
 // ── Modal close ────────────────────────────────────────────────────────────
@@ -304,6 +242,3 @@ document.getElementById('pathModal').addEventListener('click', function (e) {
 
 // ── Init ───────────────────────────────────────────────────────────────────
 setDefaultDatetime();
-setupAutocomplete('source');
-setupAutocomplete('destination');
-loadGraphData();
