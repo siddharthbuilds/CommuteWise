@@ -239,6 +239,7 @@ def summarise_route(segments, distance, score):
     total_bus * 80,
     2
     )
+    carbon=carbon/1000
 
     return {
         "distance": round(distance, 2),
