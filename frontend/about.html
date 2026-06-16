@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — CommuteWise</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    /* ── About page styles ── */
+    .about-hero {
+      background: linear-gradient(135deg, #1a3d1f 0%, #2d7a3a 60%, #4caf63 100%);
+      padding: 80px 48px 72px;
+      text-align: center;
+      color: #fff;
+    }
+    .about-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 14px;
+    }
+    .about-hero p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .about-hero .divider {
+      width: 56px; height: 3px;
+      background: rgba(255,255,255,0.4);
+      border-radius: 2px;
+      margin: 28px auto 0;
+    }
+
+    /* ── Mission ── */
+    .mission-section {
+      max-width: 760px;
+      margin: 64px auto;
+      padding: 0 48px;
+      text-align: center;
+    }
+    .mission-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1a3d1f;
+      margin-bottom: 16px;
+    }
+    .mission-section p {
+      font-size: 0.97rem;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    /* ── What we built ── */
+    .built-section {
+      background: var(--green-light);
+      padding: 60px 48px;
+    }
+    .built-section h2 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a3d1f;
+      margin-bottom: 36px;
+    }
+    .built-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .built-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+    }
+    .built-card .built-icon {
+      width: 44px; height: 44px;
+      border-radius: 10px;
+      background: var(--green-light);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--green);
+      font-size: 1.1rem;
+      margin-bottom: 14px;
+    }
+    .built-card h4 {
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: #1a3d1f;
+      margin-bottom: 8px;
+    }
+    .built-card p {
+      font-size: 0.85rem;
+      color: #666;
+      line-height: 1.65;
+    }
+
+    /* ── Team ── */
+    .team-section {
+      max-width: 1000px;
+      margin: 64px auto;
+      padding: 0 48px;
+    }
+    .team-section h2 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a3d1f;
+      margin-bottom: 8px;
+    }
+    .team-section .team-sub {
+      text-align: center;
+      color: #888;
+      font-size: 0.88rem;
+      margin-bottom: 40px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .team-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px 28px 28px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .team-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.11);
+    }
+    .team-avatar {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2d7a3a, #4caf63);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 700;
+    }
+    .team-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a3d1f;
+      margin-bottom: 6px;
+    }
+    .team-roles {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 12px 0 16px;
+    }
+    .role-tag {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .team-card .team-desc {
+      font-size: 0.82rem;
+      color: #888;
+      line-height: 1.6;
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      margin-top: 4px;
+    }
+
+    /* ── CTA ── */
+    .about-cta {
+      background: #1a3d1f;
+      text-align: center;
+      padding: 60px 48px;
+      color: #fff;
+    }
+    .about-cta h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .about-cta p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 28px;
+    }
+    .about-cta a.cta-btn {
+      display: inline-block;
+      background: #2d7a3a;
+      color: #fff;
+      padding: 13px 32px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: background 0.2s;
+    }
+    .about-cta a.cta-btn:hover { background: #4caf63; }
+
+    @media (max-width: 768px) {
+      .built-grid, .team-grid { grid-template-columns: 1fr; }
+      .about-hero { padding: 56px 24px 48px; }
+      .mission-section, .team-section { padding: 0 24px; }
+      .built-section { padding: 48px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logo.svg" alt="logo" class="logo-icon" />
+      <span class="logo-text">CommuteWise</span>
+    </div>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="about.html" style="color: var(--green); border-bottom: 2px solid var(--green); padding-bottom: 2px;">About</a>
+      </nav>
+      <span class="live-badge"><span class="dot"></span> Live Transit</span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <h1>About CommuteWise</h1>
+    <p>A student-built transit intelligence platform for Chennai, combining routing algorithms, machine learning, and real-time data to help commuters travel smarter.</p>
+    <div class="divider"></div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-section">
+    <h2>Our Mission</h2>
+    <p>
+      Chennai's public transit network spans metro rail, suburban rail, and an extensive bus system — but navigating across all three to find the right route is rarely straightforward. CommuteWise was built to close that gap. We aggregate the full network into a unified graph, run intelligent pathfinding, and layer in ML-predicted delays and carbon estimates so commuters can make genuinely informed decisions, not just guess.
+    </p>
+  </section>
+
+  <!-- WHAT WE BUILT -->
+  <section class="built-section">
+    <h2>What We Built</h2>
+    <div class="built-grid">
+      <div class="built-card">
+        <div class="built-icon"><i class="fa-solid fa-route"></i></div>
+        <h4>Graph-Based Routing</h4>
+        <p>Dijkstra's algorithm over a transit graph of 1,400+ stops covering Chennai metro, suburban rail, and bus networks with weighted transfer edges.</p>
+      </div>
+      <div class="built-card">
+        <div class="built-icon"><i class="fa-solid fa-brain"></i></div>
+        <h4>ML Delay Prediction</h4>
+        <p>A Random Forest model trained on historical delay data, using live weather conditions from Open-Meteo to predict expected delays at query time.</p>
+      </div>
+      <div class="built-card">
+        <div class="built-icon"><i class="fa-solid fa-leaf"></i></div>
+        <h4>Carbon Estimation</h4>
+        <p>Per-route CO2 estimates based on transport mode and distance, so commuters can weigh environmental impact alongside time and cost.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <h2>The Team</h2>
+    <p class="team-sub">Three students. Three disciplines. One platform.</p>
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-avatar">AR</div>
+        <h3>Adhitya R</h3>
+        <div class="team-roles">
+          <span class="role-tag">Data Scientist</span>
+          <span class="role-tag">ML Model Trainer</span>
+        </div>
+        <p class="team-desc">Built and trained the Random Forest delay prediction model, curated the transit datasets, and designed the data pipeline from raw CSV sources to a usable graph structure.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">IH</div>
+        <h3>Irfan Ul Haq</h3>
+        <div class="team-roles">
+          <span class="role-tag">UI/UX Designer</span>
+          <span class="role-tag">Frontend Developer</span>
+        </div>
+        <p class="team-desc">Designed and built the entire frontend — layout, route cards, filter system, stop-by-stop detail modal, and the integration layer that connects the UI to the FastAPI backend.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">SK</div>
+        <h3>Siddharth Krishna S</h3>
+        <div class="team-roles">
+          <span class="role-tag">Backend Architect</span>
+          <span class="role-tag">FastAPI · Routing Expert</span>
+        </div>
+        <p class="team-desc">Architected the FastAPI backend, implemented the Dijkstra routing engine over the Chennai transit graph, and designed the route scoring and badge system.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="about-cta">
+    <h2>Try It Yourself</h2>
+    <p>Enter any two locations in Chennai and see the full route comparison in seconds.</p>
+    <a href="index.html" class="cta-btn">Find Routes</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Made with <i class="fa-solid fa-heart red"></i> for Chennai Commuters</span>
+    <span>Data Sources <i class="fa-brands fa-github"></i></span>
+  </footer>
+
+</body>
+</html>
