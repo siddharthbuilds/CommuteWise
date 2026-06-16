@@ -208,28 +208,28 @@ def summarise_route(segments, distance, score):
         + total_walk / 4 * 60
     )
 
-    # estimated fare
-    cost = round(
-        total_metro * 3.2
-        + total_rail * 2
-        + total_bus * 2.5
-        + transfers * 5
-        + 10
-    )
+    # # estimated fare
+    # cost = round(
+    #     total_metro * 3.2
+    #     + total_rail * 2
+    #     + total_bus * 2.5
+    #     + transfers * 5
+    #     + 10
+    # )
 
-    # CO2 estimate
-    carbon = round(
-        total_metro * 0.04
-        + total_rail * 0.03
-        + total_bus * 0.08,
-        2
-    )
+    # # CO2 estimate
+    # carbon = round(
+    #     total_metro * 0.04
+    #     + total_rail * 0.03
+    #     + total_bus * 0.08,
+    #     2
+    # )
 
-    # delay estimate
-    timedelay = transfers * 3
+    # # delay estimate
+    # timedelay = transfers * 3
 
-    if total_bus > 5:
-        timedelay += 8
+    # if total_bus > 5:
+    #     timedelay += 8
 
     # route type label
     route_modes = []
@@ -259,10 +259,6 @@ def summarise_route(segments, distance, score):
             55,
             92 - transfers * 7
         ),
-
-        "carbonrate": carbon,
-        "expenditure": cost,
-        "timedelay": timedelay,
         "transfers": transfers,
 
         "summary": {
@@ -367,24 +363,7 @@ def find_routes(
         key=lambda x: x["score"]
     )
 
-    routes = all_routes[:10]
-
-    # badges
-    badge_order = [
-        "best",
-        "fastest",
-        "cheapest",
-        "greenest"
-    ]
-
-    for i in range(
-        min(len(routes), 4)
-    ):
-        routes[i]["badges"] = [
-            badge_order[i]
-        ]
-
-    return routes
+    return all_routes[:10]
 
 graph["THIRNEERMALAI"] = []
 graph["Vadanemili"] = []
