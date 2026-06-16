@@ -5,7 +5,7 @@ model = joblib.load("random_reg_model.pkl")
 def build_features(date, time):
     dt = datetime.strptime(
         f"{date} {time}",
-        "%Y-%m-%d %H:%M"
+        "%d-%m-%Y %H:%M"
     )
     hour = dt.hour
     weekday = dt.strftime("%a")
@@ -54,6 +54,5 @@ def predict_delay(date, time):
     prediction = model.predict(features)
     return float(prediction[0])
 if __name__ == "__main__":
-   print(predict_delay("2026-06-16","08:00"))
-   print(predict_delay("2026-06-16","14:00"))
-   print(predict_delay("2026-06-16","18:00"))
+   print(predict_delay("16-06-2026","08:00"))
+ 

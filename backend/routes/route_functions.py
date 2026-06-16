@@ -1,7 +1,7 @@
 from location import locate
 from database.djikstra import find_routes
 from routes import Routes
-
+from delay_model import predict_delay
 def get_max_values(all_routes):
     max_distance = max(r.distance for r in all_routes)
     max_duration = max(r.duration for r in all_routes)
@@ -51,11 +51,15 @@ def get_final_data(sorted_all_routes):
         final_routes.append(route_dict)
     return final_routes
 
-def get_all_routes(source,destination):
+def get_all_routes(source,destination,date,time):
     [source_lat,source_lon] = locate(source)
     [dest_lat,dest_lon] = locate(destination)
     all_routes=find_routes(source_lat,source_lon,dest_lat,dest_lon)
     route_objects = [Routes.from_dict(route)for route in all_routes]
+    stddelay=predict_delay(date,time)
+    for route in route_objects:
+        route.timedelay=stddelay*(route.distance/20)
+        route.duration+=route.timedelay
     get_max_values(route_objects)
     sorted_routes= get_badges(route_objects)
     final_routes=get_final_data(sorted_routes)
