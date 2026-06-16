@@ -340,18 +340,43 @@ POST /api/routes
 ```json
 {
   "source": "Tambaram",
-  "destination": "Chennai Central"
+  "destination": "Chennai Central",
+  "date": "2026-06-16",
+  "time":"09:00"
 }
 ```
 
 ### Response
 
 ```json
-{
-  "best_overall": {},
-  "fastest": {},
-  "cheapest": {},
-  "greenest": {}
+{ "routes": 
+      [ 
+        {   "mode": "Metro + Bus", 
+            "distance": 21.34, 
+            "duration": 58.42, 
+            "expenditure": 46.75, 
+            "timedelay": 6.42, 
+            "carbonrate": 0.94, 
+            "rating": 8.76, 
+            "badges": [ "Best", "Fastest" ], 
+            "stops": [ "GUINDY", "ALANDUR", "TAMBARAM" ], 
+            "segments": 
+            [ 
+                  { 
+                        "from": "GUINDY", 
+                        "to": "ALANDUR",
+                        "mode": "metro", 
+                        "distance": 2.15 
+                  }, 
+                  { 
+                        "from": "ALANDUR", 
+                        "to": "TAMBARAM", 
+                        "mode": "bus", 
+                        "distance": 19.19 
+                  } 
+            ] 
+        } 
+      ]  
 }
 ```
 
