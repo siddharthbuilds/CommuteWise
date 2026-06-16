@@ -65,7 +65,6 @@ def get_all_routes(source,destination,date,time):
         route.distance = round(route.distance,2)
         route.expenditure = round(route.expenditure,2)
         route.carbonrate = round(route.carbonrate,2)
-        route.rating = round(route.rating,2)
     get_max_values(route_objects)
     sorted_routes= get_badges(route_objects)
     final_routes=get_final_data(sorted_routes)

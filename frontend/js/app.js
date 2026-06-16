@@ -31,17 +31,80 @@ let _routeStore = [];
 function showRouteDetail(idx) {
   const r = _routeStore[idx];
   if (!r) return;
-  document.getElementById('pathContent').innerHTML = `
-    <div style="display:flex;flex-direction:column;gap:10px;">
-      <div class="detail-row"><span class="detail-label">Mode</span><span>${r.mode}</span></div>
-      <div class="detail-row"><span class="detail-label">Distance</span><span>${r.distance} km</span></div>
-      <div class="detail-row"><span class="detail-label">Duration</span><span>${r.duration} min</span></div>
-      <div class="detail-row"><span class="detail-label">Cost</span><span>₹${r.expenditure}</span></div>
-      <div class="detail-row"><span class="detail-label">Expected Delay</span><span>${r.timedelay} min</span></div>
-      <div class="detail-row"><span class="detail-label">Carbon Rate</span><span>${r.carbonrate} kg CO₂</span></div>
-      <div class="detail-row"><span class="detail-label">Rating</span><span>${r.rating}/10</span></div>
-      <div class="detail-row"><span class="detail-label">Badges</span><span>${r.badges.length ? r.badges.join(', ') : '—'}</span></div>
+
+  const modeIcon  = { metro: '🚇', rail: '🚆', bus: '🚌', walk: '🚶', auto: '🛺' };
+  const modeLabel = { metro: 'Metro', rail: 'Suburban Rail', bus: 'Bus', walk: 'Walk', auto: 'Auto' };
+  const modeColor = { metro: '#1565c0', rail: '#f9a825', bus: '#2d7a3a', walk: '#7b1fa2', auto: '#ef6c00' };
+
+  // ── Summary bar ──
+  const summary = `
+    <div class="modal-summary">
+      <div class="modal-stat"><span class="modal-stat-val">${r.distance} km</span><span class="modal-stat-lbl">Distance</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">${Math.round(r.duration)} min</span><span class="modal-stat-lbl">Duration</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">₹${r.expenditure}</span><span class="modal-stat-lbl">Cost</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">${r.carbonrate} kg</span><span class="modal-stat-lbl">CO₂</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">${r.rating}/10</span><span class="modal-stat-lbl">Rating</span></div>
     </div>`;
+
+  // ── Stops timeline ──
+  let stopsHtml = '';
+  if (r.segments && r.segments.length) {
+    // Group consecutive same-mode segments
+    const groups = [];
+    for (const seg of r.segments) {
+      const last = groups[groups.length - 1];
+      if (last && last.mode === seg.mode) {
+        last.stops.push(seg.to);
+        last.distance += seg.distance;
+      } else {
+        groups.push({ mode: seg.mode, stops: [seg.from, seg.to], distance: seg.distance });
+      }
+    }
+
+    stopsHtml = groups.map((g, gi) => {
+      const icon  = modeIcon[g.mode]  || '🚌';
+      const label = modeLabel[g.mode] || g.mode;
+      const color = modeColor[g.mode] || '#333';
+      const uniqueStops = [...new Set(g.stops)];
+
+      const stopRows = uniqueStops.map((stop, si) => {
+        const isFirst = si === 0;
+        const isLast  = si === uniqueStops.length - 1;
+        return `
+          <div class="stop-row">
+            <div class="stop-line-col">
+              <div class="stop-dot ${isFirst ? 'stop-dot-start' : isLast ? 'stop-dot-end' : ''}"></div>
+              ${!isLast ? `<div class="stop-line" style="background:${color}"></div>` : ''}
+            </div>
+            <div class="stop-name ${isFirst || isLast ? 'stop-name-bold' : ''}">${stop}</div>
+          </div>`;
+      }).join('');
+
+      return `
+        <div class="segment-group ${gi > 0 ? 'segment-group-gap' : ''}">
+          <div class="segment-header" style="color:${color}">
+            <span>${icon} ${label}</span>
+            <span class="segment-dist">${g.distance.toFixed(2)} km</span>
+          </div>
+          <div class="stop-list">${stopRows}</div>
+        </div>`;
+    }).join('');
+
+  } else if (r.stops && r.stops.length) {
+    // Fallback: flat stops array
+    stopsHtml = `<div class="stop-list">${r.stops.map((s, i) => `
+      <div class="stop-row">
+        <div class="stop-line-col">
+          <div class="stop-dot ${i === 0 ? 'stop-dot-start' : i === r.stops.length-1 ? 'stop-dot-end' : ''}"></div>
+          ${i < r.stops.length-1 ? '<div class="stop-line"></div>' : ''}
+        </div>
+        <div class="stop-name ${i === 0 || i === r.stops.length-1 ? 'stop-name-bold' : ''}">${s}</div>
+      </div>`).join('')}</div>`;
+  } else {
+    stopsHtml = '<p style="color:#888;font-size:0.85rem;">No stop details available.</p>';
+  }
+
+  document.getElementById('pathContent').innerHTML = summary + `<div class="stops-section"><h4 class="stops-heading">Route Stops</h4>${stopsHtml}</div>`;
   document.getElementById('pathModal').style.display = 'flex';
 }
 

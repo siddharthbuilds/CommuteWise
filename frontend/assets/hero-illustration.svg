@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none">
+  <!-- Background circle -->
+  <circle cx="260" cy="180" r="150" fill="#e8f5e9" opacity="0.6"/>
+
+  <!-- Road/path -->
+  <path d="M60 280 Q180 240 300 200 Q380 175 440 160" stroke="#c8e6c9" stroke-width="28" stroke-linecap="round" fill="none"/>
+  <path d="M60 280 Q180 240 300 200 Q380 175 440 160" stroke="white" stroke-width="3" stroke-dasharray="18 14" stroke-linecap="round" fill="none"/>
+
+  <!-- Metro train -->
+  <rect x="130" y="185" width="90" height="50" rx="10" fill="#1565c0"/>
+  <rect x="138" y="193" width="25" height="18" rx="4" fill="#bbdefb"/>
+  <rect x="170" y="193" width="25" height="18" rx="4" fill="#bbdefb"/>
+  <circle cx="148" cy="238" r="7" fill="#0d47a1"/>
+  <circle cx="202" cy="238" r="7" fill="#0d47a1"/>
+  <rect x="125" y="198" width="6" height="20" rx="3" fill="#0d47a1"/>
+  <!-- Metro label -->
+  <rect x="146" y="198" width="28" height="8" rx="2" fill="#42a5f5" opacity="0.7"/>
+
+  <!-- Bus -->
+  <rect x="270" y="158" width="80" height="48" rx="8" fill="#2d7a3a"/>
+  <rect x="278" y="166" width="22" height="16" rx="3" fill="#a5d6a7"/>
+  <rect x="306" y="166" width="22" height="16" rx="3" fill="#a5d6a7"/>
+  <rect x="334" y="166" width="10" height="16" rx="3" fill="#a5d6a7"/>
+  <circle cx="285" cy="208" r="7" fill="#1b5e20"/>
+  <circle cx="336" cy="208" r="7" fill="#1b5e20"/>
+  <rect x="264" y="172" width="6" height="18" rx="3" fill="#1b5e20"/>
+
+  <!-- Train / suburban rail -->
+  <rect x="50" y="218" width="72" height="44" rx="8" fill="#f9a825"/>
+  <rect x="58" y="226" width="20" height="14" rx="3" fill="#fff9c4"/>
+  <rect x="84" y="226" width="20" height="14" rx="3" fill="#fff9c4"/>
+  <circle cx="65" cy="264" r="6" fill="#e65100"/>
+  <circle cx="108" cy="264" r="6" fill="#e65100"/>
+  <rect x="44" y="230" width="6" height="16" rx="3" fill="#e65100"/>
+
+  <!-- Location pins -->
+  <g transform="translate(168,128)">
+    <path d="M12 0C7.6 0 4 3.6 4 8c0 5.4 8 16 8 16s8-10.6 8-16c0-4.4-3.6-8-8-8z" fill="#2d7a3a"/>
+    <circle cx="12" cy="8" r="3.5" fill="white"/>
+  </g>
+  <g transform="translate(358,110)">
+    <path d="M12 0C7.6 0 4 3.6 4 8c0 5.4 8 16 8 16s8-10.6 8-16c0-4.4-3.6-8-8-8z" fill="#c62828"/>
+    <circle cx="12" cy="8" r="3.5" fill="white"/>
+  </g>
+
+  <!-- Leaf/green accents -->
+  <ellipse cx="420" cy="260" rx="22" ry="12" fill="#a5d6a7" opacity="0.6" transform="rotate(-30 420 260)"/>
+  <ellipse cx="80" cy="150" rx="18" ry="10" fill="#c8e6c9" opacity="0.7" transform="rotate(20 80 150)"/>
+
+  <!-- CO2 / cloud badge -->
+  <rect x="340" y="60" width="90" height="32" rx="16" fill="white" stroke="#c8e6c9" stroke-width="1.5"/>
+  <text x="385" y="81" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#2d7a3a" font-weight="700">🌿 -40% CO₂</text>
+</svg>
