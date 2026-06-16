@@ -1,5 +1,4 @@
 class Routes:
-
     @classmethod
     def from_dict(cls, route_dict):
         return cls(
@@ -7,7 +6,8 @@ class Routes:
             stops=route_dict["stops"],
             segments=route_dict["segments"],
             duration=route_dict["duration"],
-            distance=route_dict["distance"]
+            distance=route_dict["distance"],
+            carbonrate=route_dict["carbonrate"]
         )
 
 
@@ -17,8 +17,6 @@ class Routes:
     def get_timedelay(self):
         self.timedelay=0
 
-    def get_carbonrate(self):
-        self.carbonrate=5
 
     def get_rating(self,max_values):
         self.rating=0
@@ -34,13 +32,14 @@ class Routes:
     def add_badge(self,str):
         self.badges.append(str)
     
-    def __init__(self,mode,stops,segments,duration,distance):
+    def __init__(self,mode,stops,segments,duration,distance,carbonrate):
         self.mode=mode
         self.stops=stops
         self.segments=segments
         self.duration=duration
         self.distance=distance
+        self.carbonrate = carbonrate
         self.badges=[]
         self.get_expenditure()
         self.get_timedelay()
-        self.get_carbonrate()
+        
