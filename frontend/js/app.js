@@ -49,7 +49,7 @@ function showRouteDetail(idx) {
 let currentRoutes = [];
 let activeSortKey = 'rating';
 
-function renderCards(routes, sortKey) {
+function renderCards(routes, sortKey, limit = 3) {
   activeSortKey = sortKey;
 
   const sorted = [...routes].sort((a, b) => {
@@ -60,7 +60,8 @@ function renderCards(routes, sortKey) {
     return 0;
   });
 
-  _routeStore = sorted;
+  const display = limit ? sorted.slice(0, limit) : sorted;
+  _routeStore = display;
 
   const maxDur  = Math.max(...routes.map(r => r.duration));
   const maxCO2  = Math.max(...routes.map(r => r.carbonrate));
@@ -68,7 +69,7 @@ function renderCards(routes, sortKey) {
 
   const modeIcon = { Metro: '🚇', Bus: '🚌', Rail: '🚆', Walk: '🚶', Auto: '🛺' };
 
-  document.getElementById('routeCards').innerHTML = sorted.map((r, idx) => {
+  document.getElementById('routeCards').innerHTML = display.map((r, idx) => {
     const pb = primaryBadge(r.badges);
     const cardCls = pb ? CARD_CLASS[pb] : '';
     const pctLess = Math.round(((2.1 - r.carbonrate) / 2.1) * 100);
@@ -157,7 +158,9 @@ document.querySelectorAll('.filter-option').forEach(opt => {
     if (!currentRoutes.length) return;
     document.querySelectorAll('.filter-option').forEach(o => o.classList.remove('active'));
     opt.classList.add('active');
-    renderCards(currentRoutes, opt.dataset.sort);
+    const sortKey = opt.dataset.sort;
+    const limit = sortKey === 'all' ? null : 3;
+    renderCards(currentRoutes, sortKey, limit);
   });
 });
 
@@ -215,7 +218,7 @@ document.getElementById('searchForm').addEventListener('submit', async function 
     resultsSection.style.display = 'block';
     resultsSection.scrollIntoView({ behavior: 'smooth' });
 
-    renderCards(currentRoutes, 'rating');
+    renderCards(currentRoutes, 'rating', 3);
     renderInsights(currentRoutes);
     renderImpact(currentRoutes);
 
