@@ -29,6 +29,7 @@ class Routes:
             normalised_value=((1-(current_values[i]/max_values[i]))*100)
             self.rating+=normalised_value*rating_weights[i]
             i+=1
+        self.rating = round(self.rating / 10, 2)
 
     def add_badge(self,str):
         self.badges.append(str)

@@ -22,14 +22,14 @@ def get_min_values(all_routes):
 def get_badges(all_routes):
     min_values=get_min_values(all_routes)
     sorted_all_routes=sorted(all_routes,key=lambda route: route.rating)
-    sorted_all_routes[0].add_badge("best")
+    sorted_all_routes[0].add_badge("Best")
     for routes in sorted_all_routes:
         if routes.expenditure==min_values[0]:
-            routes.add_badge("cheapest")
+            routes.add_badge("Cheapest")
         if routes.duration==min_values[1]:
-            routes.add_badge("fastest")
+            routes.add_badge("Fastest")
         if routes.carbonrate==min_values[2]:
-            routes.add_badge("safest")
+            routes.add_badge("Greenest")
     return sorted_all_routes
 
 
@@ -60,6 +60,12 @@ def get_all_routes(source,destination,date,time):
     for route in route_objects:
         route.timedelay=stddelay*(route.distance/20)
         route.duration+=route.timedelay
+        route.timedelay = round(route.timedelay,2)
+        route.duration = round(route.duration,2)
+        route.distance = round(route.distance,2)
+        route.expenditure = round(route.expenditure,2)
+        route.carbonrate = round(route.carbonrate,2)
+        route.rating = round(route.rating,2)
     get_max_values(route_objects)
     sorted_routes= get_badges(route_objects)
     final_routes=get_final_data(sorted_routes)
