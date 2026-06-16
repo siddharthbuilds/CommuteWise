@@ -21,18 +21,42 @@ def haversine(lat1, lon1, lat2, lon2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return R * c
 
-def nearest_nodes(lat, lon, all_coords, k=5, max_radius=1.5):
+def nearest_nodes(
+    lat,
+    lon,
+    all_coords,
+    k=5,
+    max_radius=1.5
+):
     distances = []
 
     for node, (nlat, nlon) in all_coords.items():
-        d = haversine(lat, lon, nlat, nlon)
 
-        if d <= max_radius:
-            distances.append((d, node))
+        d = haversine(
+            lat,
+            lon,
+            nlat,
+            nlon
+        )
+
+        distances.append((d, node))
 
     distances.sort()
 
-    return [node for _, node in distances[:k]]
+    nearby = [
+        node
+        for d, node in distances
+        if d <= max_radius
+    ]
+
+    if nearby:
+        return nearby[:k]
+
+    # fallback
+    return [
+        node
+        for _, node in distances[:k]
+    ]
 
 
 def build_weighted_graph(graph, all_coords, node_mode):
@@ -134,6 +158,135 @@ def route_nodes(segments):
         nodes.append(end)
     return nodes
 
+def summarise_route(segments, distance, score):
+
+    total_walk = 0
+    total_bus = 0
+    total_rail = 0
+    total_metro = 0
+    transfers = 0
+
+    previous_mode = None
+    stops = []
+
+    for start, end, mode, dist in segments:
+
+        # build stop list
+        if not stops:
+            stops.append(start)
+
+        stops.append(end)
+
+        # transfer counting
+        if (
+            previous_mode
+            and previous_mode != mode
+            and mode != "walk"
+        ):
+            transfers += 1
+
+        previous_mode = mode
+
+        # distance breakdown
+        if mode == "walk":
+            total_walk += max(dist, 0.05)
+
+        elif mode == "bus":
+            total_bus += dist
+
+        elif mode == "rail":
+            total_rail += dist
+
+        elif mode == "metro":
+            total_metro += dist
+
+    # estimated duration (minutes)
+    duration = round(
+        total_metro / 35 * 60
+        + total_rail / 40 * 60
+        + total_bus / 18 * 60
+        + total_walk / 4 * 60
+    )
+
+    # estimated fare
+    cost = round(
+        total_metro * 3.2
+        + total_rail * 2
+        + total_bus * 2.5
+        + transfers * 5
+        + 10
+    )
+
+    # CO2 estimate
+    carbon = round(
+        total_metro * 0.04
+        + total_rail * 0.03
+        + total_bus * 0.08,
+        2
+    )
+
+    # delay estimate
+    timedelay = transfers * 3
+
+    if total_bus > 5:
+        timedelay += 8
+
+    # route type label
+    route_modes = []
+
+    if total_metro > 0:
+        route_modes.append("Metro")
+
+    if total_rail > 0:
+        route_modes.append("Rail")
+
+    if total_bus > 0:
+        route_modes.append("Bus")
+
+    mode_label = (
+        " + ".join(route_modes)
+        if route_modes
+        else "Walk"
+    )
+
+    return {
+        "distance": round(distance, 2),
+        "score": round(score, 2),
+
+        "mode": mode_label,
+        "duration": duration,
+        "reliability": max(
+            55,
+            92 - transfers * 7
+        ),
+
+        "carbonrate": carbon,
+        "expenditure": cost,
+        "timedelay": timedelay,
+        "transfers": transfers,
+
+        "summary": {
+            "walk": round(total_walk, 2),
+            "bus": round(total_bus, 2),
+            "rail": round(total_rail, 2),
+            "metro": round(total_metro, 2)
+        },
+
+        "stops_count": len(stops),
+
+        "stops": stops,
+
+        "segments": [
+            {
+                "from": start,
+                "to": end,
+                "mode": mode,
+                "distance": round(dist, 2)
+            }
+            for start, end, mode, dist in segments
+        ]
+    }
+
 def get_candidate_routes(weighted_graph, source, destination, k=10):
     graph_copy = copy.deepcopy(weighted_graph)
     routes = []
@@ -152,8 +305,12 @@ def get_candidate_routes(weighted_graph, source, destination, k=10):
   
     return routes
 
-def find_routes(source_lat, source_lon,
-                dest_lat, dest_lon):
+def find_routes(
+    source_lat,
+    source_lon,
+    dest_lat,
+    dest_lon
+):
 
     source_candidates = nearest_nodes(
         source_lat,
@@ -197,63 +354,43 @@ def find_routes(source_lat, source_lon,
                     + destination_error * 5
                 )
 
-                all_routes.append(
-                    (segments, distance, score)
+                route = summarise_route(
+                    segments,
+                    distance,
+                    score
                 )
 
-    all_routes.sort(key=lambda x: x[2])
+                all_routes.append(route)
 
-    for candidate in source_candidates:
-        print(candidate)
+    # sort by score
+    all_routes.sort(
+        key=lambda x: x["score"]
+    )
 
-    for candidate in destination_candidates:
-        print(candidate)
+    routes = all_routes[:10]
 
-    return all_routes[:10]
+    # badges
+    badge_order = [
+        "best",
+        "fastest",
+        "cheapest",
+        "greenest"
+    ]
+
+    for i in range(
+        min(len(routes), 4)
+    ):
+        routes[i]["badges"] = [
+            badge_order[i]
+        ]
+
+    return routes
 
 graph["THIRNEERMALAI"] = []
 graph["Vadanemili"] = []
 weighted_graph = build_weighted_graph(graph, all_coords, node_mode)
 weighted_graph = add_transfer_edges(weighted_graph, all_coords, node_mode)
 
-source_lat, source_lon = 12.99, 80.21
-dest_lat,   dest_lon   = 12.5,  80.13
 
-source_candidates = nearest_nodes(
-    source_lat,
-    source_lon,
-    all_coords,
-    k=5
-)
-
-destination_candidates = nearest_nodes(
-    dest_lat,
-    dest_lon,
-    all_coords,
-    k=5
-)
-all_routes = []
-
-for src in source_candidates:
-    for dst in destination_candidates:
-
-        routes = get_candidate_routes(
-            weighted_graph,
-            src,
-            dst,
-            k=2
-        )
-
-        all_routes.extend(routes)
-
-all_routes.sort(key=lambda x: x[1])
-
-routes = all_routes[:10]
-
-
-for idx, (segments, distance) in enumerate(routes):
-    print(f"\nRoute {idx + 1}")
-    print("Distance:", round(distance, 2))
-    explain_route(segments)
 
 
