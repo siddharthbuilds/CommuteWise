@@ -1,9 +1,15 @@
 class Routes:
-    def get_distance(self):
-        self.distance=0
 
-    def get_duration(self):
-        self.duration=0
+    @classmethod
+    def from_dict(cls, route_dict):
+        return cls(
+            mode=route_dict["mode"],
+            stops=route_dict["stops"],
+            segments=route_dict["segments"],
+            duration=route_dict["duration"],
+            distance=route_dict["distance"]
+        )
+
 
     def get_expenditure(self):
         self.expenditure=0
@@ -27,11 +33,13 @@ class Routes:
     def add_badge(self,str):
         self.badges.append(str)
     
-    def __init__(self,mode):
+    def __init__(self,mode,stops,segments,duration,distance):
         self.mode=mode
+        self.stops=stops
+        self.segments=segments
+        self.duration=duration
+        self.distance=distance
         self.badges=[]
-        self.get_distance()
-        self.get_duration()
         self.get_expenditure()
         self.get_timedelay()
         self.get_carbonrate()
