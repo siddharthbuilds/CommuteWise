@@ -12,13 +12,13 @@ class Routes:
 
 
     def get_expenditure(self):
-        self.expenditure=0
+        self.expenditure=5
 
     def get_timedelay(self):
         self.timedelay=0
 
     def get_carbonrate(self):
-        self.carbonrate=0
+        self.carbonrate=5
 
     def get_rating(self,max_values):
         self.rating=0

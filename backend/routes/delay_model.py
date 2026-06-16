@@ -1,7 +1,7 @@
 from datetime import datetime
 import joblib
 import requests
-model = joblib.load("random_reg_model.pkl")
+model = joblib.load("./routes/random_reg_model.pkl")
 def build_features(date, time):
     dt = datetime.strptime(
         f"{date} {time}",

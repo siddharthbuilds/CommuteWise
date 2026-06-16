@@ -26,7 +26,7 @@ def home():
 
 @app.post('/api/routes')
 def routes(data:RouteRequest):
-    final_routes = get_all_routes(data.source,data.destination)
+    final_routes = get_all_routes(data.source,data.destination,data.date,data.time)
     return {"routes": final_routes}
 
 if __name__ == "__main__":

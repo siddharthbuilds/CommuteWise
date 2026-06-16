@@ -1,7 +1,7 @@
 from location import locate
 from database.djikstra import find_routes
-from routes import Routes
-from delay_model import predict_delay
+from routes.routes import Routes
+from routes.delay_model import predict_delay
 def get_max_values(all_routes):
     max_distance = max(r.distance for r in all_routes)
     max_duration = max(r.duration for r in all_routes)
@@ -28,7 +28,7 @@ def get_badges(all_routes):
             routes.add_badge("cheapest")
         if routes.duration==min_values[1]:
             routes.add_badge("fastest")
-        if routes.carbonate==min_values[2]:
+        if routes.carbonrate==min_values[2]:
             routes.add_badge("safest")
     return sorted_all_routes
 
