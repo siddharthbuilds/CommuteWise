@@ -7,12 +7,9 @@ class Routes:
             segments=route_dict["segments"],
             duration=route_dict["duration"],
             distance=route_dict["distance"],
-            carbonrate=route_dict["carbonrate"]
+            carbonrate=route_dict["carbonrate"],
+            expenditure=route_dict["expenditure"]
         )
-
-
-    def get_expenditure(self):
-        self.expenditure=5
 
     def get_timedelay(self):
         self.timedelay=0
@@ -32,14 +29,14 @@ class Routes:
     def add_badge(self,str):
         self.badges.append(str)
     
-    def __init__(self,mode,stops,segments,duration,distance,carbonrate):
+    def __init__(self,mode,stops,segments,duration,distance,carbonrate,expenditure):
         self.mode=mode
         self.stops=stops
         self.segments=segments
         self.duration=duration
         self.distance=distance
         self.carbonrate = carbonrate
+        self.expenditure=expenditure
         self.badges=[]
-        self.get_expenditure()
         self.get_timedelay()
         

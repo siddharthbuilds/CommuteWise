@@ -200,7 +200,7 @@ def summarise_route(segments, distance, score):
         elif mode == "metro":
             total_metro += dist
 
-    # estimated duration (minutes)
+    
     duration = round(
         total_metro / 35 * 60
         + total_rail / 40 * 60
@@ -208,30 +208,14 @@ def summarise_route(segments, distance, score):
         + total_walk / 4 * 60
     )
 
-    # # estimated fare
-    # cost = round(
-    #     total_metro * 3.2
-    #     + total_rail * 2
-    #     + total_bus * 2.5
-    #     + transfers * 5
-    #     + 10
-    # )
-
-    # # CO2 estimate
-    # carbon = round(
-    #     total_metro * 0.04
-    #     + total_rail * 0.03
-    #     + total_bus * 0.08,
-    #     2
-    # )
-
-    # # delay estimate
-    # timedelay = transfers * 3
-
-    # if total_bus > 5:
-    #     timedelay += 8
-
-    # route type label
+    
+    cost = round(
+        total_metro * 3.2
+        + total_rail * 2
+        + total_bus * 2.5
+        + transfers * 5
+        + 10,2)
+   
     route_modes = []
 
     if total_metro > 0:
@@ -263,6 +247,7 @@ def summarise_route(segments, distance, score):
         "mode": mode_label,
         "duration": duration,
         "carbonrate":carbon,
+        "expenditure": cost,
         "stops_count": len(stops),
         "stops": stops,
         "segments": [
