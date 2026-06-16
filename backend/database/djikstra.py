@@ -248,6 +248,13 @@ def summarise_route(segments, distance, score):
         if route_modes
         else "Walk"
     )
+    carbon = round(
+    total_walk * 0 +
+    total_metro * 30 +
+    total_rail * 40 +
+    total_bus * 80,
+    2
+    )
 
     return {
         "distance": round(distance, 2),
@@ -255,23 +262,9 @@ def summarise_route(segments, distance, score):
 
         "mode": mode_label,
         "duration": duration,
-        "reliability": max(
-            55,
-            92 - transfers * 7
-        ),
-        "transfers": transfers,
-
-        "summary": {
-            "walk": round(total_walk, 2),
-            "bus": round(total_bus, 2),
-            "rail": round(total_rail, 2),
-            "metro": round(total_metro, 2)
-        },
-
+        "carbonrate":carbon,
         "stops_count": len(stops),
-
         "stops": stops,
-
         "segments": [
             {
                 "from": start,
