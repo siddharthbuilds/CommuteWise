@@ -26,9 +26,9 @@ def get_badges(all_routes):
     for routes in sorted_all_routes:
         if routes.expenditure==min_values[0]:
             routes.add_badge("cheapest")
-        if routes.expenditure==min_values[1]:
+        if routes.duration==min_values[1]:
             routes.add_badge("fastest")
-        if routes.expenditure==min_values[2]:
+        if routes.carbonate==min_values[2]:
             routes.add_badge("safest")
     return sorted_all_routes
 

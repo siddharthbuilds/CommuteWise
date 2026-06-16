@@ -5,7 +5,7 @@ model = joblib.load("random_reg_model.pkl")
 def build_features(date, time):
     dt = datetime.strptime(
         f"{date} {time}",
-        "%d-%m-%Y %H:%M"
+        "%Y-%m-%d %H:%M"
     )
     hour = dt.hour
     weekday = dt.strftime("%a")
