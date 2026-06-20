@@ -1,4 +1,4 @@
-from location import locate
+from location import locate, get_matching_node
 from database.djikstra import find_routes
 from routes.routes import Routes
 from routes.delay_model import predict_delay
@@ -54,12 +54,14 @@ def get_final_data(sorted_all_routes):
 def get_all_routes(source,destination,date,time):
     [source_lat,source_lon] = locate(source)
     [dest_lat,dest_lon] = locate(destination)
-    all_routes=find_routes(source_lat,source_lon,dest_lat,dest_lon)
+    source_node = get_matching_node(source)
+    dest_node = get_matching_node(destination)
+    all_routes=find_routes(source_lat,source_lon,dest_lat,dest_lon,source_node,dest_node)
     route_objects = [Routes.from_dict(route)for route in all_routes]
     stddelay=predict_delay(date,time)
     for route in route_objects:
         route.timedelay=stddelay*(route.distance/20)
-        route.duration+=route.timedelay
+        route.duration+=(route.timedelay/60)
         route.timedelay = round(route.timedelay,2)
         route.duration = round(route.duration,2)
         route.distance = round(route.distance,2)

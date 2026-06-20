@@ -240,7 +240,7 @@ def summarise_route(segments, distance, score):
     2
     )
     carbon=carbon/1000
-    duration = min(duration, 180)
+    duration = min(duration, 160)
     return {
         "distance": round(distance, 2),
         "score": round(score, 2),
@@ -284,22 +284,30 @@ def find_routes(
     source_lat,
     source_lon,
     dest_lat,
-    dest_lon
+    dest_lon,
+    source_node=None,
+    dest_node=None
 ):
 
-    source_candidates = nearest_nodes(
-        source_lat,
-        source_lon,
-        all_coords,
-        k=5
-    )
+    if source_node:
+        source_candidates = [source_node]
+    else:
+        source_candidates = nearest_nodes(
+            source_lat,
+            source_lon,
+            all_coords,
+            k=5
+        )
 
-    destination_candidates = nearest_nodes(
-        dest_lat,
-        dest_lon,
-        all_coords,
-        k=5
-    )
+    if dest_node:
+        destination_candidates = [dest_node]
+    else:
+        destination_candidates = nearest_nodes(
+            dest_lat,
+            dest_lon,
+            all_coords,
+            k=5
+        )
 
     all_routes = []
 
