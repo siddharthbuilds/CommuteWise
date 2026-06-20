@@ -7,10 +7,18 @@ function swapLocations() {
 
 // ── Default datetime ───────────────────────────────────────────────────────
 function setDefaultDatetime() {
-  const now = new Date();
-  now.setHours(8, 0, 0, 0);
-  document.getElementById('datetime').value =
-    new Date(now - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+    const now = new Date();
+
+    // Move to next full hour
+    now.setMinutes(0);
+    now.setSeconds(0);
+    now.setMilliseconds(0);
+    now.setHours(now.getHours() + 1);
+
+    document.getElementById("datetime").value =
+        new Date(now - now.getTimezoneOffset() * 60000)
+            .toISOString()
+            .slice(0, 16);
 }
 
 // ── Badge helpers ──────────────────────────────────────────────────────────
@@ -50,11 +58,11 @@ function showRouteDetail(idx) {
   // ── Summary bar ──
   const summary = `
     <div class="modal-summary">
-      <div class="modal-stat"><span class="modal-stat-val">${r.distance} km</span><span class="modal-stat-lbl">Distance</span></div>
-      <div class="modal-stat"><span class="modal-stat-val">${durationHours ? `${durationHours} h ${durationMinutes} mins` : `${durationMinutes} mins`}</span><span class="modal-stat-lbl">Duration</span></div>
-      <div class="modal-stat"><span class="modal-stat-val">₹${Math.round(r.expenditure)}</span><span class="modal-stat-lbl">Cost</span></div>
-      <div class="modal-stat"><span class="modal-stat-val">${r.carbonrate} kg</span><span class="modal-stat-lbl">CO₂</span></div>
-      <div class="modal-stat"><span class="modal-stat-val">${r.rating}/10</span><span class="modal-stat-lbl">Rating</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">${r.distance} km</span><br><span class="modal-stat-lbl">Distance</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">${durationHours ? `${durationHours} h ${durationMinutes} mins` : `${durationMinutes} mins`}</span><br><span class="modal-stat-lbl">Duration</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">₹${Math.round(r.expenditure)}</span><br><span class="modal-stat-lbl">Cost</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">${r.carbonrate} kg</span><br><span class="modal-stat-lbl">CO₂</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">${Math.min((r.rating+1.8).toFixed(2),4.90)}/5</span><br><span class="modal-stat-lbl">Rating</span></div>
     </div>`;
 
   // ── Stops timeline ──
@@ -167,8 +175,8 @@ function renderCards(routes, sortKey, limit = 3) {
 
         <div class="card-metric">
           <div class="metric-label">Rating</div>
-          <div class="progress-bar"><div class="progress-fill fill-green" style="width:${r.rating * 10}%"></div></div>
-          <div class="metric-value">${r.rating}/10</div>
+          <div class="progress-bar"><div class="progress-fill fill-green" style="width:${Math.min((r.rating+1.8).toFixed(2),4.9)*20}%"></div></div>
+          <div class="metric-value">${Math.min((r.rating+1.8).toFixed(2),4.9)}/5</div>
         </div>
         <div class="card-metric">
           <div class="metric-label">Travel Time</div>
@@ -183,10 +191,14 @@ function renderCards(routes, sortKey, limit = 3) {
         <div class="card-metric">
           <div class="metric-label">Cost</div>
           <div class="progress-bar"><div class="progress-fill fill-orange" style="width:${Math.round(r.expenditure / maxCost * 100)}%"></div></div>
-          <div class="metric-value">₹${r.expenditure}</div>
+          <div class="metric-value">₹${Math.round(r.expenditure)}</div>
         </div>
 
-        <div class="card-score">Distance: <span>${r.distance} km</span> · Delay: <span>+${r.timedelay} min</span></div>
+        <div class="card-score">Distance: <span>${r.distance} km</span> · Delay: <span>
+        +${r.timedelay>30?`${Math.floor(r.timedelay/30)} - ${Math.floor(r.timedelay/30)+1} mins`:`1 min`} 
+          
+        </span>
+        </div>
         ${r.badges.length ? `<div class="mode-breakdown">${r.badges.map(b => `<span class="mode-tag ${(b).toLowerCase()}">${BADGE_LABEL[b] || b}</span>`).join('')}</div>` : ''}
         <button class="view-btn" onclick="showRouteDetail(${idx})">View Details →</button>
       </div>`;
@@ -199,11 +211,29 @@ function renderInsights(routes) {
   const fastest = routes.find(r => r.badges.includes('Fastest')) || routes[0];
   const cheapest = routes.find(r => r.badges.includes('Cheapest')) || routes[0];
   const pctLess = Math.round(((2.1 - best.carbonrate) / 2.1) * 100);
+  let durationHours=0;
+  let durationMinutes=0;
+  let bestdurationHours=0;
+  let bestdurationMinutes=0;
+  if(fastest.duration>60)
+    {
+         durationHours = Math.floor(fastest.duration/60);
+         durationMinutes=Math.round(fastest.duration%60);
+    }
+    else { durationMinutes = Math.round(fastest.duration)}
+
+  if(best.duration>60)
+    {
+         bestdurationHours = Math.floor(best.duration/60);
+         bestdurationMinutes=Math.round(best.duration%60);
+    }
+    else { bestdurationMinutes = Math.round(best.duration)}
 
   const insights = [
-    { icon: 'fa-star',        text: `Best route: ${best.mode}, ${best.duration} min, rated ${best.rating}/10.` },
-    { icon: 'fa-bolt',        text: `Fastest option: ${fastest.mode} at ${fastest.duration} min (+${fastest.timedelay} min delay).` },
-    { icon: 'fa-indian-rupee-sign', text: `Cheapest option: ${cheapest.mode} at ₹${cheapest.expenditure}.` },
+    { icon: 'fa-star',text: `Best route: ${best.mode}, ${bestdurationHours ? `${bestdurationHours} h ${bestdurationMinutes} mins` : `${bestdurationMinutes} mins`}, rated ${Math.min((best.rating+1.8).toFixed(2),4.9)}/5.` },
+    { icon: 'fa-bolt',text: `Fastest option: ${fastest.mode} at ${durationHours ? `${durationHours} h ${durationMinutes} mins` : `${durationMinutes} mins`}
+      (+ ${fastest.timedelay>30?`${Math.floor(fastest.timedelay/30)} - ${Math.floor(fastest.timedelay/30)+1} mins`:`1 min`} delay).` },
+    { icon: 'fa-indian-rupee-sign', text: `Cheapest option: ${cheapest.mode} at ₹${Math.round(cheapest.expenditure)}.` },
     { icon: 'fa-leaf',        text: `Best route emits ${best.carbonrate} kg CO₂ — ${pctLess > 0 ? pctLess + '% less than driving' : 'comparable to driving'}.` },
   ];
 
