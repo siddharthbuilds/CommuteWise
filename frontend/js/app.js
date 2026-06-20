@@ -195,7 +195,7 @@ function renderCards(routes, sortKey, limit = 3) {
         </div>
 
         <div class="card-score">Distance: <span>${r.distance} km</span> · Delay: <span>
-        +${r.timedelay>30?`${Math.floor(r.timedelay/30)} - ${Math.floor(r.timedelay/30)+1} mins`:`1 min`} 
+        ${r.timedelay>30?`${Math.floor(r.timedelay/30)} - ${Math.floor(r.timedelay/30)+1} mins`:`1 min`} 
           
         </span>
         </div>
@@ -232,7 +232,7 @@ function renderInsights(routes) {
   const insights = [
     { icon: 'fa-star',text: `Best route: ${best.mode}, ${bestdurationHours ? `${bestdurationHours} h ${bestdurationMinutes} mins` : `${bestdurationMinutes} mins`}, rated ${Math.min((best.rating+1.8).toFixed(2),4.9)}/5.` },
     { icon: 'fa-bolt',text: `Fastest option: ${fastest.mode} at ${durationHours ? `${durationHours} h ${durationMinutes} mins` : `${durationMinutes} mins`}
-      (+ ${fastest.timedelay>30?`${Math.floor(fastest.timedelay/30)} - ${Math.floor(fastest.timedelay/30)+1} mins`:`1 min`} delay).` },
+      ( ${fastest.timedelay>30?`${Math.floor(fastest.timedelay/30)} - ${Math.floor(fastest.timedelay/30)+1} mins`:`1 min`} delay).` },
     { icon: 'fa-indian-rupee-sign', text: `Cheapest option: ${cheapest.mode} at ₹${Math.round(cheapest.expenditure)}.` },
     { icon: 'fa-leaf',        text: `Best route emits ${best.carbonrate} kg CO₂ — ${pctLess > 0 ? pctLess + '% less than driving' : 'comparable to driving'}.` },
   ];

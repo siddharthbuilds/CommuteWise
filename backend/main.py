@@ -8,7 +8,7 @@ from routes.route_functions import get_all_routes
 app = FastAPI(title='CommuteWise')
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],          
+    allow_origins=["*"],         #add frontend url 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
