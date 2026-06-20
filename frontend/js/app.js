@@ -136,6 +136,12 @@ function renderCards(routes, sortKey, limit = 3) {
     const pb = primaryBadge(r.badges);
     const cardCls = pb ? CARD_CLASS[pb] : '';
     const pctLess = Math.round(((2.1 - r.carbonrate) / 2.1) * 100);
+    if(r.duration>60)
+    {
+        const durationHours =r.duration%60;
+        const durationMinutes=Math.round(r.duration-durationHours);
+    }
+    else {const durationMinutes = Math.round(r.duration)}
 
     return `
       <div class="route-card ${cardCls}">
@@ -143,7 +149,7 @@ function renderCards(routes, sortKey, limit = 3) {
         <div class="card-mode-row">
           <span class="mode-chip">${modeIcon[r.mode] || '🚌'} ${r.mode}</span>
         </div>
-        <div class="card-duration">${r.duration} min</div>
+        <div class="card-duration">${durationHours?`${durationHours} h ${durationMinutes} mins`:`${durationMinutes} min `}</div>
 
         <div class="card-metric">
           <div class="metric-label">Rating</div>
