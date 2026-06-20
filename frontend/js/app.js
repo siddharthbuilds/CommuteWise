@@ -35,13 +35,24 @@ function showRouteDetail(idx) {
   const modeIcon  = { metro: '🚇', rail: '🚆', bus: '🚌', walk: '🚶', auto: '🛺' };
   const modeLabel = { metro: 'Metro', rail: 'Suburban Rail', bus: 'Bus', walk: 'Walk', auto: 'Auto' };
   const modeColor = { metro: '#1565c0', rail: '#f9a825', bus: '#2d7a3a', walk: '#7b1fa2', auto: '#ef6c00' };
+   let durationHours = 0;
+    let durationMinutes=0;
+    console.log(r.duration);
+    if(r.duration>60)
+    {
+         durationHours = Math.floor(r.duration/60);
+         durationMinutes=Math.round(r.duration%60);
+    }
+    else { durationMinutes = Math.round(r.duration)}
+
+
 
   // ── Summary bar ──
   const summary = `
     <div class="modal-summary">
       <div class="modal-stat"><span class="modal-stat-val">${r.distance} km</span><span class="modal-stat-lbl">Distance</span></div>
-      <div class="modal-stat"><span class="modal-stat-val">${Math.round(r.duration)} min</span><span class="modal-stat-lbl">Duration</span></div>
-      <div class="modal-stat"><span class="modal-stat-val">₹${r.expenditure}</span><span class="modal-stat-lbl">Cost</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">${durationHours ? `${durationHours} h ${durationMinutes} mins` : `${durationMinutes} mins`}</span><span class="modal-stat-lbl">Duration</span></div>
+      <div class="modal-stat"><span class="modal-stat-val">₹${Math.round(r.expenditure)}</span><span class="modal-stat-lbl">Cost</span></div>
       <div class="modal-stat"><span class="modal-stat-val">${r.carbonrate} kg</span><span class="modal-stat-lbl">CO₂</span></div>
       <div class="modal-stat"><span class="modal-stat-val">${r.rating}/10</span><span class="modal-stat-lbl">Rating</span></div>
     </div>`;
@@ -136,12 +147,15 @@ function renderCards(routes, sortKey, limit = 3) {
     const pb = primaryBadge(r.badges);
     const cardCls = pb ? CARD_CLASS[pb] : '';
     const pctLess = Math.round(((2.1 - r.carbonrate) / 2.1) * 100);
+    let durationHours = 0;
+    let durationMinutes=0;
+    console.log(r.duration);
     if(r.duration>60)
     {
-        const durationHours =r.duration%60;
-        const durationMinutes=Math.round(r.duration-durationHours);
+         durationHours = Math.floor(r.duration/60);
+         durationMinutes=Math.round(r.duration%60);
     }
-    else {const durationMinutes = Math.round(r.duration)}
+    else { durationMinutes = Math.round(r.duration)}
 
     return `
       <div class="route-card ${cardCls}">
@@ -149,7 +163,7 @@ function renderCards(routes, sortKey, limit = 3) {
         <div class="card-mode-row">
           <span class="mode-chip">${modeIcon[r.mode] || '🚌'} ${r.mode}</span>
         </div>
-        <div class="card-duration">${durationHours?`${durationHours} h ${durationMinutes} mins`:`${durationMinutes} min `}</div>
+        <div class="card-duration"> ${durationHours ? `${durationHours} h ${durationMinutes} mins` : `${durationMinutes} mins`} </div>
 
         <div class="card-metric">
           <div class="metric-label">Rating</div>
@@ -159,7 +173,7 @@ function renderCards(routes, sortKey, limit = 3) {
         <div class="card-metric">
           <div class="metric-label">Travel Time</div>
           <div class="progress-bar"><div class="progress-fill fill-blue" style="width:${Math.round(r.duration / maxDur * 100)}%"></div></div>
-          <div class="metric-value">${r.duration} min</div>
+          <div class="metric-value">${durationHours ? `${durationHours} h ${durationMinutes} mins` : `${durationMinutes} mins`}</div>
         </div>
         <div class="card-metric">
           <div class="metric-label">CO₂ Emissions</div>
