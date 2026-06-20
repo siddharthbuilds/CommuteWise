@@ -318,7 +318,7 @@ def find_routes(
                 weighted_graph,
                 src,
                 dst,
-                k=2
+                k=5
             )
 
             for segments, distance in routes:
